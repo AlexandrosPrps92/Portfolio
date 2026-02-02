@@ -453,28 +453,32 @@ const ProjectModal = ({ project, onClose }) => {
 };
 
 export default function App() {
-    useEffect(() => {
-        const style = document.createElement('style');
-        style.innerHTML = `
-      @keyframes scroll {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
-      }
-      .animate-scroll {
-        animation: scroll 20s linear infinite;
-      }
-      .animate-fade-in {
-        animation: fadeIn 1s ease-out;
-      }
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-    `;
-        document.head.appendChild(style);
-        return () => document.head.removeChild(style);
-    }, []);
+    // 1. Create the state to remember which project was clicked
+    const [selectedProject, setSelectedProject] = useState(null);
 
+    return (
+        <div className="min-h-screen bg-black text-white font-sans">
+            <Nav />
+            <Hero />
+
+            {/* 2. PASS the function to the Work component */}
+            <Work onProjectClick={setSelectedProject} />
+
+            <Services />
+            <About />
+            <Contact />
+            <Footer />
+
+            {/* 3. If a project is selected, show the Modal */}
+            {selectedProject && (
+                <ProjectModal
+                    project={selectedProject}
+                    onClose={() => setSelectedProject(null)}
+                />
+            )}
+        </div>
+    );
+}
     return (
         <div className="min-h-screen bg-black text-white selection:bg-blue-500 selection:text-white font-sans">
             <Nav />
