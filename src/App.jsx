@@ -350,7 +350,7 @@ export default function App() {
             <Contact />
 
             <footer className="py-8 bg-black text-center text-gray-600 text-sm border-t border-zinc-900">
-                © {new Date().getFullYear()} Alex Rivera. Crafted with React & Tailwind.
+                © {new Date().getFullYear()} Alexandros Prepis. Crafted with React & Tailwind.
             </footer>
         </div>
     );
