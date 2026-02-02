@@ -28,15 +28,20 @@ const PROJECTS = [
 
         // BENTO GRID DATA (The new part)
         bentoData: {
-            hero: "/images/award_ceremony.jpg", // Using your uploaded image here
-            metric: "+25%",
-            metricLabel: "Increase in CTR",
-            subMetric: "Gold Award 2025",
+            hero: "/images/case_study.jpg", // Using your uploaded image here
+            metric: "+155%",
+            metricLabel: "Increase in Conversions for Job applications",
+            subMetric: "Google Case study 2025",
             variations: [
                 // Replace these with your real /public/images/ paths when you have them
-                "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&q=80",
-                "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=400&q=80",
-                "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&q=80"
+                "/images/AI_Sqaure_noAI.jpg",
+                "/images/HKT25.jpg",
+                "/images/dashboard.jpg"
+                "/images/dashboard2.jpg"
+                "/images/dashboard3.jpg"
+                "/images/generic1.jpg"
+                "/images/generic2.jpg"
+                "/images/generic3.jpg"
             ]
         }
     },
