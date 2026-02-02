@@ -11,7 +11,7 @@ const PROJECTS = [
         title: "Kariera Group",
         category: "Digital Designer",
         description: "Digital Designer in Kariera Group since 1st of April 2024",
-        tags: ["Figma", "Adobe CC", "ZOHO Email Marketing" , "Blog"],
+        tags: ["Figma", "Adobe CC", "ZOHO Email Marketing" , "WordPress"],
         image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         color: "from-blue-600 to-cyan-400"
     },
