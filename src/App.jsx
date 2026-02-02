@@ -294,7 +294,7 @@ const Contact = () => {
                 </p>
 
                 <a
-                    href="mailto:hello@alex.design"
+                    href="mailto:prepis92@hotmail.com"
                     className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform duration-300"
                 >
                     <Mail className="w-5 h-5" />
