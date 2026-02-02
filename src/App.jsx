@@ -137,6 +137,15 @@ const PROJECTS = [
                 "/images/NL_600x150_GR.jpg",
                 "/images/NL.jpg",
                 "/images/MB_activation_NL_2_EN_A3.jpg",
+                "/images/OPA.gif",
+                "/images/OA_Logo.gif",
+                "/images/where_to_next_res.gif",
+                "/images/OA_Plane_test.gif",
+                "/images/kalimera2.gif",
+                "/images/kalinyhta.gif",
+                "/images/I_love_Greece.gif",
+                "/images/Greek_Moments.gif",
+                "/images/Discovering_Gree.gif",
 
             ]
         },
