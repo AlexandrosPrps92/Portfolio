@@ -10,10 +10,23 @@ const PROJECTS = [
         id: 1,
         title: "Kariera Group",
         category: "Digital Designer",
-        type: "Professional", // <--- Add this for filtering
-        description: "Digital Designer in Kariera Group since 1st of April 2024...",
-        tags: ["Figma", "Adobe CC", "Email Marketing"],
-        image: "...",
+        type: "Professional",
+        year: "2024",
+        role: "Lead Designer",
+        description: "Spearheaded the modernization of legacy advertising assets and established data-validated creative guidelines.",
+        challenge: " The company relied on legacy visual assets that were performing poorly in generic brand awareness campaigns. There was no standardized system for creating new ads, leading to inconsistent branding and unmeasured effectiveness.",
+        solution: "I introduced a 'Data-First' creative workflow. Instead of guessing, I executed structured A/B testing across three pillars: Text Hierarchy, Composition, and Aesthetics. I also implemented the Celtra tool for Meta automation to scale asset production.",
+        results: [
+            "Increased Click-Through Rate (CTR) by 25% (example metric)",
+            "Reduced ad production time by 40% using Celtra templates",
+            "Won Gold & Silver at Peak Awards 2025"
+        ],
+        tags: ["Figma", "Adobe CC", "Zoho Analytics", "Celtra"],
+        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        gallery: [
+            "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1000",
+            "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000"
+        ],
         color: "from-blue-600 to-cyan-400"
     },
     {
