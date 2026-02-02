@@ -91,7 +91,7 @@ const Hero = () => {
             <div className="container mx-auto relative z-10">
                 <div className="max-w-4xl">
                     <p className="text-blue-400 font-mono mb-4 tracking-wider text-sm animate-fade-in">
-                        HELLO, I'M ALEXANDER
+                        HELLO, I'M ALEX
                     </p>
                     <h1 className="text-6xl md:text-8xl font-bold leading-[0.9] tracking-tighter mb-8">
                         DIGITAL <br />
