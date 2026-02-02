@@ -8,8 +8,8 @@ import {
 const PROJECTS = [
     {
         id: 1,
-        title: "Digital Designer",
-        category: "UI/UX Design",
+        title: "Kariera Group",
+        category: "Digital Designer",
         description: "Digital Designer in Kariera Group since 1st of April 2024",
         tags: ["Figma", "Adobe CC", "ZOHO Email Marketing" , "Blog"],
         image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
@@ -17,8 +17,8 @@ const PROJECTS = [
     },
     {
         id: 2,
-        title: "Digital Designer",
-        category: "Web Application",
+        title: "AEGEAN",
+        category: "Digital Designer",
         description: "Dark-mode analytics dashboard for a SaaS platform. Features real-time data graphing and modular widgets.",
         tags: ["Adobe CC", "Email Marketing", "Product design"],
         image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
@@ -27,7 +27,7 @@ const PROJECTS = [
     {
         id: 3,
         title: "Freelance",
-        category: "Branding",
+        category: "Digital Designer",
         description: "Brand guidelines, typography system, and logo design for a modern audio streaming startup.",
         tags: ["Branding", "Vector", "Identity","Animation and Video Design"],
         image: "https://images.unsplash.com/photo-1626785774573-4b799314346d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
@@ -36,7 +36,7 @@ const PROJECTS = [
     {
         id: 4,
         title: "The University of Edinburgh",
-        category: "Digital Media Design",
+        category: "MSc in Digital Media Design",
         description: "Minimalist fashion e-commerce storefront with a focus on high-quality imagery and seamless checkout flow.",
         tags: ["Web Design", "3D Design", "Media Ethics"],
         image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
