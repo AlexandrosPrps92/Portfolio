@@ -23,7 +23,7 @@ const PROJECTS = [
             "Won Gold & Silver at Peak Awards 2025"
         ],
         tags: ["Figma", "Adobe CC", "Zoho Analytics", "Wordpress"],
-        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        image: "public/images/award_ceremony.jpg",
         gallery: [
             "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1000",
             "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000"
