@@ -18,9 +18,9 @@ const PROJECTS = [
         challenge: " The company relied on legacy visual assets that were performing poorly in generic brand awareness campaigns. There was no standardized system for creating new ads, leading to inconsistent branding and unmeasured effectiveness.",
         solution: "I introduced a 'Data-First' creative workflow. Instead of guessing, I executed structured A/B testing across three pillars: Text Hierarchy, Composition, and Aesthetics. I also implemented the Celtra tool for Meta automation to scale asset production.",
         results: [
-            "Increased Click-Through Rate (CTR) by 25% (example metric)",
-            "Reduced ad production time by 40% using Celtra templates",
-            "Won Gold & Silver at Peak Awards 2025"
+            "Redesign of all older brand creatives, created additional for further audience segmentation, enriched with additional video creatives",
+            "Reduced video ad production time by 40% using Heygen templates",
+            "Won Gold & Silver at Peak Awards 2025 for Best Performance in Employment → AI-Driven Omnichannel Lead Gen and Best Use of Data Data-Driven Lead Generation 1st-Party Data & ML Customer Segmentation"
         ],
         tags: ["Figma", "Adobe CC", "Zoho Analytics", "Wordpress", "Heygen"],
         image: "/images/award_ceremony.jpg",
