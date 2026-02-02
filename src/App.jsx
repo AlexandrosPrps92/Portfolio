@@ -109,17 +109,17 @@ const PROJECTS = [
         challenge: "AEGEAN needed a robust internal tool to visualize complex flight data. The existing spreadsheets were difficult to read and slowed down decision-making processes.",
         solution: "Designed a high-contrast dark mode interface that prioritized data legibility. Created a modular widget system allowing users to customize their view based on their specific role.",
         results: [
-            "Improved data retrieval speed by 30%",
-            "Adopted by 5 different internal departments",
-            "Zero downtime during transition"
+            "Updated most of AEGEAN'S digital and some physical touchpoints with the new rebranded logo and tagline",
+            "Designed the first animated stickers for social media use",
+            "Multiple Company profit records in sales via email campaigns"
         ],
         tags: ["Email Marketing", "Social Media", "UI Design", "Branding"],
         image: "/images/HEADER_A3.jpg",
         color: "from-purple-600 to-pink-400",
         bentoData: {
             hero: "/images/template_NL_3.jpg",
-            metric: "+15",
-            metricLabel: "product launches",
+            metric: "Aegean Rebrand",
+            metricLabel: "Updated most of AEGEAN'S digital touchpoints and Physical banners, designed new stickers for OA and AEGEAN brands",
             subMetric: "Internal Tool",
             variations: [
                 "/images/Story_ATH_nl.jpg",
