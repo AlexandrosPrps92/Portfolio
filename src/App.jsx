@@ -114,20 +114,127 @@ const PROJECTS = [
             "Zero downtime during transition"
         ],
         tags: ["Email Marketing", "Social Media", "UI Design", "Branding"],
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        image: "/images/HEADER_A3.jpg",
         color: "from-purple-600 to-pink-400",
         bentoData: {
-            hero: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
+            hero: "/images/template_NL_3.jpg",
             metric: "30%",
             metricLabel: "Faster Workflow",
             subMetric: "Internal Tool",
             variations: [
-                "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80",
-                "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&q=80",
-                "https://images.unsplash.com/photo-1543286386-713df548e9cc?w=400&q=80"
+                "/images/Story_ATH_nl.jpg",
+                "/images/Story_SKG_nl.jpg",
+                "/images/NL_second_subject_wifi_280122.jpg",
+                "/images/NL_second_subject_grid_wifi_DE_280122.jpg",
+                "/images/NL_OA_GR.jpg",
+                "/images/NL_gr.jpg",
+                "/images/NL_b2b.jpg",
+                "/images/NL_640x500_EN.jpg",
+                "/images/NL_600x500_GR.jpg",
+                "/images/NL_600x500_EN.jpg",
+                "/images/NL_600x400_GR.jpg",
+                "/images/NL_600x150_EN.jpg",
+                "/images/NL_600x150_GR.jpg",
+                "/images/NL.jpg",
+                "/images/MB_activation_NL_2_EN_A3.jpg",
+
             ]
         },
-        // No videos for this one yet, so it won't show the section
+        videos: [
+            {
+                id: "a1",
+                title: "Dashboard Interactions",
+                category: "UX/UI",
+                src: "/videos/all_dom_EN.mp4", // Replace with your file
+                className: "md:col-span-2 md:row-span-2" // Big Box
+            },
+            {
+                id: "a2",
+                title: "Live Data Graph",
+                category: "Data Viz",
+                src: "/videos/all_int_GR.mp4",
+                className: "md:col-span-1 md:row-span-1"
+            },
+            {
+                id: "a3",
+                title: "Mobile Responsiveness",
+                category: "Mobile View",
+                src: "/videos/DXB_Square.mp4",
+                className: "md:col-span-1 md:row-span-1"
+            },
+            {
+                id: "a4",
+                title: "Mobile Responsiveness",
+                category: "Mobile View",
+                src: "/videos/GR_Destinations_DE_audience_Horizontal.mp4",
+                className: "md:col-span-1 md:row-span-1"
+            },
+            {
+                id: "a5",
+                title: "Mobile Responsiveness",
+                category: "Mobile View",
+                src: "/videos/INT_Destinations_GR_audience.mp4",
+                className: "md:col-span-1 md:row-span-1"
+            },
+            {
+                id: "a6",
+                title: "Mobile Responsiveness",
+                category: "Mobile View",
+                src: "/videos/main_Story_A3_EN.mp4",
+                className: "md:col-span-1 md:row-span-1"
+            },
+            {
+                id: "a7",
+                title: "Mobile Responsiveness",
+                category: "Mobile View",
+                src: "/videos/mainYT_OA.mp4",
+                className: "md:col-span-1 md:row-span-1"
+            },
+            {
+                id: "a8",
+                title: "Mobile Responsiveness",
+                category: "Mobile View",
+                src: "/videos/NewYear_A3.mp4",
+                className: "md:col-span-1 md:row-span-1"
+            },
+            {
+                id: "a9",
+                title: "Mobile Responsiveness",
+                category: "Mobile View",
+                src: "/videos/NewYear_OA.mp4",
+                className: "md:col-span-1 md:row-span-1"
+            },
+            {
+                id: "a10",
+                title: "Mobile Responsiveness",
+                category: "Mobile View",
+                src: "/videos/Tik_Tok.mp4",
+                className: "md:col-span-1 md:row-span-1"
+            },
+            {
+                id: "a11",
+                title: "Mobile Responsiveness",
+                category: "Mobile View",
+                src: "/videos/tik_tok_family_promo.mp4",
+                className: "md:col-span-1 md:row-span-1"
+            },
+            {
+                id: "a12",
+                title: "Mobile Responsiveness",
+                category: "Mobile View",
+                src: "/videos/TikTok_Gen.mp4",
+                className: "md:col-span-1 md:row-span-1"
+            },
+            {
+                id: "a13",
+                title: "Mobile Responsiveness",
+                category: "Mobile View",
+                src: "/videos/Video_Tik_tok_250822.mp4",
+                className: "md:col-span-1 md:row-span-1"
+            },
+
+
+        ] // No videos for this one yet, so it won't show the section
     },
     {
         id: 3,
