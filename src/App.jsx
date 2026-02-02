@@ -69,7 +69,7 @@ const SERVICES = [
 
 const Nav = () => (
     <nav className="fixed top-0 left-0 w-full p-6 z-50 flex justify-between items-center mix-blend-difference text-white">
-        <div className="font-bold text-xl tracking-tighter">ALEX.DESIGN</div>
+        <div className="font-bold text-xl tracking-tighter">ALEXANDROS_PREPIS.DESIGN</div>
         <div className="flex gap-6 text-sm font-medium">
             <a href="#work" className="hover:opacity-50 transition-opacity">WORK</a>
             <a href="#about" className="hover:opacity-50 transition-opacity">ABOUT</a>
@@ -88,7 +88,7 @@ const Hero = () => {
             <div className="container mx-auto relative z-10">
                 <div className="max-w-4xl">
                     <p className="text-blue-400 font-mono mb-4 tracking-wider text-sm animate-fade-in">
-                        HELLO, I'M ALEX
+                        HELLO, I'M ALEXANDER
                     </p>
                     <h1 className="text-6xl md:text-8xl font-bold leading-[0.9] tracking-tighter mb-8">
                         DIGITAL <br />
