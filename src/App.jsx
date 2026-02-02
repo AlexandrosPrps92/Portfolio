@@ -70,28 +70,28 @@ const PROJECTS = [
             {
                 id: "v3",
                 title: "Heygen use",
-                category: "Instagram","TikTok",
+                category: "Instagram,TikTok",
                 src: "/videos/Alex__For you page__Vertical.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "v4",
                 title: "Kinetic typography",
-                category: "Instagram", "TikTok","Meta",
+                category: "Instagram, TikTok",
                 src: "/videos/1080x1080_video_generic.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "v5",
                 title: "Kinetic typography",
-                category: "Instagram", "TikTok","Meta",
+                category: "Instagram, TikTok, Meta",
                 src: "/videos/1080x1080_video_premium.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "v6",
                 title: "Kinetic typography",
-                category: "Instagram", "TikTok","Meta",
+                category: "Instagram, TikTok, Meta",
                 src: "/videos/1080x1080_video_standard.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
