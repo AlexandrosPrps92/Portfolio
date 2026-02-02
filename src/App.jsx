@@ -298,7 +298,7 @@ const Contact = () => {
                     className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform duration-300"
                 >
                     <Mail className="w-5 h-5" />
-                    hello@prepis92@hotmail.com
+                    prepis92@hotmail.com
                 </a>
 
                 <div className="mt-16 flex justify-center gap-8">
