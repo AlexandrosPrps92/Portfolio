@@ -44,10 +44,10 @@ const PROJECTS = [
                 "/images/skg1.jpg",
                 "/images/skg2.jpg",
                 "/images/skg3.jpg",
-                "/images/square.jpg",
-                "/images/square2.jpg",
-                "/images/square3.jpg",
-                "/images/square4.jpg",
+                "/images/square.png",
+                "/images/square2.png",
+                "/images/square3.png",
+                "/images/square4.png",
             ]
         },
 
@@ -118,15 +118,15 @@ const PROJECTS = [
         color: "from-purple-600 to-pink-400",
         bentoData: {
             hero: "/images/template_NL_3.jpg",
-            metric: "30%",
-            metricLabel: "Faster Workflow",
+            metric: "+15",
+            metricLabel: "product launches",
             subMetric: "Internal Tool",
             variations: [
                 "/images/Story_ATH_nl.jpg",
                 "/images/Story_SKG_nl.jpg",
                 "/images/NL_second_subject_wifi_280122.jpg",
                 "/images/NL_second_subject_grid_wifi_DE_280122.jpg",
-                "/images/NL_OA_GR.jpg",
+                "/images/NL_OA_GR.png",
                 "/images/NL_gr.jpg",
                 "/images/NL_b2b.jpg",
                 "/images/NL_640x500_EN.jpg",
