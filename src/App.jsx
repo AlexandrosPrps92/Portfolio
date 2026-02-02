@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import {
     ArrowUpRight, Mail, Github, Linkedin, Figma,
     Layers, Layout, Smartphone, Code, MoveRight,
-    Dribbble, Palette
+    Dribbble, Palette, X, CheckCircle2
 } from 'lucide-react';
 
+// --- DATA ---
 const PROJECTS = [
     {
         id: 1,
@@ -34,9 +35,11 @@ const PROJECTS = [
         title: "AEGEAN",
         category: "Digital Designer",
         type: "Professional",
-        description: "Dark-mode analytics dashboard...",
+        year: "2023",
+        role: "UI Designer",
+        description: "Dark-mode analytics dashboard for a SaaS platform. Features real-time data graphing and modular widgets.",
         tags: ["UI Design", "Branding"],
-        image: "...",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         color: "from-purple-600 to-pink-400"
     },
     {
@@ -44,9 +47,11 @@ const PROJECTS = [
         title: "Freelance",
         category: "Digital Designer",
         type: "Freelance",
-        description: "Brand guidelines and typography...",
+        year: "2022",
+        role: "Brand Designer",
+        description: "Brand guidelines, typography system, and logo design for a modern audio streaming startup.",
         tags: ["Branding", "Identity"],
-        image: "...",
+        image: "https://images.unsplash.com/photo-1626785774573-4b799314346d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         color: "from-orange-500 to-red-500"
     },
     {
@@ -54,12 +59,15 @@ const PROJECTS = [
         title: "University of Edinburgh",
         category: "MSc Project",
         type: "Academic",
-        description: "Minimalist fashion e-commerce...",
+        year: "2025",
+        role: "Student",
+        description: "Minimalist fashion e-commerce storefront with a focus on high-quality imagery and seamless checkout flow.",
         tags: ["3D Design", "Web Design"],
-        image: "...",
+        image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         color: "from-green-500 to-emerald-400"
     }
 ];
+
 const SERVICES = [
     {
         icon: <Layout className="w-6 h-6" />,
@@ -83,6 +91,8 @@ const SERVICES = [
     }
 ];
 
+// --- COMPONENTS ---
+
 const Nav = () => (
     <nav className="fixed top-0 left-0 w-full p-6 z-50 flex justify-between items-center mix-blend-difference text-white">
         <div className="font-bold text-xl tracking-tighter">ALEXANDROS_PREPIS.DESIGN</div>
@@ -97,7 +107,6 @@ const Nav = () => (
 const Hero = () => {
     return (
         <section className="min-h-screen flex flex-col justify-center px-6 pt-24 pb-12 bg-black text-white relative overflow-hidden">
-            {/* Abstract Background Blurs */}
             <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-purple-600 rounded-full blur-[120px] opacity-20 animate-pulse"></div>
             <div className="absolute bottom-[-20%] left-[-10%] w-[500px] h-[500px] bg-blue-600 rounded-full blur-[120px] opacity-20 animate-pulse delay-700"></div>
 
@@ -130,7 +139,6 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* Scrolling Skills Marquee */}
             <div className="absolute bottom-0 left-0 w-full border-t border-white/10 py-6 overflow-hidden bg-black/50 backdrop-blur-sm">
                 <div className="flex gap-12 animate-scroll whitespace-nowrap text-gray-500 font-mono text-sm uppercase tracking-widest">
                     {[...Array(2)].map((_, i) => (
@@ -159,7 +167,8 @@ const Hero = () => {
     );
 };
 
-const Work = ({ onProjectClick }) => { // <--- 1. We receive the function here
+// 1. UPDATED WORK COMPONENT
+const Work = ({ onProjectClick }) => {
     const [activeTab, setActiveTab] = useState("All");
     const tabs = ["All", "Professional", "Freelance", "Academic"];
 
@@ -197,10 +206,8 @@ const Work = ({ onProjectClick }) => { // <--- 1. We receive the function here
                     {filteredProjects.map((project, index) => (
                         <div
                             key={project.id}
-                            // ▼▼▼▼▼▼▼▼▼▼▼ THIS IS THE PART YOU WERE MISSING ▼▼▼▼▼▼▼▼▼▼▼
                             onClick={() => onProjectClick(project)}
                             className="group relative rounded-2xl overflow-hidden bg-zinc-900 border border-white/5 hover:border-white/20 transition-all duration-500 animate-fade-in cursor-pointer"
-                            // ▲▲▲▲▲▲▲▲▲▲▲ Added onClick AND cursor-pointer ▲▲▲▲▲▲▲▲▲▲▲
                         >
                             <div className="aspect-[4/3] overflow-hidden relative">
                                 <div className={`absolute inset-0 bg-gradient-to-tr ${project.color} opacity-0 group-hover:opacity-20 transition-opacity duration-500 z-10`}></div>
@@ -352,8 +359,7 @@ const Contact = () => {
     );
 };
 
-import { X, CheckCircle2 } from 'lucide-react'; // Make sure to import these
-
+// 2. PROJECT MODAL COMPONENT
 const ProjectModal = ({ project, onClose }) => {
     if (!project) return null;
 
@@ -452,38 +458,51 @@ const ProjectModal = ({ project, onClose }) => {
     );
 };
 
+// 3. MAIN APP COMPONENT
 export default function App() {
     // 1. Create the state to remember which project was clicked
     const [selectedProject, setSelectedProject] = useState(null);
 
-    return (
-        <div className="min-h-screen bg-black text-white font-sans">
-            <Nav />
-            <Hero />
+    // 2. Lock body scroll when modal is open
+    useEffect(() => {
+        if (selectedProject) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+    }, [selectedProject]);
 
-            {/* 2. PASS the function to the Work component */}
-            <Work onProjectClick={setSelectedProject} />
+    // 3. Define the Animation Styles
+    useEffect(() => {
+        const style = document.createElement('style');
+        style.innerHTML = `
+      @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-scroll {
+        animation: scroll 20s linear infinite;
+      }
+      .animate-fade-in {
+        animation: fadeIn 1s ease-out;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    `;
+        document.head.appendChild(style);
+        return () => document.head.removeChild(style);
+    }, []);
 
-            <Services />
-            <About />
-            <Contact />
-            <Footer />
-
-            {/* 3. If a project is selected, show the Modal */}
-            {selectedProject && (
-                <ProjectModal
-                    project={selectedProject}
-                    onClose={() => setSelectedProject(null)}
-                />
-            )}
-        </div>
-    );
-}
     return (
         <div className="min-h-screen bg-black text-white selection:bg-blue-500 selection:text-white font-sans">
             <Nav />
             <Hero />
-            <Work />
+
+            {/* 4. PASS the function to the Work component */}
+            <Work onProjectClick={setSelectedProject} />
+
             <Services />
             <About />
             <Contact />
@@ -491,6 +510,14 @@ export default function App() {
             <footer className="py-8 bg-black text-center text-gray-600 text-sm border-t border-zinc-900">
                 © {new Date().getFullYear()} Alexandros Prepis. Crafted with React & Tailwind.
             </footer>
+
+            {/* 5. If a project is selected, show the Modal */}
+            {selectedProject && (
+                <ProjectModal
+                    project={selectedProject}
+                    onClose={() => setSelectedProject(null)}
+                />
+            )}
         </div>
     );
 }
