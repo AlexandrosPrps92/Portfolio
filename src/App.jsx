@@ -36,12 +36,12 @@ const PROJECTS = [
                 // Replace these with your real /public/images/ paths when you have them
                 "/images/AI_Sqaure_noAI.jpg",
                 "/images/HKT25.jpg",
-                "/images/dashboard.jpg"
-                "/images/dashboard2.jpg"
-                "/images/dashboard3.jpg"
-                "/images/generic1.jpg"
-                "/images/generic2.jpg"
-                "/images/generic3.jpg"
+                "/images/dashboard.jpg",
+                "/images/dashboard2.jpg",
+                "/images/dashboard3.jpg",
+                "/images/generic1.jpg",
+                "/images/generic2.jpg",
+                "/images/generic3.jpg",
             ]
         }
     },
