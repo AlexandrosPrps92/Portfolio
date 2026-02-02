@@ -331,7 +331,7 @@ const Contact = () => {
                     <a href="#" className="p-4 rounded-full bg-zinc-900 hover:bg-zinc-800 transition-colors">
                         <Dribbble className="w-6 h-6 text-pink-500" />
                     </a>
-                    <a href="www.linkedin.com/in/alexandros-prepis-792796163" className="p-4 rounded-full bg-zinc-900 hover:bg-zinc-800 transition-colors">
+                    <a href="https://www.linkedin.com/in/alexandros-prepis-792796163" className="p-4 rounded-full bg-zinc-900 hover:bg-zinc-800 transition-colors">
                         <Linkedin className="w-6 h-6 text-blue-500" />
                     </a>
                     <a href="https://github.com/AlexandrosPrps92" className="p-4 rounded-full bg-zinc-900 hover:bg-zinc-800 transition-colors">
