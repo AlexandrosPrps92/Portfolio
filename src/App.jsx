@@ -22,7 +22,7 @@ const PROJECTS = [
             "Reduced ad production time by 40% using Celtra templates",
             "Won Gold & Silver at Peak Awards 2025"
         ],
-        tags: ["Figma", "Adobe CC", "Zoho Analytics", "Wordpress"],
+        tags: ["Figma", "Adobe CC", "Zoho Analytics", "Wordpress", "Heygen"],
         image: "/images/award_ceremony.jpg",
         gallery: [
             "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1000",
