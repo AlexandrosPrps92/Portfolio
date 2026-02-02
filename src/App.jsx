@@ -26,19 +26,19 @@ const PROJECTS = [
     },
     {
         id: 3,
-        title: "Echo Brand Identity",
+        title: "Freelance",
         category: "Branding",
         description: "Brand guidelines, typography system, and logo design for a modern audio streaming startup.",
-        tags: ["Branding", "Vector", "Identity"],
+        tags: ["Branding", "Vector", "Identity","Animation and Video Design"],
         image: "https://images.unsplash.com/photo-1626785774573-4b799314346d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         color: "from-orange-500 to-red-500"
     },
     {
         id: 4,
-        title: "Zenith E-Commerce",
-        category: "Web Design",
+        title: "The University of Edinburgh",
+        category: "Digital Media Design",
         description: "Minimalist fashion e-commerce storefront with a focus on high-quality imagery and seamless checkout flow.",
-        tags: ["Web Design", "Shopify", "Minimalism"],
+        tags: ["Web Design", "3D Design", "Media Ethics"],
         image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         color: "from-green-500 to-emerald-400"
     }
