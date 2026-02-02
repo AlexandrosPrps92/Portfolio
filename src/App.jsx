@@ -43,7 +43,11 @@ const PROJECTS = [
                 "/images/generic3.jpg",
                 "/images/skg1.jpg",
                 "/images/skg2.jpg",
-                "/images/skg3.jpg"
+                "/images/skg3.jpg",
+                "/images/square.jpg",
+                "/images/square2.jpg",
+                "/images/square3.jpg",
+                "/images/square4.jpg",
             ]
         },
 
@@ -51,25 +55,47 @@ const PROJECTS = [
         videos: [
             {
                 id: "v1",
-                title: "Campaign Showreel",
+                title: "Heygen launch",
                 category: "Social Media",
                 src: "/videos/Alex__Update your profile__vertical.mp4", // Make sure file exists in public/videos/
                 className: "md:col-span-2 md:row-span-2" // Big Box
             },
             {
                 id: "v2",
-                title: "Kinetic Typography",
+                title: "Animated creative",
                 category: "Brand Awareness",
-                src: "/videos/type.mp4",
+                src: "/videos/1920x1080_idea1.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "v3",
-                title: "Story Ad",
-                category: "Instagram",
-                src: "/videos/interaction.mp4",
+                title: "Heygen use",
+                category: "Instagram","TikTok",
+                src: "/videos/Alex__For you page__Vertical.mp4",
                 className: "md:col-span-1 md:row-span-1"
-            }
+            },
+            {
+                id: "v4",
+                title: "Kinetic typography",
+                category: "Instagram", "TikTok","Meta",
+                src: "/videos/1080x1080_video_generic.mp4",
+                className: "md:col-span-1 md:row-span-1"
+            },
+            {
+                id: "v5",
+                title: "Kinetic typography",
+                category: "Instagram", "TikTok","Meta",
+                src: "/videos/1080x1080_video_premium.mp4",
+                className: "md:col-span-1 md:row-span-1"
+            },
+            {
+                id: "v6",
+                title: "Kinetic typography",
+                category: "Instagram", "TikTok","Meta",
+                src: "/videos/1080x1080_video_standard.mp4",
+                className: "md:col-span-1 md:row-span-1"
+            },
+
         ]
     },
     {
