@@ -159,14 +159,10 @@ const Hero = () => {
     );
 };
 
-const Work = () => {
-    // 1. State to track the active tab
+const Work = ({ onProjectClick }) => { // <--- 1. We receive the function here
     const [activeTab, setActiveTab] = useState("All");
-
-    // 2. Define your tabs
     const tabs = ["All", "Professional", "Freelance", "Academic"];
 
-    // 3. Filter projects based on the active tab
     const filteredProjects = activeTab === "All"
         ? PROJECTS
         : PROJECTS.filter(project => project.type === activeTab);
@@ -180,7 +176,6 @@ const Work = () => {
                         <p className="text-gray-400 max-w-md">A collection of projects exploring the intersection of design and technology.</p>
                     </div>
 
-                    {/* 4. Render the Filter Tabs */}
                     <div className="flex gap-2 mt-6 md:mt-0 bg-zinc-900 p-1 rounded-full border border-white/10">
                         {tabs.map((tab) => (
                             <button
@@ -198,14 +193,15 @@ const Work = () => {
                     </div>
                 </div>
 
-                {/* 5. Render the filtered list with animation support */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 min-h-[500px]">
                     {filteredProjects.map((project, index) => (
                         <div
                             key={project.id}
-                            className="group relative rounded-2xl overflow-hidden bg-zinc-900 border border-white/5 hover:border-white/20 transition-all duration-500 animate-fade-in"
+                            // ▼▼▼▼▼▼▼▼▼▼▼ THIS IS THE PART YOU WERE MISSING ▼▼▼▼▼▼▼▼▼▼▼
+                            onClick={() => onProjectClick(project)}
+                            className="group relative rounded-2xl overflow-hidden bg-zinc-900 border border-white/5 hover:border-white/20 transition-all duration-500 animate-fade-in cursor-pointer"
+                            // ▲▲▲▲▲▲▲▲▲▲▲ Added onClick AND cursor-pointer ▲▲▲▲▲▲▲▲▲▲▲
                         >
-                            {/* ... (Keep your existing card code here, it is excellent) ... */}
                             <div className="aspect-[4/3] overflow-hidden relative">
                                 <div className={`absolute inset-0 bg-gradient-to-tr ${project.color} opacity-0 group-hover:opacity-20 transition-opacity duration-500 z-10`}></div>
                                 <img
@@ -353,6 +349,106 @@ const Contact = () => {
                 </div>
             </div>
         </section>
+    );
+};
+
+import { X, CheckCircle2 } from 'lucide-react'; // Make sure to import these
+
+const ProjectModal = ({ project, onClose }) => {
+    if (!project) return null;
+
+    return (
+        <div className="fixed inset-0 z-[100] overflow-y-auto bg-zinc-950 animate-fade-in">
+            {/* Sticky Close Button */}
+            <button
+                onClick={onClose}
+                className="fixed top-6 right-6 z-50 p-3 bg-white text-black rounded-full hover:scale-110 transition-transform shadow-lg"
+            >
+                <X className="w-6 h-6" />
+            </button>
+
+            {/* Hero Section */}
+            <div className="relative h-[60vh] w-full">
+                <div className={`absolute inset-0 bg-gradient-to-b ${project.color} opacity-20`}></div>
+                <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover opacity-60"
+                />
+                <div className="absolute bottom-0 left-0 w-full p-6 md:p-12 bg-gradient-to-t from-zinc-950 to-transparent">
+                    <div className="container mx-auto">
+                        <span className="inline-block px-3 py-1 mb-4 text-xs font-mono border border-white/30 rounded-full text-white/80">
+                            {project.category} • {project.year}
+                        </span>
+                        <h1 className="text-5xl md:text-7xl font-bold text-white mb-2 tracking-tighter">
+                            {project.title}
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            {/* Content Container */}
+            <div className="container mx-auto px-6 py-16 text-white">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+                    {/* Sidebar Info (Left Column) */}
+                    <div className="lg:col-span-4 space-y-8">
+                        <div>
+                            <h3 className="text-gray-400 font-mono text-sm mb-2">MY ROLE</h3>
+                            <p className="text-xl font-medium">{project.role}</p>
+                        </div>
+                        <div>
+                            <h3 className="text-gray-400 font-mono text-sm mb-2">TOOLS & TECH</h3>
+                            <div className="flex flex-wrap gap-2">
+                                {project.tags.map(tag => (
+                                    <span key={tag} className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-sm">
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="p-6 bg-zinc-900 rounded-2xl border border-white/5">
+                            <h3 className="text-blue-400 font-bold mb-4 flex items-center gap-2">
+                                <CheckCircle2 className="w-5 h-5" /> Key Results
+                            </h3>
+                            <ul className="space-y-3">
+                                {project.results?.map((result, i) => (
+                                    <li key={i} className="text-sm text-gray-300 leading-relaxed border-l-2 border-white/10 pl-4">
+                                        {result}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Main Story (Right Column) */}
+                    <div className="lg:col-span-8 space-y-12">
+                        <section>
+                            <h2 className="text-2xl font-bold mb-4 text-white">The Challenge</h2>
+                            <p className="text-gray-400 text-lg leading-relaxed">
+                                {project.challenge || project.description}
+                            </p>
+                        </section>
+
+                        <section>
+                            <h2 className="text-2xl font-bold mb-4 text-white">The Solution</h2>
+                            <p className="text-gray-400 text-lg leading-relaxed">
+                                {project.solution || "Detailed breakdown of the design process, A/B testing variations, and final implementation strategy."}
+                            </p>
+                        </section>
+
+                        {/* Image Gallery */}
+                        <div className="space-y-6 mt-12">
+                            {project.gallery?.map((img, index) => (
+                                <div key={index} className="rounded-2xl overflow-hidden border border-white/5 bg-zinc-900">
+                                    <img src={img} alt={`Gallery ${index}`} className="w-full h-auto hover:scale-105 transition-transform duration-700" />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 };
 
