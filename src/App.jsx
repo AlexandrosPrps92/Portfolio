@@ -147,26 +147,52 @@ const Hero = () => {
 };
 
 const Work = () => {
+    // 1. State to track the active tab
+    const [activeTab, setActiveTab] = useState("All");
+
+    // 2. Define your tabs
+    const tabs = ["All", "Professional", "Freelance", "Academic"];
+
+    // 3. Filter projects based on the active tab
+    const filteredProjects = activeTab === "All"
+        ? PROJECTS
+        : PROJECTS.filter(project => project.type === activeTab);
+
     return (
         <section id="work" className="py-24 bg-zinc-950 text-white">
             <div className="container mx-auto px-6">
-                <div className="flex justify-between items-end mb-16">
+                <div className="flex flex-col md:flex-row justify-between items-end mb-12">
                     <div>
                         <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Selected Work</h2>
                         <p className="text-gray-400 max-w-md">A collection of projects exploring the intersection of design and technology.</p>
                     </div>
-                    <button className="hidden md:flex items-center gap-2 text-sm font-bold border-b border-white pb-1 hover:text-gray-300 transition-colors">
-                        VIEW ALL ARCHIVE <MoveRight className="w-4 h-4" />
-                    </button>
+
+                    {/* 4. Render the Filter Tabs */}
+                    <div className="flex gap-2 mt-6 md:mt-0 bg-zinc-900 p-1 rounded-full border border-white/10">
+                        {tabs.map((tab) => (
+                            <button
+                                key={tab}
+                                onClick={() => setActiveTab(tab)}
+                                className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                                    activeTab === tab
+                                        ? "bg-white text-black shadow-lg"
+                                        : "text-gray-400 hover:text-white hover:bg-white/5"
+                                }`}
+                            >
+                                {tab}
+                            </button>
+                        ))}
+                    </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {PROJECTS.map((project, index) => (
+                {/* 5. Render the filtered list with animation support */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 min-h-[500px]">
+                    {filteredProjects.map((project, index) => (
                         <div
                             key={project.id}
-                            className={`group relative rounded-2xl overflow-hidden bg-zinc-900 border border-white/5 hover:border-white/20 transition-all duration-500 ${index % 2 === 0 ? 'md:mt-0' : 'md:mt-12'}`}
+                            className="group relative rounded-2xl overflow-hidden bg-zinc-900 border border-white/5 hover:border-white/20 transition-all duration-500 animate-fade-in"
                         >
-                            {/* Image Container */}
+                            {/* ... (Keep your existing card code here, it is excellent) ... */}
                             <div className="aspect-[4/3] overflow-hidden relative">
                                 <div className={`absolute inset-0 bg-gradient-to-tr ${project.color} opacity-0 group-hover:opacity-20 transition-opacity duration-500 z-10`}></div>
                                 <img
@@ -174,18 +200,15 @@ const Work = () => {
                                     alt={project.title}
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
-
-                                {/* Floating Tags */}
                                 <div className="absolute top-4 left-4 flex flex-wrap gap-2 z-20">
                                     {project.tags.map(tag => (
                                         <span key={tag} className="px-3 py-1 bg-black/50 backdrop-blur-md rounded-full text-xs font-medium border border-white/10">
-                      {tag}
-                    </span>
+                                            {tag}
+                                        </span>
                                     ))}
                                 </div>
                             </div>
 
-                            {/* Content */}
                             <div className="p-8">
                                 <div className="flex justify-between items-start mb-4">
                                     <div>
