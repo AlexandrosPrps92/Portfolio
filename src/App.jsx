@@ -8,19 +8,19 @@ import {
 const PROJECTS = [
     {
         id: 1,
-        title: "Neobank Finance",
+        title: "Digital Designer",
         category: "UI/UX Design",
-        description: "A complete redesign of a fintech banking application focusing on accessibility and data visualization.",
-        tags: ["Figma", "Mobile App", "Prototyping"],
+        description: "Digital Designer in Kariera Group since 1st of April 2024",
+        tags: ["Figma", "After Effects", "Google ads"],
         image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         color: "from-blue-600 to-cyan-400"
     },
     {
         id: 2,
-        title: "Lumina Dashboard",
+        title: "Digital Designer",
         category: "Web Application",
         description: "Dark-mode analytics dashboard for a SaaS platform. Features real-time data graphing and modular widgets.",
-        tags: ["React", "Dashboard", "SaaS"],
+        tags: ["Adobe CC", "Email Marketing", "Product design"],
         image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         color: "from-purple-600 to-pink-400"
     },
