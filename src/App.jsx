@@ -20,7 +20,7 @@ const PROJECTS = [
         title: "AEGEAN",
         category: "Digital Designer",
         description: "Dark-mode analytics dashboard for a SaaS platform. Features real-time data graphing and modular widgets.",
-        tags: ["Adobe CC", "Email Marketing", "Product design"],
+        tags: ["Adobe CC", "Email Marketing", "UI Design", "Branding"],
         image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         color: "from-purple-600 to-pink-400"
     },
