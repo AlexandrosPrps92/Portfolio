@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {
     ArrowUpRight, Mail, Github, Linkedin, Figma,
     Layers, Layout, Smartphone, Code, MoveRight,
-    Dribbble, Palette, X, CheckCircle2, Image as ImageIcon
+    Dribbble, Palette, X, CheckCircle2, Image as ImageIcon, Play
 } from 'lucide-react';
 
 // --- DATA ---
@@ -19,21 +19,20 @@ const PROJECTS = [
         solution: "I introduced a 'Data-First' creative workflow. Instead of guessing, I executed structured A/B testing across three pillars: Text Hierarchy, Composition, and Aesthetics. I also implemented the Celtra tool for Meta automation to scale asset production.",
         results: [
             "Redesigned all legacy brand creatives and expanded assets for audience segmentation.",
-            "Reduced video ad production time by 40% using Heygen templates.",
-            "Won Gold & Silver at Peak Awards 2025: Best Performance in Employment (AI-Driven Lead Gen) & Best Use of Data."
+            "Part of the success of Google Case study and best practice for 2025, +155% conversion rates for jobseekers, -49% cost per application (CPA).",
+            "Our team won Gold & Silver at Peak Awards 2025: Best Performance in Employment (AI-Driven Lead Gen) & Best Use of Data."
         ],
         tags: ["Figma", "Adobe CC", "Zoho Analytics", "Wordpress", "Heygen"],
-        image: "/images/award_ceremony.jpg", // Ensure this exists in public/images/
+        image: "/images/award_ceremony.jpg",
         color: "from-blue-600 to-cyan-400",
 
         // BENTO GRID DATA
         bentoData: {
-            hero: "/images/case_study.jpg", // Ensure this exists
+            hero: "/images/case_study.jpg",
             metric: "+155%",
             metricLabel: "Increase in Conversions",
             subMetric: "Google Case Study 2025",
             variations: [
-                // Replace these with your real paths
                 "/images/AI_Sqaure_noAI.jpg",
                 "/images/HKT25.jpg",
                 "/images/dashboard.jpg",
@@ -42,6 +41,9 @@ const PROJECTS = [
                 "/images/generic1.jpg",
                 "/images/generic2.jpg",
                 "/images/generic3.jpg",
+                "/images/skg1.jpg",
+                "/images/skg2.jpg",
+                "/images/skg3.jpg"
             ]
         }
     },
@@ -137,6 +139,7 @@ const PROJECTS = [
     }
 ];
 
+// --- GALLERY DATA ---
 const GALLERY_ITEMS = [
     {
         id: 1,
@@ -182,6 +185,38 @@ const GALLERY_ITEMS = [
     },
 ];
 
+// --- VIDEO DATA (MAKE SURE FILES EXIST IN public/videos/) ---
+const VIDEOS = [
+    {
+        id: 1,
+        title: "2025 Showreel",
+        category: "Motion Graphics",
+        src: "/videos/Alex__Update your profile__vertical.mp4",
+        className: "md:col-span-2 md:row-span-2"
+    },
+    {
+        id: 2,
+        title: "UI Interactions",
+        category: "App Prototype",
+        src: "/videos/interaction.mp4",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 3,
+        title: "Logo Animation",
+        category: "Brand Identity",
+        src: "/videos/logo.mp4",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 4,
+        title: "Kinetic Typography",
+        category: "Experimental",
+        src: "/videos/type.mp4",
+        className: "md:col-span-2 md:row-span-1"
+    }
+];
+
 const SERVICES = [
     {
         icon: <Layout className="w-6 h-6" />,
@@ -213,6 +248,7 @@ const Nav = () => (
         <div className="flex gap-6 text-sm font-medium">
             <a href="#work" className="hover:opacity-50 transition-opacity">WORK</a>
             <a href="#playground" className="hover:opacity-50 transition-opacity">PLAYGROUND</a>
+            <a href="#motion" className="hover:opacity-50 transition-opacity">MOTION</a>
             <a href="#contact" className="hover:opacity-50 transition-opacity">CONTACT</a>
         </div>
     </nav>
@@ -390,6 +426,77 @@ const Playground = () => {
                         </div>
                     ))}
                 </div>
+            </div>
+        </section>
+    );
+};
+
+// --- NEW COMPONENT: VIDEO GALLERY ---
+const VideoGallery = () => {
+    const [selectedVideo, setSelectedVideo] = useState(null);
+
+    return (
+        <section id="motion" className="py-24 bg-zinc-950 text-white border-t border-white/10">
+            <div className="container mx-auto px-6">
+                <div className="mb-12">
+                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Motion & Video</h2>
+                    <p className="text-gray-400 max-w-md">Showreels, micro-interactions, and kinetic typography.</p>
+                </div>
+
+                {/* VIDEO GRID */}
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[250px]">
+                    {VIDEOS.map((video) => (
+                        <div
+                            key={video.id}
+                            onClick={() => setSelectedVideo(video)}
+                            className={`relative rounded-2xl overflow-hidden group border border-white/10 bg-zinc-900 cursor-pointer ${video.className}`}
+                        >
+                            {/* The Preview Video (Muted, Loop) */}
+                            <video
+                                src={video.src}
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+                            />
+
+                            {/* Play Icon Overlay */}
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                                <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30">
+                                    <Play className="w-6 h-6 text-white fill-current" />
+                                </div>
+                            </div>
+
+                            {/* Text Overlay */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                                <h3 className="text-xl font-bold">{video.title}</h3>
+                                <p className="text-sm text-gray-400 font-mono">{video.category}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                {/* FULLSCREEN VIDEO MODAL */}
+                {selectedVideo && (
+                    <div
+                        className="fixed inset-0 z-[200] bg-black/95 backdrop-blur-md flex items-center justify-center p-4 animate-fade-in"
+                        onClick={() => setSelectedVideo(null)}
+                    >
+                        <button className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors z-50">
+                            <X className="w-8 h-8" />
+                        </button>
+
+                        <div className="w-full max-w-6xl aspect-video bg-black rounded-xl overflow-hidden shadow-2xl border border-white/10 relative" onClick={e => e.stopPropagation()}>
+                            <video
+                                src={selectedVideo.src}
+                                controls
+                                autoPlay
+                                className="w-full h-full"
+                            />
+                        </div>
+                    </div>
+                )}
             </div>
         </section>
     );
@@ -735,6 +842,10 @@ export default function App() {
             <Hero />
             <Work onProjectClick={setSelectedProject} />
             <Playground />
+
+            {/* VIDEO SECTION ADDED HERE */}
+            <VideoGallery />
+
             <Services />
             <About />
             <Contact />
