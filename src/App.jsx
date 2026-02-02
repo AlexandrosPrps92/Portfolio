@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {
     ArrowUpRight, Mail, Github, Linkedin, Figma,
     Layers, Layout, Smartphone, Code, MoveRight,
-    Dribbble, Palette, X, CheckCircle2
+    Dribbble, Palette, X, CheckCircle2, Image as ImageIcon
 } from 'lucide-react';
 
 // --- DATA ---
@@ -23,17 +23,17 @@ const PROJECTS = [
             "Won Gold & Silver at Peak Awards 2025: Best Performance in Employment (AI-Driven Lead Gen) & Best Use of Data."
         ],
         tags: ["Figma", "Adobe CC", "Zoho Analytics", "Wordpress", "Heygen"],
-        image: "/images/award_ceremony.jpg", // Ensure this file exists in public/images/
+        image: "/images/award_ceremony.jpg", // Ensure this exists in public/images/
         color: "from-blue-600 to-cyan-400",
 
-        // BENTO GRID DATA (The new part)
+        // BENTO GRID DATA
         bentoData: {
-            hero: "/images/case_study.jpg", // Using your uploaded image here
+            hero: "/images/case_study.jpg", // Ensure this exists
             metric: "+155%",
-            metricLabel: "Increase in Conversions for Job applications",
-            subMetric: "Google Case study 2025",
+            metricLabel: "Increase in Conversions",
+            subMetric: "Google Case Study 2025",
             variations: [
-                // Replace these with your real /public/images/ paths when you have them
+                // Replace these with your real paths
                 "/images/AI_Sqaure_noAI.jpg",
                 "/images/HKT25.jpg",
                 "/images/dashboard.jpg",
@@ -137,6 +137,51 @@ const PROJECTS = [
     }
 ];
 
+const GALLERY_ITEMS = [
+    {
+        id: 1,
+        title: "3D Motion Exploration",
+        description: "Blender Cycles Render",
+        image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800",
+        className: "md:col-span-2 md:row-span-2"
+    },
+    {
+        id: 2,
+        title: "Typography Layout",
+        description: "Editorial Design System",
+        image: "https://images.unsplash.com/photo-1614680376408-81e91ffe3db7?auto=format&fit=crop&q=80&w=400",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 3,
+        title: "Neon Gradients",
+        description: "Mesh Gradient Experiments",
+        image: "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?auto=format&fit=crop&q=80&w=400",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 4,
+        title: "App Interaction",
+        description: "Figma Micro-interactions",
+        image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800",
+        className: "md:col-span-2 md:row-span-1"
+    },
+    {
+        id: 5,
+        title: "Vinyl Cover Art",
+        description: "Freelance Commission",
+        image: "https://images.unsplash.com/photo-1626785774573-4b799314346d?auto=format&fit=crop&q=80&w=400",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 6,
+        title: "Poster Series",
+        description: "Swiss Style Print",
+        image: "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?auto=format&fit=crop&q=80&w=400",
+        className: "md:col-span-1 md:row-span-1"
+    },
+];
+
 const SERVICES = [
     {
         icon: <Layout className="w-6 h-6" />,
@@ -167,7 +212,7 @@ const Nav = () => (
         <div className="font-bold text-xl tracking-tighter">ALEXANDROS_PREPIS.DESIGN</div>
         <div className="flex gap-6 text-sm font-medium">
             <a href="#work" className="hover:opacity-50 transition-opacity">WORK</a>
-            <a href="#about" className="hover:opacity-50 transition-opacity">ABOUT</a>
+            <a href="#playground" className="hover:opacity-50 transition-opacity">PLAYGROUND</a>
             <a href="#contact" className="hover:opacity-50 transition-opacity">CONTACT</a>
         </div>
     </nav>
@@ -315,9 +360,44 @@ const Work = ({ onProjectClick }) => {
     );
 };
 
+const Playground = () => {
+    return (
+        <section id="playground" className="py-24 bg-black text-white border-t border-white/10">
+            <div className="container mx-auto px-6">
+                <div className="mb-12">
+                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Playground</h2>
+                    <p className="text-gray-400 max-w-md">Experiments, 3D renders, and miscellaneous creative explorations.</p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[250px]">
+                    {GALLERY_ITEMS.map((item) => (
+                        <div
+                            key={item.id}
+                            className={`relative rounded-2xl overflow-hidden group border border-white/10 bg-zinc-900 ${item.className}`}
+                        >
+                            <img
+                                src={item.image}
+                                alt={item.title}
+                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            />
+
+                            <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                                <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <h3 className="text-xl font-bold mb-1">{item.title}</h3>
+                                    <p className="text-sm text-gray-400">{item.description}</p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
+
 const Services = () => {
     return (
-        <section className="py-24 bg-black text-white border-t border-white/10">
+        <section className="py-24 bg-zinc-950 text-white border-t border-white/10">
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {SERVICES.map((service, index) => (
@@ -339,7 +419,7 @@ const Services = () => {
 
 const About = () => {
     return (
-        <section id="about" className="py-24 bg-zinc-950 text-white relative overflow-hidden">
+        <section id="about" className="py-24 bg-black text-white relative overflow-hidden">
             <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
                 <div className="md:w-1/2">
                     <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-8">
@@ -427,17 +507,31 @@ const Contact = () => {
     );
 };
 
-// --- NEW COMPONENT: BENTO GRID ---
-// --- UPDATED COMPONENT: BENTO GRID (GALLERY MODE) ---
+// --- UPDATED BENTO GRID: GALLERY MODE WITH LIGHTBOX ---
 const BentoGrid = ({ data }) => {
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    // Close lightbox on ESC key press
+    useEffect(() => {
+        const handleEsc = (e) => {
+            if (e.key === 'Escape') setSelectedImage(null);
+        };
+        window.addEventListener('keydown', handleEsc);
+        return () => window.removeEventListener('keydown', handleEsc);
+    }, []);
+
     return (
         <div className="flex flex-col gap-4 mb-12">
+
             {/* TOP SECTION: Hero & Metrics */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 h-auto md:h-[400px]">
 
-                {/* 1. HERO BOX (Left Side - Big) */}
-                <div className="md:col-span-2 relative rounded-3xl overflow-hidden border border-white/10 group">
-                    <div className="absolute top-4 left-4 z-10 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs font-mono border border-white/10 text-white">
+                {/* Hero Box */}
+                <div
+                    onClick={() => setSelectedImage(data.hero)}
+                    className="md:col-span-2 relative rounded-3xl overflow-hidden border border-white/10 group cursor-zoom-in"
+                >
+                    <div className="absolute top-4 left-4 z-10 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs font-mono border border-white/10 text-white pointer-events-none">
                         HIGHLIGHT
                     </div>
                     <img
@@ -445,10 +539,10 @@ const BentoGrid = ({ data }) => {
                         alt="Final Design"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none"></div>
                 </div>
 
-                {/* 2. METRIC BOX (Right Side) */}
+                {/* Metric Box */}
                 <div className="bg-zinc-900 rounded-3xl p-8 flex flex-col justify-center items-center border border-white/10 relative overflow-hidden group">
                     <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/20 blur-[50px] group-hover:bg-blue-500/30 transition-all"></div>
                     <h3 className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 tracking-tighter text-center">
@@ -461,32 +555,52 @@ const BentoGrid = ({ data }) => {
                 </div>
             </div>
 
-            {/* BOTTOM SECTION: The Gallery Grid */}
+            {/* BOTTOM SECTION: Gallery Grid */}
             <div>
                 <h3 className="text-sm font-mono text-gray-500 uppercase tracking-widest mb-4 mt-4">Project Gallery</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {data.variations.map((img, i) => (
                         <div
                             key={i}
-                            // BENTO LOGIC: Every 3rd image spans 2 columns to create the "puzzle" look
-                            className={`relative rounded-2xl overflow-hidden border border-white/10 group cursor-pointer h-64 ${
-                                i % 3 === 0 ? 'md:col-span-2' : 'md:col-span-1'
+                            onClick={() => setSelectedImage(img)}
+                            // Interlocking logic: (2, 1, 1, 2) pattern
+                            className={`relative rounded-2xl overflow-hidden border border-white/10 group cursor-zoom-in h-64 ${
+                                (i % 4 === 0 || i % 4 === 3) ? 'md:col-span-2' : 'md:col-span-1'
                             }`}
                         >
-                            <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
+                            <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
                             <img
                                 src={img}
-                                alt={`Work variation ${i}`}
+                                alt={`Gallery item ${i}`}
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
                     ))}
                 </div>
             </div>
+
+            {/* LIGHTBOX OVERLAY */}
+            {selectedImage && (
+                <div
+                    className="fixed inset-0 z-[200] bg-black/95 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-in"
+                    onClick={() => setSelectedImage(null)}
+                >
+                    <button className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors">
+                        <X className="w-8 h-8" />
+                    </button>
+                    <img
+                        src={selectedImage}
+                        alt="Full Screen"
+                        className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
+                        onClick={(e) => e.stopPropagation()}
+                    />
+                </div>
+            )}
         </div>
     );
 };
-// 2. PROJECT MODAL COMPONENT (UPDATED)
+
+// 2. PROJECT MODAL COMPONENT
 const ProjectModal = ({ project, onClose }) => {
     if (!project) return null;
 
@@ -583,10 +697,8 @@ const ProjectModal = ({ project, onClose }) => {
 
 // 3. MAIN APP COMPONENT
 export default function App() {
-    // 1. Create the state to remember which project was clicked
     const [selectedProject, setSelectedProject] = useState(null);
 
-    // 2. Lock body scroll when modal is open
     useEffect(() => {
         if (selectedProject) {
             document.body.style.overflow = 'hidden';
@@ -595,7 +707,6 @@ export default function App() {
         }
     }, [selectedProject]);
 
-    // 3. Define the Animation Styles
     useEffect(() => {
         const style = document.createElement('style');
         style.innerHTML = `
@@ -622,10 +733,8 @@ export default function App() {
         <div className="min-h-screen bg-black text-white selection:bg-blue-500 selection:text-white font-sans">
             <Nav />
             <Hero />
-
-            {/* 4. PASS the function to the Work component */}
             <Work onProjectClick={setSelectedProject} />
-
+            <Playground />
             <Services />
             <About />
             <Contact />
@@ -634,7 +743,6 @@ export default function App() {
                 © {new Date().getFullYear()} Alexandros Prepis. Crafted with React & Tailwind.
             </footer>
 
-            {/* 5. If a project is selected, show the Modal */}
             {selectedProject && (
                 <ProjectModal
                     project={selectedProject}
