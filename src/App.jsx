@@ -291,7 +291,7 @@ const PROJECTS = [
                 "/images/spotify3000.jpg",
 
             ]
-        }
+        },
 
         videos: [
             {
