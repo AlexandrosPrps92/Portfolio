@@ -272,6 +272,43 @@ const PROJECTS = [
         courses: [
             {
                 id: "c1",
+                title: "Final Project: Remediation of a Youtube podcast into a game",
+                description: "Remediation of a humorous motorsport podcast into a racing game.",
+                bentoData: {
+                    hero: "/images/final1.jpg",
+                    metric: "B",
+                    metricLabel: "Grade",
+                    subMetric: "3D Design in Maya, Interactivity in Unity",
+                    variations: [
+                        "/images/final1.jpg",
+                        "/images/final2.jpg",
+                        "/images/final3.jpg",
+                        "/images/final4.jpg",
+                        "/images/final5.jpg",
+                        "/images/final6.jpg",
+                        "/images/final7.jpg",
+                        "/images/final8.jpg",
+                        "/images/final9.jpg",
+                        "/images/final10.jpg",
+                        "/images/final11.jpg",
+                        "/images/final12.jpg",
+                        "/images/final13.jpg",
+
+                    ]
+                },
+                videos: [
+                    {
+                        id: "v_int1",
+                        title: "Game Walkthrough",
+                        category: "Maya",
+                        src: "/videos/final_game.mp4",
+                        className: "md:col-span-2 md:row-span-2"
+                    },
+                ]
+            },
+
+            {
+                id: "c2",
                 title: "Course 1: Design for Interactive Media",
                 description: "Building responsive, data-driven web applications.",
                 bentoData: {
@@ -280,6 +317,9 @@ const PROJECTS = [
                     metricLabel: "Grade",
                     subMetric: "3D Design in Maya, Interactivity in Unity",
                     variations: [
+                        "/images/last_render.jpg",
+                        "/images/2last_render.jpg",
+                        "/images/3last_render.jpg",
                         "/images/first_render.jpg",
                         "/images/2first_render.jpg",
                         "/images/3first_render.jpg",
@@ -290,9 +330,7 @@ const PROJECTS = [
                         "/images/8first_render.jpg",
                         "/images/9first_render.jpg",
                         "/images/10first_render.jpg",
-                        "/images/last_render.jpg",
-                        "/images/2last_render.jpg",
-                        "/images/3last_render.jpg",
+
                     ]
                 },
                 videos: [
@@ -313,7 +351,7 @@ const PROJECTS = [
                 ]
             },
             {
-                id: "c2",
+                id: "c3",
                 title: "Course 2: Game Design Studio",
                 description: "Creating immersive spaces using Blender and Unity.",
                 bentoData: {
@@ -337,7 +375,7 @@ const PROJECTS = [
                 ]
             },
             {
-                id: "c3",
+                id: "c4",
                 title: "Course 3: Digital Playgrounds",
                 description: "Narrative structure and level design mechanics.",
                 bentoData: {
