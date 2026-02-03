@@ -269,12 +269,12 @@ const PROJECTS = [
             "Responsive across all devices"
         ],
         tags: ["3D Design", "Web Design", "Game Design", "Media Ethics"],
-        image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        image: "/images/edin_home.jpg",
         color: "from-green-500 to-emerald-400",
         bentoData: {
-            hero: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=1000",
-            metric: "A+",
-            metricLabel: "MSc Distinction",
+            hero: "/images/edin_home.jpg",
+            metric: "B",
+            metricLabel: "MSc with Merit",
             subMetric: "Academic",
             variations: [
                 "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&q=80",
