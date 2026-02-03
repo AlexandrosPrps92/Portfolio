@@ -318,7 +318,7 @@ const PROJECTS = [
                 description: "Creating immersive spaces using Blender and Unity.",
                 bentoData: {
                     hero: "/images/game_design.jpg",
-                    metric: "A-",
+                    metric: "B",
                     metricLabel: "Grade",
                     subMetric: "3D Design",
                     variations: [
@@ -338,17 +338,17 @@ const PROJECTS = [
             },
             {
                 id: "c3",
-                title: "Course 3: Game Design",
+                title: "Course 3: Digital Playgrounds",
                 description: "Narrative structure and level design mechanics.",
                 bentoData: {
-                    hero: "/images/edin_home.jpg",
-                    metric: "B+",
+                    hero: "/images/play_hero.jpg",
+                    metric: "B-",
                     metricLabel: "Grade",
                     subMetric: "Game Dev",
                     variations: [
-                        "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=400&q=80",
-                        "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&q=80",
-                        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&q=80"
+                        "/images/play2.jpg",
+                        "/images/play3.jpg",
+                        "/images/play4.jpg",
                     ]
                 },
                 videos: [
@@ -356,7 +356,7 @@ const PROJECTS = [
                         id: "v_game1",
                         title: "Gameplay Demo",
                         category: "Unity",
-                        src: "/videos/gameplay.mp4",
+                        src: "/videos/Digital_playgrounds.mp4",
                         className: "md:col-span-2 md:row-span-1"
                     }
                 ]
