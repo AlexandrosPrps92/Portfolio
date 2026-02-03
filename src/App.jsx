@@ -253,7 +253,7 @@ const PROJECTS = [
         ] // No videos for this one yet, so it won't show the section
     },
     {
-        id: 3,
+        id: 4,
         title: "Freelance",
         category: "Digital Designer",
         type: "Freelance",
@@ -304,7 +304,7 @@ const PROJECTS = [
         ]
     },
     {
-        id: 4,
+        id: 3,
         title: "University of Edinburgh",
         category: "MSc Digital Media Design",
         type: "Academic",
