@@ -315,7 +315,7 @@ const PROJECTS = [
             {
                 id: "c2",
                 title: "Course 2: 3D Environments",
-                description: "Creating immersive spaces using Blender and Unreal Engine.",
+                description: "Creating immersive spaces using Blender and Unity.",
                 bentoData: {
                     hero: "/images/edin_home.jpg",
                     metric: "A-",
