@@ -137,8 +137,8 @@ const PROJECTS = [
                 "/images/NL_600x150_GR.jpg",
                 "/images/NL.jpg",
                 "/images/MB_activation_NL_2_EN_A3.jpg",
-                "/images/OPA.gif",
-                "/images/OA_Logo.gif",
+                "/images/Οpa.gif",
+                "/images/ΟΑ_Logo.gif",
                 "/images/where_to_next_res.gif",
                 "/images/OA_Plane_test.gif",
                 "/images/kalimera2.gif",
@@ -152,93 +152,100 @@ const PROJECTS = [
         videos: [
             {
                 id: "a1",
-                title: "Dashboard Interactions",
-                category: "UX/UI",
+                title: "Tik Tok, Meta and Google perfomance ads channels",
+                category: "Social Media",
                 src: "/videos/all_dom_EN.mp4", // Replace with your file
                 className: "md:col-span-2 md:row-span-2" // Big Box
             },
             {
                 id: "a2",
-                title: "Live Data Graph",
-                category: "Data Viz",
+                title: "Tik Tok, Meta and Google perfomance ads channels",
+                category: "Social Media",
                 src: "/videos/all_int_GR.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a3",
-                title: "Mobile Responsiveness",
-                category: "Mobile View",
+                title: "Tik Tok, Meta and Google ads channels",
+                category: "Social Media",
                 src: "/videos/DXB_Square.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a4",
-                title: "Mobile Responsiveness",
-                category: "Mobile View",
+                title: "Tik Tok and Meta channels",
+                category: "Social Media",
                 src: "/videos/GR_Destinations_DE_audience_Horizontal.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a5",
-                title: "Mobile Responsiveness",
-                category: "Mobile View",
+                title: "Tik Tok and Meta channel",
+                category: "Social Media",
                 src: "/videos/INT_Destinations_GR_audience.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a6",
-                title: "Mobile Responsiveness",
-                category: "Mobile View",
+                title: "Tik Tok and Meta channel",
+                category: "Social Media",
                 src: "/videos/main_Story_A3_EN.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a7",
                 title: "Mobile Responsiveness",
-                category: "Mobile View",
+                category: "Social Media",
                 src: "/videos/mainYT_OA.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a8",
-                title: "Mobile Responsiveness",
-                category: "Mobile View",
+                title: "Tik Tok and Meta channel",
+                category: "Social Media",
                 src: "/videos/NewYear_A3.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a9",
-                title: "Mobile Responsiveness",
-                category: "Mobile View",
+                title: "Tik Tok and Meta channel",
+                category: "Social Media",
                 src: "/videos/NewYear_OA.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a10",
-                title: "Mobile Responsiveness",
-                category: "Mobile View",
+                title: "Tik Tok channel offer",
+                category: "Social Media",
                 src: "/videos/Tik_Tok.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a11",
-                title: "Mobile Responsiveness",
-                category: "Mobile View",
+                title: "Tik Tok channel Family product",
+                category: "Social Media",
                 src: "/videos/tik_tok_family_promo.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a12",
-                title: "Mobile Responsiveness",
-                category: "Mobile View",
+                title: "Tik Tok channel Genairation product",
+                category: "Social Media",
                 src: "/videos/TikTok_Gen.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a13",
-                title: "Mobile Responsiveness",
-                category: "Mobile View",
+                title: "Tik Tok channel Genairation product",
+                category: "Social Media",
                 src: "/videos/Video_Tik_tok_250822.mp4",
+                className: "md:col-span-1 md:row-span-1"
+            },
+            {
+                id: "a14",
+                title: "Tik Tok channel Genairation product",
+                category: "Social Media",
+                src: "/videos/Tik_Tok_080922.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
 
@@ -261,19 +268,40 @@ const PROJECTS = [
             "Positive user feedback on visual identity"
         ],
         tags: ["Branding", "Identity", "Video Editing"],
-        image: "https://images.unsplash.com/photo-1626785774573-4b799314346d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        image: "/images/FREE_HOME.jpg",
         color: "from-orange-500 to-red-500",
         bentoData: {
-            hero: "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?auto=format&fit=crop&q=80&w=1000",
+            hero: "/images/FREE_HOME.jpg",
             metric: "3",
             metricLabel: "Platforms Launched",
             subMetric: "Brand Identity",
             variations: [
-                "https://images.unsplash.com/photo-1626785774573-4b799314346d?w=400&q=80",
-                "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&q=80",
-                "https://images.unsplash.com/photo-1614680376408-81e91ffe3db7?w=400&q=80"
+                "/images/khora.jpg",
+                "/images/finalizing.png",
+                "/images/khora_blue.png",
+                "/images/khora_col.png",
+                "/images/khora_idea.png",
+                "/images/GST.jpg",
+                "/images/GST_social.jpg",
+                "/images/AYA_SOFIA.jpg",
+                "/images/preview_aya_sofia-01.jpg",
+                "/images/preview_aya_sofia_color-01.jpg",
+                "/images/CHICKEN.jpg",
+                "/images/neegold3000.jpg",
+                "/images/spotify3000.jpg",
+
             ]
         }
+
+        videos: [
+            {
+                id: "f1",
+                title: "Album, channel, and video cover for Youtube channel of a hip hop group",
+                category: "Music and video Covers",
+                src: "https://youtube.com/playlist?list=PLKlubVxCs3I5UdoJRvUzh2elMD1kR80iP&si=npd4G3bfVrFAeQaf", // Replace with your file
+                className: "md:col-span-2 md:row-span-2" // Big Box
+            },
+        ]
     },
     {
         id: 4,
