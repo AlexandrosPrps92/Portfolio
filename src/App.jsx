@@ -260,7 +260,7 @@ const PROJECTS = [
         challenge: "To master a diverse set of digital tools while maintaining critical academic rigor across multiple disciplines.",
         solution: "Delivered distinct high-fidelity projects for each module, utilizing WebGL for 3D, React for web, and Unreal Engine for game design.",
         results: [
-            "Graded Distinction (A)",
+            "With Merit",
             "Integrated 3D view with <2s load time",
             "Responsive across all devices"
         ],
@@ -272,25 +272,42 @@ const PROJECTS = [
         courses: [
             {
                 id: "c1",
-                title: "Course 1: Dynamic Web Design",
+                title: "Course 1: Design for Interactive Media",
                 description: "Building responsive, data-driven web applications.",
                 bentoData: {
-                    hero: "/images/edin_home.jpg",
-                    metric: "A",
+                    hero: "/images/in_game.jpg",
+                    metric: "B",
                     metricLabel: "Grade",
-                    subMetric: "Web Dev",
+                    subMetric: "3D Design in Maya, Interactivity in Unity",
                     variations: [
-                        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&q=80",
-                        "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400&q=80",
-                        "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=400&q=80"
+                        "/images/first_render.jpg",
+                        "/images/2first_render.jpg",
+                        "/images/3first_render.jpg",
+                        "/images/4first_render.jpg",
+                        "/images/5first_render.jpg",
+                        "/images/6first_render.jpg",
+                        "/images/7first_render.jpg",
+                        "/images/8first_render.jpg",
+                        "/images/9first_render.jpg",
+                        "/images/10first_render.jpg",
+                        "/images/last_render.jpg",
+                        "/images/2last_render.jpg",
+                        "/images/3last_render.jpg",
                     ]
                 },
                 videos: [
                     {
-                        id: "v_web1",
-                        title: "Site Walkthrough",
-                        category: "React",
-                        src: "/videos/web_walkthrough.mp4",
+                        id: "v_int1",
+                        title: "Build Walkthrough",
+                        category: "Maya",
+                        src: "/videos/design_for_interactive_media_before.mp4",
+                        className: "md:col-span-2 md:row-span-2"
+                    },
+                    {
+                        id: "v_int2",
+                        title: "Interaction Walkthrough",
+                        category: "Unity",
+                        src: "/videos/S2464169_D4IM_SUB2.mp4",
                         className: "md:col-span-2 md:row-span-2"
                     }
                 ]
