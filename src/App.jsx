@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import {
     ArrowUpRight, Mail, Github, Linkedin, Figma,
     Layers, Layout, Smartphone, Code, MoveRight,
-    Dribbble, Palette, X, CheckCircle2, Image as ImageIcon, Play
+    Dribbble, Palette, X, CheckCircle2, Image as ImageIcon, Play,
+    ChevronLeft, ChevronRight // <--- ADDED THESE IMPORTS
 } from 'lucide-react';
 
 // --- DATA ---
@@ -51,14 +52,14 @@ const PROJECTS = [
             ]
         },
 
-        // 2. VIDEO GALLERY (SPECIFIC TO THIS PROJECT)
+        // 2. VIDEO GALLERY
         videos: [
             {
                 id: "v1",
                 title: "Heygen launch",
                 category: "Social Media",
-                src: "/videos/Alex__Update your profile__vertical.mp4", // Make sure file exists in public/videos/
-                className: "md:col-span-2 md:row-span-2" // Big Box
+                src: "/videos/Alex__Update your profile__vertical.mp4",
+                className: "md:col-span-2 md:row-span-2"
             },
             {
                 id: "v2",
@@ -95,7 +96,6 @@ const PROJECTS = [
                 src: "/videos/1080x1080_video_standard.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
-
         ]
     },
     {
@@ -118,8 +118,8 @@ const PROJECTS = [
         color: "from-purple-600 to-pink-400",
         bentoData: {
             hero: "/images/template_NL_3.jpg",
-            metric: "Aegean Rebrand",
-            metricLabel: "Updated most of AEGEAN'S digital touchpoints and Physical banners, designed new stickers for OA and AEGEAN brands",
+            metric: "Rebrand",
+            metricLabel: "Updated Digital Touchpoints",
             subMetric: "Internal Tool",
             variations: [
                 "/images/Story_ATH_nl.jpg",
@@ -146,48 +146,47 @@ const PROJECTS = [
                 "/images/I_love_Greece.gif",
                 "/images/Greek_Moments.gif",
                 "/images/Discovering_Gree.gif",
-
             ]
         },
         videos: [
             {
                 id: "a1",
-                title: "Tik Tok, Meta and Google perfomance ads channels",
+                title: "Performance Ads",
                 category: "Social Media",
-                src: "/videos/all_dom_EN.mp4", // Replace with your file
-                className: "md:col-span-2 md:row-span-2" // Big Box
+                src: "/videos/all_dom_EN.mp4",
+                className: "md:col-span-2 md:row-span-2"
             },
             {
                 id: "a2",
-                title: "Tik Tok, Meta and Google perfomance ads channels",
+                title: "International Ads",
                 category: "Social Media",
                 src: "/videos/all_int_GR.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a3",
-                title: "Tik Tok, Meta and Google ads channels",
+                title: "DXB Square",
                 category: "Social Media",
                 src: "/videos/DXB_Square.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a4",
-                title: "Tik Tok and Meta channels",
+                title: "GR Destinations",
                 category: "Social Media",
                 src: "/videos/GR_Destinations_DE_audience_Horizontal.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a5",
-                title: "Tik Tok and Meta channel",
+                title: "INT Destinations",
                 category: "Social Media",
                 src: "/videos/INT_Destinations_GR_audience.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a6",
-                title: "Tik Tok and Meta channel",
+                title: "Main Story",
                 category: "Social Media",
                 src: "/videos/main_Story_A3_EN.mp4",
                 className: "md:col-span-1 md:row-span-1"
@@ -201,58 +200,55 @@ const PROJECTS = [
             },
             {
                 id: "a8",
-                title: "Tik Tok and Meta channel",
+                title: "New Year A3",
                 category: "Social Media",
                 src: "/videos/NewYear_A3.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a9",
-                title: "Tik Tok and Meta channel",
+                title: "New Year OA",
                 category: "Social Media",
                 src: "/videos/NewYear_OA.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a10",
-                title: "Tik Tok channel offer",
+                title: "TikTok Offer",
                 category: "Social Media",
                 src: "/videos/Tik_Tok.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a11",
-                title: "Tik Tok channel Family product",
+                title: "Family Promo",
                 category: "Social Media",
                 src: "/videos/tik_tok_family_promo.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a12",
-                title: "Tik Tok channel Genairation product",
+                title: "Genairation",
                 category: "Social Media",
                 src: "/videos/TikTok_Gen.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a13",
-                title: "Tik Tok channel Genairation product",
+                title: "TikTok Video 1",
                 category: "Social Media",
                 src: "/videos/Video_Tik_tok_250822.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a14",
-                title: "Tik Tok channel Genairation product",
+                title: "TikTok Video 2",
                 category: "Social Media",
                 src: "/videos/Tik_Tok_080922.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
-
-
-        ] // No videos for this one yet, so it won't show the section
+        ]
     },
-
     {
         id: 3,
         title: "University of Edinburgh",
@@ -260,9 +256,9 @@ const PROJECTS = [
         type: "Academic",
         year: "2022-2025",
         role: "Student",
-        description: "Minimalist fashion e-commerce storefront with a focus on high-quality imagery and seamless checkout flow.",
-        challenge: "To design an immersive e-commerce experience that balanced high-fidelity 3D assets with web performance.",
-        solution: "Utilized WebGL for 3D product previews and a headless CMS structure.",
+        description: "A comprehensive exploration of digital media, ranging from 3D interactive environments to web development and game design ethics.",
+        challenge: "To master a diverse set of digital tools while maintaining critical academic rigor across multiple disciplines.",
+        solution: "Delivered distinct high-fidelity projects for each module, utilizing WebGL for 3D, React for web, and Unreal Engine for game design.",
         results: [
             "Graded Distinction (A)",
             "Integrated 3D view with <2s load time",
@@ -271,19 +267,86 @@ const PROJECTS = [
         tags: ["3D Design", "Web Design", "Game Design", "Media Ethics"],
         image: "/images/edin_home.jpg",
         color: "from-green-500 to-emerald-400",
-        bentoData: {
-            hero: "/images/edin_home.jpg",
-            metric: "B",
-            metricLabel: "MSc with Merit",
-            subMetric: "Academic",
-            variations: [
-                "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&q=80",
-                "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400&q=80",
-                "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=400&q=80"
-            ]
-        }
-    },
 
+        // --- SEPARATE COURSES ---
+        courses: [
+            {
+                id: "c1",
+                title: "Course 1: Dynamic Web Design",
+                description: "Building responsive, data-driven web applications.",
+                bentoData: {
+                    hero: "/images/edin_home.jpg",
+                    metric: "A",
+                    metricLabel: "Grade",
+                    subMetric: "Web Dev",
+                    variations: [
+                        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&q=80",
+                        "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400&q=80",
+                        "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=400&q=80"
+                    ]
+                },
+                videos: [
+                    {
+                        id: "v_web1",
+                        title: "Site Walkthrough",
+                        category: "React",
+                        src: "/videos/web_walkthrough.mp4",
+                        className: "md:col-span-2 md:row-span-2"
+                    }
+                ]
+            },
+            {
+                id: "c2",
+                title: "Course 2: 3D Environments",
+                description: "Creating immersive spaces using Blender and Unreal Engine.",
+                bentoData: {
+                    hero: "/images/edin_home.jpg",
+                    metric: "A-",
+                    metricLabel: "Grade",
+                    subMetric: "3D Design",
+                    variations: [
+                        "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&q=80",
+                        "https://images.unsplash.com/photo-1614680376408-81e91ffe3db7?w=400&q=80",
+                        "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=400&q=80"
+                    ]
+                },
+                videos: [
+                    {
+                        id: "v_3d1",
+                        title: "Environment Flythrough",
+                        category: "Unreal Engine",
+                        src: "/videos/flythrough.mp4",
+                        className: "md:col-span-2 md:row-span-2"
+                    }
+                ]
+            },
+            {
+                id: "c3",
+                title: "Course 3: Game Design",
+                description: "Narrative structure and level design mechanics.",
+                bentoData: {
+                    hero: "/images/edin_home.jpg",
+                    metric: "B+",
+                    metricLabel: "Grade",
+                    subMetric: "Game Dev",
+                    variations: [
+                        "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=400&q=80",
+                        "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&q=80",
+                        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&q=80"
+                    ]
+                },
+                videos: [
+                    {
+                        id: "v_game1",
+                        title: "Gameplay Demo",
+                        category: "Unity",
+                        src: "/videos/gameplay.mp4",
+                        className: "md:col-span-2 md:row-span-1"
+                    }
+                ]
+            }
+        ]
+    },
     {
         id: 4,
         title: "Freelance",
@@ -321,21 +384,18 @@ const PROJECTS = [
                 "/images/CHICKEN.jpg",
                 "/images/neegold3000.jpg",
                 "/images/spotify3000.jpg",
-
             ]
         },
-
         videos: [
             {
                 id: "f1",
                 title: "Album, channel, and video cover for Youtube channel of a hip hop group",
                 category: "Music and video Covers",
-                src: "https://youtube.com/playlist?list=PLKlubVxCs3I5UdoJRvUzh2elMD1kR80iP&si=npd4G3bfVrFAeQaf", // Replace with your file
-                className: "md:col-span-2 md:row-span-2" // Big Box
+                src: "/videos/freelance_reel.mp4", // CHANGE THIS to local file
+                className: "md:col-span-2 md:row-span-2"
             },
         ]
     },
-
 ];
 
 // --- GALLERY DATA ---
@@ -709,17 +769,40 @@ const Contact = () => {
     );
 };
 
-// --- BENTO GRID (IMAGES) ---
+// --- UPDATED BENTO GRID WITH NAVIGATION ---
 const BentoGrid = ({ data }) => {
-    const [selectedImage, setSelectedImage] = useState(null);
+    const [currentIndex, setCurrentIndex] = useState(null);
 
+    // Combine hero and variations into one list for gallery navigation
+    const allImages = [data.hero, ...data.variations];
+
+    const openLightbox = (index) => {
+        setCurrentIndex(index);
+    };
+
+    const closeLightbox = () => setCurrentIndex(null);
+
+    const showNext = (e) => {
+        e?.stopPropagation();
+        setCurrentIndex((prev) => (prev + 1) % allImages.length);
+    };
+
+    const showPrev = (e) => {
+        e?.stopPropagation();
+        setCurrentIndex((prev) => (prev - 1 + allImages.length) % allImages.length);
+    };
+
+    // Keyboard navigation
     useEffect(() => {
-        const handleEsc = (e) => {
-            if (e.key === 'Escape') setSelectedImage(null);
+        if (currentIndex === null) return;
+        const handleKeyDown = (e) => {
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') showNext();
+            if (e.key === 'ArrowLeft') showPrev();
         };
-        window.addEventListener('keydown', handleEsc);
-        return () => window.removeEventListener('keydown', handleEsc);
-    }, []);
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [currentIndex]);
 
     return (
         <div className="flex flex-col gap-4 mb-12">
@@ -729,7 +812,7 @@ const BentoGrid = ({ data }) => {
 
                 {/* Hero Box */}
                 <div
-                    onClick={() => setSelectedImage(data.hero)}
+                    onClick={() => openLightbox(0)}
                     className="md:col-span-2 relative rounded-3xl overflow-hidden border border-white/10 group cursor-zoom-in"
                 >
                     <div className="absolute top-4 left-4 z-10 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs font-mono border border-white/10 text-white pointer-events-none">
@@ -763,8 +846,7 @@ const BentoGrid = ({ data }) => {
                     {data.variations.map((img, i) => (
                         <div
                             key={i}
-                            onClick={() => setSelectedImage(img)}
-                            // Interlocking logic: (2, 1, 1, 2) pattern
+                            onClick={() => openLightbox(i + 1)} // +1 because index 0 is hero
                             className={`relative rounded-2xl overflow-hidden border border-white/10 group cursor-zoom-in h-64 ${
                                 (i % 4 === 0 || i % 4 === 3) ? 'md:col-span-2' : 'md:col-span-1'
                             }`}
@@ -781,27 +863,50 @@ const BentoGrid = ({ data }) => {
             </div>
 
             {/* LIGHTBOX OVERLAY */}
-            {selectedImage && (
+            {currentIndex !== null && (
                 <div
                     className="fixed inset-0 z-[200] bg-black/95 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-in"
-                    onClick={() => setSelectedImage(null)}
+                    onClick={closeLightbox}
                 >
-                    <button className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors">
+                    {/* Close Button */}
+                    <button className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors z-[210]">
                         <X className="w-8 h-8" />
                     </button>
+
+                    {/* Navigation Arrows */}
+                    <button
+                        onClick={showPrev}
+                        className="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors z-[210] hidden md:block"
+                    >
+                        <ChevronLeft className="w-8 h-8" />
+                    </button>
+
+                    <button
+                        onClick={showNext}
+                        className="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors z-[210] hidden md:block"
+                    >
+                        <ChevronRight className="w-8 h-8" />
+                    </button>
+
+                    {/* Image */}
                     <img
-                        src={selectedImage}
+                        src={allImages[currentIndex]}
                         alt="Full Screen"
                         className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
                         onClick={(e) => e.stopPropagation()}
                     />
+
+                    {/* Mobile Tip */}
+                    <div className="absolute bottom-4 left-0 w-full text-center text-white/40 text-xs md:hidden">
+                        Swipe or tap sides to navigate
+                    </div>
                 </div>
             )}
         </div>
     );
 };
 
-// --- NEW COMPONENT: PROJECT VIDEO GRID (LIVES INSIDE MODAL) ---
+// --- PROJECT VIDEO GRID (LIVES INSIDE MODAL) ---
 const ProjectVideoGrid = ({ videos }) => {
     const [selectedVideo, setSelectedVideo] = useState(null);
 
@@ -809,7 +914,6 @@ const ProjectVideoGrid = ({ videos }) => {
         <div className="mt-16 border-t border-white/10 pt-12">
             <h3 className="text-sm font-mono text-gray-500 uppercase tracking-widest mb-6">Motion & Video Assets</h3>
 
-            {/* GRID LAYOUT */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[250px]">
                 {videos.map((video) => (
                     <div
@@ -817,7 +921,6 @@ const ProjectVideoGrid = ({ videos }) => {
                         onClick={() => setSelectedVideo(video)}
                         className={`relative rounded-2xl overflow-hidden group border border-white/10 bg-zinc-900 cursor-pointer ${video.className}`}
                     >
-                        {/* The Preview Video (Muted, Loop) */}
                         <video
                             src={video.src}
                             autoPlay
@@ -826,15 +929,11 @@ const ProjectVideoGrid = ({ videos }) => {
                             playsInline
                             className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
                         />
-
-                        {/* Play Icon Overlay */}
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
                             <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30">
                                 <Play className="w-6 h-6 text-white fill-current" />
                             </div>
                         </div>
-
-                        {/* Text Overlay */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                             <h3 className="text-xl font-bold">{video.title}</h3>
                             <p className="text-sm text-gray-400 font-mono">{video.category}</p>
@@ -843,7 +942,6 @@ const ProjectVideoGrid = ({ videos }) => {
                 ))}
             </div>
 
-            {/* FULLSCREEN VIDEO MODAL */}
             {selectedVideo && (
                 <div
                     className="fixed inset-0 z-[250] bg-black/95 backdrop-blur-md flex items-center justify-center p-4 animate-fade-in"
@@ -852,7 +950,6 @@ const ProjectVideoGrid = ({ videos }) => {
                     <button className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors z-50">
                         <X className="w-8 h-8" />
                     </button>
-
                     <div className="w-full max-w-6xl aspect-video bg-black rounded-xl overflow-hidden shadow-2xl border border-white/10 relative" onClick={e => e.stopPropagation()}>
                         <video
                             src={selectedVideo.src}
@@ -867,13 +964,12 @@ const ProjectVideoGrid = ({ videos }) => {
     );
 };
 
-// 2. PROJECT MODAL COMPONENT (UPDATED TO INCLUDE VIDEOS)
+// 2. PROJECT MODAL COMPONENT (UPDATED FOR COURSES)
 const ProjectModal = ({ project, onClose }) => {
     if (!project) return null;
 
     return (
         <div className="fixed inset-0 z-[100] overflow-y-auto bg-zinc-950 animate-fade-in">
-            {/* Sticky Close Button */}
             <button
                 onClick={onClose}
                 className="fixed top-6 right-6 z-50 p-3 bg-white text-black rounded-full hover:scale-110 transition-transform shadow-lg"
@@ -951,14 +1047,31 @@ const ProjectModal = ({ project, onClose }) => {
                             </p>
                         </section>
 
-                        {/* --- BENTO GRID SECTION (IMAGES) --- */}
-                        <div className="space-y-6 mt-12">
-                            {project.bentoData && <BentoGrid data={project.bentoData} />}
-                        </div>
+                        {/* --- DYNAMIC RENDER LOGIC --- */}
 
-                        {/* --- VIDEO GALLERY SECTION (VIDEOS) --- */}
-                        {/* Only renders if the project has videos array */}
-                        {project.videos && <ProjectVideoGrid videos={project.videos} />}
+                        {/* SCENARIO A: Project has Multiple Courses (University) */}
+                        {project.courses ? (
+                            project.courses.map((course) => (
+                                <div key={course.id} className="mt-24 pt-12 border-t border-white/10">
+                                    <div className="mb-8">
+                                        <h2 className="text-3xl font-bold text-white mb-2">{course.title}</h2>
+                                        <p className="text-gray-400">{course.description}</p>
+                                    </div>
+                                    {/* Render Bento Grid for this Course */}
+                                    {course.bentoData && <BentoGrid data={course.bentoData} />}
+                                    {/* Render Video Grid for this Course */}
+                                    {course.videos && <ProjectVideoGrid videos={course.videos} />}
+                                </div>
+                            ))
+                        ) : (
+                            /* SCENARIO B: Standard Project (Kariera, Aegean, Freelance) */
+                            <>
+                                <div className="space-y-6 mt-12">
+                                    {project.bentoData && <BentoGrid data={project.bentoData} />}
+                                </div>
+                                {project.videos && <ProjectVideoGrid videos={project.videos} />}
+                            </>
+                        )}
 
                     </div>
                 </div>
@@ -1007,8 +1120,6 @@ export default function App() {
             <Hero />
             <Work onProjectClick={setSelectedProject} />
             <Playground />
-
-            {/* Note: Global Video Gallery removed as requested */}
 
             <Services />
             <About />
