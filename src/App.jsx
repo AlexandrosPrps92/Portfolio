@@ -314,25 +314,24 @@ const PROJECTS = [
             },
             {
                 id: "c2",
-                title: "Course 2: 3D Environments",
+                title: "Course 2: Game Design Studio",
                 description: "Creating immersive spaces using Blender and Unity.",
                 bentoData: {
-                    hero: "/images/edin_home.jpg",
+                    hero: "/images/game_design.jpg",
                     metric: "A-",
                     metricLabel: "Grade",
                     subMetric: "3D Design",
                     variations: [
-                        "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&q=80",
-                        "https://images.unsplash.com/photo-1614680376408-81e91ffe3db7?w=400&q=80",
-                        "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=400&q=80"
+                        "/images/game2.jpg",
+                        "/images/game3.jpg",
                     ]
                 },
                 videos: [
                     {
                         id: "v_3d1",
-                        title: "Environment Flythrough",
-                        category: "Unreal Engine",
-                        src: "/videos/flythrough.mp4",
+                        title: "Game Walkthrough",
+                        category: "Unity Engine",
+                        src: "/videos/game_design_studio.mp4",
                         className: "md:col-span-2 md:row-span-2"
                     }
                 ]
