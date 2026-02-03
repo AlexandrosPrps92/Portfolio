@@ -252,6 +252,38 @@ const PROJECTS = [
 
         ] // No videos for this one yet, so it won't show the section
     },
+
+    {
+        id: 3,
+        title: "University of Edinburgh",
+        category: "MSc Digital Media Design",
+        type: "Academic",
+        year: "2022-2025",
+        role: "Student",
+        description: "Minimalist fashion e-commerce storefront with a focus on high-quality imagery and seamless checkout flow.",
+        challenge: "To design an immersive e-commerce experience that balanced high-fidelity 3D assets with web performance.",
+        solution: "Utilized WebGL for 3D product previews and a headless CMS structure.",
+        results: [
+            "Graded Distinction (A)",
+            "Integrated 3D view with <2s load time",
+            "Responsive across all devices"
+        ],
+        tags: ["3D Design", "Web Design", "Game Design", "Media Ethics"],
+        image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        color: "from-green-500 to-emerald-400",
+        bentoData: {
+            hero: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=1000",
+            metric: "A+",
+            metricLabel: "MSc Distinction",
+            subMetric: "Academic",
+            variations: [
+                "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&q=80",
+                "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400&q=80",
+                "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=400&q=80"
+            ]
+        }
+    },
+
     {
         id: 4,
         title: "Freelance",
@@ -303,36 +335,7 @@ const PROJECTS = [
             },
         ]
     },
-    {
-        id: 3,
-        title: "University of Edinburgh",
-        category: "MSc Digital Media Design",
-        type: "Academic",
-        year: "2022-2025",
-        role: "Student",
-        description: "Minimalist fashion e-commerce storefront with a focus on high-quality imagery and seamless checkout flow.",
-        challenge: "To design an immersive e-commerce experience that balanced high-fidelity 3D assets with web performance.",
-        solution: "Utilized WebGL for 3D product previews and a headless CMS structure.",
-        results: [
-            "Graded Distinction (A)",
-            "Integrated 3D view with <2s load time",
-            "Responsive across all devices"
-        ],
-        tags: ["3D Design", "Web Design", "Game Design", "Media Ethics"],
-        image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-        color: "from-green-500 to-emerald-400",
-        bentoData: {
-            hero: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=1000",
-            metric: "A+",
-            metricLabel: "MSc Distinction",
-            subMetric: "Academic",
-            variations: [
-                "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&q=80",
-                "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400&q=80",
-                "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=400&q=80"
-            ]
-        }
-    }
+
 ];
 
 // --- GALLERY DATA ---
