@@ -471,6 +471,7 @@ const PROJECTS = [
                         "/images/CHICKEN.jpg",
                         "/images/chicken2.jpg",
                         "/images/chicken3.jpg",
+                        "/images/chicken_menu.jpg",
 
                     ]
                 },
@@ -496,6 +497,129 @@ const PROJECTS = [
                     ]
                 },
 
+
+            }
+        ]
+    },
+    {
+        id: 5,
+        title: "AKTO in partnership with University of Middlesex",
+        category: "BA(Hons) in Graphic Design",
+        type: "Academic",
+        year: "2015-2018",
+        role: "Student",
+        description: "A comprehensive exploration of digital media, ranging from 3D interactive environments to web development and game design ethics.",
+        challenge: "To master a diverse set of digital tools while maintaining critical academic rigor across multiple disciplines.",
+        solution: "Delivered distinct high-fidelity projects for each module, utilizing WebGL for 3D, React for web, and Unreal Engine for game design.",
+        results: [
+            "Graded Distinction (A)",
+            "Integrated 3D view with <2s load time",
+            "Responsive across all devices"
+        ],
+        tags: ["3D Design", "Web Design", "Game Design", "Media Ethics"],
+        image: "/images/Hero_akto.jpg",
+        color: "from-green-500 to-emerald-400",
+        courses: [
+            {
+                id: "c1",
+                title: "Final Project: Brand building as a case study of Tesla and suggested brand campaigns",
+                description: "Remediation of a humorous motorsport podcast into a racing game.",
+                bentoData: {
+                    hero: "/images/final1.jpg",
+                    metric: "B",
+                    metricLabel: "Grade",
+                    subMetric: "Maya & Unity",
+                    variations: [
+                        "/images/final2.jpg",
+                        "/images/final3.jpg",
+                        "/images/final4.jpg",
+                        "/images/final5.jpg",
+                        "/images/final6.jpg",
+                        "/images/final7.jpg",
+                        "/images/final8.jpg",
+                        "/images/final9.jpg",
+                        "/images/final10.jpg",
+                        "/images/final11.jpg",
+                        "/images/final12.jpg",
+                        "/images/final13.jpg",
+                        "/images/alex.fbx",
+                    ]
+                },
+                videos: [
+                    {
+                        id: "v_int1",
+                        title: "Game Walkthrough",
+                        category: "Unity Gameplay",
+                        src: "/videos/final_game.mp4",
+                        className: "md:col-span-2 md:row-span-2"
+                    }
+                ]
+            },
+            {
+                id: "c2",
+                title: "Course 1: Editorial design of a magazine",
+                description: "Building responsive, data-driven web applications.",
+                bentoData: {
+                    hero: "/images/reference.jpg",
+                    metric: "B",
+                    metricLabel: "Grade",
+                    subMetric: "Interaction Design",
+                    variations: [
+                        "/images/print.jpg",
+                        "/images/print2.jpg",
+
+                    ]
+                },
+
+            },
+            {
+                id: "c3",
+                title: "Course 2: Branding",
+                description: "Hypothetical rebrand of a logo and applications of it of our own selection.",
+                bentoData: {
+                    hero: "/images/branding.jpg",
+                    metric: "B",
+                    metricLabel: "Grade",
+                    subMetric: "3D Design",
+                    variations: [
+                        "/images/branding2.jpg",
+                        "/images/branding3.jpg",
+                    ]
+                },
+                videos: [
+                    {
+                        id: "v_3d1",
+                        title: "Game Walkthrough",
+                        category: "Unity Engine",
+                        src: "/videos/game_design_studio.mp4",
+                        className: "md:col-span-2 md:row-span-2"
+                    }
+                ]
+            },
+            {
+                id: "c4",
+                title: "Course 3: Digital Playgrounds",
+                description: "Narrative structure and level design mechanics.",
+                bentoData: {
+                    hero: "/images/play_hero.jpg",
+                    metric: "B-",
+                    metricLabel: "Grade",
+                    subMetric: "Game Dev",
+                    variations: [
+                        "/images/play2.jpg",
+                        "/images/play3.jpg",
+                        "/images/play4.jpg"
+                    ]
+                },
+                videos: [
+                    {
+                        id: "v_game1",
+                        title: "Gameplay Demo",
+                        category: "Unity",
+                        src: "/videos/Digital_playgrounds.mp4",
+                        className: "md:col-span-2 md:row-span-1"
+                    }
+                ]
             }
         ]
     },
@@ -542,7 +666,7 @@ const GALLERY_ITEMS = [
         id: 6,
         title: "Poster Series",
         description: "Swiss Style Print",
-        image: "/images/sketch5.jpg",
+        image: "/images/Hero_akto.jpg",
         className: "md:col-span-1 md:row-span-1"
     },
 ];
