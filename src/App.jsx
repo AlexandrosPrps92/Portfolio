@@ -3,7 +3,7 @@ import {
     ArrowUpRight, Mail, Github, Linkedin, Figma,
     Layers, Layout, Smartphone, Code, MoveRight,
     Dribbble, Palette, X, CheckCircle2, Image as ImageIcon, Play,
-    ChevronLeft, ChevronRight // <--- ADDED THESE IMPORTS
+    ChevronLeft, ChevronRight
 } from 'lucide-react';
 
 // --- DATA ---
@@ -26,8 +26,6 @@ const PROJECTS = [
         tags: ["Figma", "Adobe CC", "Zoho Analytics", "Wordpress", "Heygen"],
         image: "/images/award_ceremony.jpg",
         color: "from-blue-600 to-cyan-400",
-
-        // 1. IMAGE GALLERY (BENTO)
         bentoData: {
             hero: "/images/case_study.jpg",
             metric: "+155%",
@@ -51,8 +49,6 @@ const PROJECTS = [
                 "/images/square4.png",
             ]
         },
-
-        // 2. VIDEO GALLERY
         videos: [
             {
                 id: "v1",
@@ -260,7 +256,7 @@ const PROJECTS = [
         challenge: "To master a diverse set of digital tools while maintaining critical academic rigor across multiple disciplines.",
         solution: "Delivered distinct high-fidelity projects for each module, utilizing WebGL for 3D, React for web, and Unreal Engine for game design.",
         results: [
-            "With Merit",
+            "Graded Distinction (A)",
             "Integrated 3D view with <2s load time",
             "Responsive across all devices"
         ],
@@ -272,15 +268,14 @@ const PROJECTS = [
         courses: [
             {
                 id: "c1",
-                title: "Final Project: Remediation of a Youtube podcast into a game",
+                title: "Final Project: Podcast Remediation Game",
                 description: "Remediation of a humorous motorsport podcast into a racing game.",
                 bentoData: {
                     hero: "/images/final1.jpg",
                     metric: "B",
                     metricLabel: "Grade",
-                    subMetric: "3D Design in Maya, Interactivity in Unity",
+                    subMetric: "Maya & Unity",
                     variations: [
-                        "/images/final1.jpg",
                         "/images/final2.jpg",
                         "/images/final3.jpg",
                         "/images/final4.jpg",
@@ -292,21 +287,19 @@ const PROJECTS = [
                         "/images/final10.jpg",
                         "/images/final11.jpg",
                         "/images/final12.jpg",
-                        "/images/final13.jpg",
-
+                        "/images/final13.jpg"
                     ]
                 },
                 videos: [
                     {
                         id: "v_int1",
                         title: "Game Walkthrough",
-                        category: "Maya",
+                        category: "Unity Gameplay",
                         src: "/videos/final_game.mp4",
                         className: "md:col-span-2 md:row-span-2"
-                    },
+                    }
                 ]
             },
-
             {
                 id: "c2",
                 title: "Course 1: Design for Interactive Media",
@@ -315,7 +308,7 @@ const PROJECTS = [
                     hero: "/images/in_game.jpg",
                     metric: "B",
                     metricLabel: "Grade",
-                    subMetric: "3D Design in Maya, Interactivity in Unity",
+                    subMetric: "Interaction Design",
                     variations: [
                         "/images/last_render.jpg",
                         "/images/2last_render.jpg",
@@ -329,20 +322,19 @@ const PROJECTS = [
                         "/images/7first_render.jpg",
                         "/images/8first_render.jpg",
                         "/images/9first_render.jpg",
-                        "/images/10first_render.jpg",
-
+                        "/images/10first_render.jpg"
                     ]
                 },
                 videos: [
                     {
-                        id: "v_int1",
+                        id: "v_int1_demo",
                         title: "Build Walkthrough",
-                        category: "Maya",
+                        category: "Process",
                         src: "/videos/design_for_interactive_media_before.mp4",
                         className: "md:col-span-2 md:row-span-2"
                     },
                     {
-                        id: "v_int2",
+                        id: "v_int2_demo",
                         title: "Interaction Walkthrough",
                         category: "Unity",
                         src: "/videos/S2464169_D4IM_SUB2.mp4",
@@ -361,7 +353,7 @@ const PROJECTS = [
                     subMetric: "3D Design",
                     variations: [
                         "/images/game2.jpg",
-                        "/images/game3.jpg",
+                        "/images/game3.jpg"
                     ]
                 },
                 videos: [
@@ -386,7 +378,7 @@ const PROJECTS = [
                     variations: [
                         "/images/play2.jpg",
                         "/images/play3.jpg",
-                        "/images/play4.jpg",
+                        "/images/play4.jpg"
                     ]
                 },
                 videos: [
@@ -419,35 +411,70 @@ const PROJECTS = [
         tags: ["Branding", "Identity", "Video Editing"],
         image: "/images/FREE_HOME.jpg",
         color: "from-orange-500 to-red-500",
-        bentoData: {
-            hero: "/images/FREE_HOME.jpg",
-            metric: "3",
-            metricLabel: "Platforms Launched",
-            subMetric: "Brand Identity",
-            variations: [
-                "/images/khora.jpg",
-                "/images/finalizing.png",
-                "/images/khora_blue.png",
-                "/images/khora_col.png",
-                "/images/khora_idea.png",
-                "/images/GST.jpg",
-                "/images/GST_social.jpg",
-                "/images/AYA_SOFIA.jpg",
-                "/images/preview_aya_sofia-01.jpg",
-                "/images/preview_aya_sofia_color-01.jpg",
-                "/images/CHICKEN.jpg",
-                "/images/neegold3000.jpg",
-                "/images/spotify3000.jpg",
-            ]
-        },
-        videos: [
+
+        // --- SEPARATE FREELANCE PROJECTS (TREATED AS "COURSES" FOR LAYOUT) ---
+        courses: [
             {
-                id: "f1",
-                title: "Album, channel, and video cover for Youtube channel of a hip hop group",
-                category: "Music and video Covers",
-                src: "/videos/freelance_reel.mp4", // CHANGE THIS to local file
-                className: "md:col-span-2 md:row-span-2"
+                id: "f_khora",
+                title: "Client: Khora",
+                description: "Brand identity and logo design for Khora.",
+                bentoData: {
+                    hero: "/images/khora.jpg",
+                    metric: "Brand",
+                    metricLabel: "Identity System",
+                    subMetric: "Logo Design",
+                    variations: [
+                        "/images/finalizing.png",
+                        "/images/khora_blue.png",
+                        "/images/khora_col.png",
+                        "/images/khora_idea.png"
+                    ]
+                },
+                // No videos for this client
             },
+            {
+                id: "f_aya",
+                title: "Client: Aya Sofia",
+                description: "Visual identity and social media assets.",
+                bentoData: {
+                    hero: "/images/AYA_SOFIA.jpg",
+                    metric: "Social",
+                    metricLabel: "Visual Assets",
+                    subMetric: "Graphic Design",
+                    variations: [
+                        "/images/preview_aya_sofia-01.jpg",
+                        "/images/preview_aya_sofia_color-01.jpg",
+                        "/images/GST.jpg",
+                        "/images/GST_social.jpg"
+                    ]
+                },
+                // No videos for this client
+            },
+            {
+                id: "f_music",
+                title: "Music & Cover Art",
+                description: "Album covers and promotional video content for music artists.",
+                bentoData: {
+                    hero: "/images/neegold3000.jpg",
+                    metric: "Cover Art",
+                    metricLabel: "Album Design",
+                    subMetric: "Music Industry",
+                    variations: [
+                        "/images/CHICKEN.jpg",
+                        "/images/spotify3000.jpg",
+                        "/images/FREE_HOME.jpg"
+                    ]
+                },
+                videos: [
+                    {
+                        id: "f1",
+                        title: "Album & Video Covers",
+                        category: "Music Videos",
+                        src: "/videos/freelance_reel.mp4", // Using local file instead of Youtube link
+                        className: "md:col-span-2 md:row-span-2"
+                    }
+                ]
+            }
         ]
     },
 ];
@@ -1103,7 +1130,7 @@ const ProjectModal = ({ project, onClose }) => {
 
                         {/* --- DYNAMIC RENDER LOGIC --- */}
 
-                        {/* SCENARIO A: Project has Multiple Courses (University) */}
+                        {/* SCENARIO A: Project has Multiple Courses (University or Freelance) */}
                         {project.courses ? (
                             project.courses.map((course) => (
                                 <div key={course.id} className="mt-24 pt-12 border-t border-white/10">
@@ -1118,7 +1145,7 @@ const ProjectModal = ({ project, onClose }) => {
                                 </div>
                             ))
                         ) : (
-                            /* SCENARIO B: Standard Project (Kariera, Aegean, Freelance) */
+                            /* SCENARIO B: Standard Project (Kariera, Aegean) */
                             <>
                                 <div className="space-y-6 mt-12">
                                     {project.bentoData && <BentoGrid data={project.bentoData} />}
