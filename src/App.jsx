@@ -497,6 +497,22 @@ const PROJECTS = [
                         "/images/music6.jpg",
                     ]
                 },
+                videos: [
+                    {
+                        id: "v_int1",
+                        title: "Game Walkthrough",
+                        category: "Unity Gameplay",
+                        src: "/videos/panselinos.mp4",
+                        className: "md:col-span-2 md:row-span-2"
+                    },
+                    {
+                        id: "v_int3",
+                        title: "Game Walkthrough",
+                        category: "Unity Gameplay",
+                        src: "/videos/quaresma.mp4",
+                        className: "md:col-span-2 md:row-span-2"
+                    },
+                ]
 
 
             }
@@ -624,15 +640,7 @@ const PROJECTS = [
                         "/images/branding3.jpg",
                     ]
                 },
-                videos: [
-                    {
-                        id: "v_3d1",
-                        title: "Game Walkthrough",
-                        category: "Unity Engine",
-                        src: "/videos/game_design_studio.mp4",
-                        className: "md:col-span-2 md:row-span-2"
-                    }
-                ]
+
             },
 
         ]
