@@ -455,6 +455,7 @@ const PROJECTS = [
                     variations: [
                         "/images/GST.jpg",
                         "/images/GST_social.jpg",
+                        "/images/GST_VAR.jpg",
                     ]
                 },
             },
@@ -525,24 +526,21 @@ const PROJECTS = [
                 title: "Final Project: Brand building as a case study of Tesla and suggested brand campaigns",
                 description: "Remediation of a humorous motorsport podcast into a racing game.",
                 bentoData: {
-                    hero: "/images/final1.jpg",
+                    hero: "/images/black2.jpg",
                     metric: "B",
                     metricLabel: "Grade",
                     subMetric: "Maya & Unity",
                     variations: [
-                        "/images/final2.jpg",
-                        "/images/final3.jpg",
-                        "/images/final4.jpg",
-                        "/images/final5.jpg",
-                        "/images/final6.jpg",
-                        "/images/final7.jpg",
-                        "/images/final8.jpg",
-                        "/images/final9.jpg",
-                        "/images/final10.jpg",
-                        "/images/final11.jpg",
-                        "/images/final12.jpg",
-                        "/images/final13.jpg",
-                        "/images/alex.fbx",
+                        "/images/black4.jpg",
+                        "/images/black2.jpg",
+                        "/images/black5.jpg",
+                        "/images/black6.jpg",
+                        "/images/space1.jpg",
+                        "/images/space2.jpg",
+                        "/images/space3.jpg",
+                        "/images/arcade1.jpg",
+                        "/images/arcade2.jpg",
+                        "/images/arcade3.jpg",
                     ]
                 },
                 videos: [
@@ -550,11 +548,26 @@ const PROJECTS = [
                         id: "v_int1",
                         title: "Game Walkthrough",
                         category: "Unity Gameplay",
-                        src: "/videos/final_game.mp4",
+                        src: "/videos/black.mp4",
                         className: "md:col-span-2 md:row-span-2"
-                    }
+                    },
+                    {
+                        id: "v_int2",
+                        title: "Game Walkthrough",
+                        category: "Unity Gameplay",
+                        src: "/videos/space.mp4",
+                        className: "md:col-span-2 md:row-span-2"
+                    },
+                    {
+                        id: "v_int3",
+                        title: "Game Walkthrough",
+                        category: "Unity Gameplay",
+                        src: "/videos/arcade.mp4",
+                        className: "md:col-span-2 md:row-span-2"
+                    },
                 ]
             },
+
             {
                 id: "c2",
                 title: "Course 1: Editorial design of a magazine",
@@ -571,6 +584,31 @@ const PROJECTS = [
                     ]
                 },
 
+            },
+
+            {
+                id: "c4",
+                title: "Course 3: visualize a fairytale of Calvino imaginary cities",
+                description: "Narrative structure and level design mechanics.",
+                bentoData: {
+                    hero: "/images/Ersilia.jpg",
+                    metric: "B-",
+                    metricLabel: "Grade",
+                    subMetric: "Game Dev",
+                    variations: [
+                        "/images/ersilialogo.jpg",
+                        "/images/ersilialogo1.jpg",
+                    ]
+                },
+                videos: [
+                    {
+                        id: "v_game1",
+                        title: "Gameplay Demo",
+                        category: "Unity",
+                        src: "/videos/ersilia1.mp4",
+                        className: "md:col-span-2 md:row-span-1"
+                    }
+                ]
             },
             {
                 id: "c3",
@@ -596,31 +634,7 @@ const PROJECTS = [
                     }
                 ]
             },
-            {
-                id: "c4",
-                title: "Course 3: Digital Playgrounds",
-                description: "Narrative structure and level design mechanics.",
-                bentoData: {
-                    hero: "/images/play_hero.jpg",
-                    metric: "B-",
-                    metricLabel: "Grade",
-                    subMetric: "Game Dev",
-                    variations: [
-                        "/images/play2.jpg",
-                        "/images/play3.jpg",
-                        "/images/play4.jpg"
-                    ]
-                },
-                videos: [
-                    {
-                        id: "v_game1",
-                        title: "Gameplay Demo",
-                        category: "Unity",
-                        src: "/videos/Digital_playgrounds.mp4",
-                        className: "md:col-span-2 md:row-span-1"
-                    }
-                ]
-            }
+
         ]
     },
 ];
@@ -1009,7 +1023,7 @@ const Contact = () => {
 
                 <div className="mt-16 flex justify-center gap-8">
                     {/* INSTAGRAM ICON SWAP */}
-                    <a href="https://www.instagram.com/alexandros_prepis" className="p-4 rounded-full bg-zinc-900 hover:bg-zinc-800 transition-colors">
+                    <a href="https://www.instagram.com/alex_prps_photos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="p-4 rounded-full bg-zinc-900 hover:bg-zinc-800 transition-colors">
                         <Instagram className="w-6 h-6 text-pink-500" />
                     </a>
                     <a href="https://www.linkedin.com/in/alexandros-prepis-792796163" className="p-4 rounded-full bg-zinc-900 hover:bg-zinc-800 transition-colors">
