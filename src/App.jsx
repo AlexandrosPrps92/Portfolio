@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import {
     ArrowUpRight, Mail, Github, Linkedin, Figma,
     Layers, Layout, Smartphone, Code, MoveRight,
-    Dribbble, Palette, X, CheckCircle2, Image as ImageIcon, Play,
-    ChevronLeft, ChevronRight
+    Palette, X, CheckCircle2, Image as ImageIcon, Play,
+    ChevronLeft, ChevronRight, Instagram, Menu // <--- Added Instagram & Menu
 } from 'lucide-react';
 
 // --- DATA ---
@@ -263,8 +263,6 @@ const PROJECTS = [
         tags: ["3D Design", "Web Design", "Game Design", "Media Ethics"],
         image: "/images/edin_home.jpg",
         color: "from-green-500 to-emerald-400",
-
-        // --- SEPARATE COURSES ---
         courses: [
             {
                 id: "c1",
@@ -411,8 +409,6 @@ const PROJECTS = [
         tags: ["Branding", "Identity", "Video Editing"],
         image: "/images/FREE_HOME.jpg",
         color: "from-orange-500 to-red-500",
-
-        // --- SEPARATE FREELANCE PROJECTS (TREATED AS "COURSES" FOR LAYOUT) ---
         courses: [
             {
                 id: "f_khora",
@@ -430,7 +426,6 @@ const PROJECTS = [
                         "/images/khora_idea.png"
                     ]
                 },
-                // No videos for this client
             },
             {
                 id: "f_aya",
@@ -448,7 +443,6 @@ const PROJECTS = [
                         "/images/GST_social.jpg"
                     ]
                 },
-                // No videos for this client
             },
             {
                 id: "f_music",
@@ -470,7 +464,7 @@ const PROJECTS = [
                         id: "f1",
                         title: "Album & Video Covers",
                         category: "Music Videos",
-                        src: "/videos/freelance_reel.mp4", // Using local file instead of Youtube link
+                        src: "/videos/freelance_reel.mp4",
                         className: "md:col-span-2 md:row-span-2"
                     }
                 ]
@@ -548,18 +542,42 @@ const SERVICES = [
     }
 ];
 
-// --- COMPONENTS ---
+// --- UPDATED NAV WITH HAMBURGER MENU ---
+const Nav = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-const Nav = () => (
-    <nav className="fixed top-0 left-0 w-full p-6 z-50 flex justify-between items-center mix-blend-difference text-white">
-        <div className="font-bold text-xl tracking-tighter">ALEXANDROS_PREPIS.DESIGN</div>
-        <div className="flex gap-6 text-sm font-medium">
-            <a href="#work" className="hover:opacity-50 transition-opacity">WORK</a>
-            <a href="#playground" className="hover:opacity-50 transition-opacity">PLAYGROUND</a>
-            <a href="#contact" className="hover:opacity-50 transition-opacity">CONTACT</a>
-        </div>
-    </nav>
-);
+    return (
+        <>
+            <nav className="fixed top-0 left-0 w-full p-6 z-50 flex justify-between items-center text-white mix-blend-difference">
+                <div className="font-bold text-xl tracking-tighter z-50">ALEXANDROS_PREPIS.DESIGN</div>
+
+                {/* Desktop Menu */}
+                <div className="hidden md:flex gap-6 text-sm font-medium">
+                    <a href="#work" className="hover:opacity-50 transition-opacity">WORK</a>
+                    <a href="#playground" className="hover:opacity-50 transition-opacity">PLAYGROUND</a>
+                    <a href="#contact" className="hover:opacity-50 transition-opacity">CONTACT</a>
+                </div>
+
+                {/* Mobile Hamburger Button */}
+                <button
+                    className="md:hidden z-50"
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                >
+                    {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                </button>
+            </nav>
+
+            {/* Mobile Full Screen Menu Overlay */}
+            {isMenuOpen && (
+                <div className="fixed inset-0 bg-black z-40 flex flex-col justify-center items-center gap-8 text-2xl font-bold text-white animate-fade-in">
+                    <a href="#work" onClick={() => setIsMenuOpen(false)}>WORK</a>
+                    <a href="#playground" onClick={() => setIsMenuOpen(false)}>PLAYGROUND</a>
+                    <a href="#contact" onClick={() => setIsMenuOpen(false)}>CONTACT</a>
+                </div>
+            )}
+        </>
+    );
+};
 
 const Hero = () => {
     return (
@@ -624,6 +642,7 @@ const Hero = () => {
     );
 };
 
+// --- UPDATED WORK COMPONENT WITH SCROLLABLE FILTERS ---
 const Work = ({ onProjectClick }) => {
     const [activeTab, setActiveTab] = useState("All");
     const tabs = ["All", "Professional", "Freelance", "Academic"];
@@ -641,12 +660,13 @@ const Work = ({ onProjectClick }) => {
                         <p className="text-gray-400 max-w-md">A collection of projects exploring the intersection of design and technology.</p>
                     </div>
 
-                    <div className="flex gap-2 mt-6 md:mt-0 bg-zinc-900 p-1 rounded-full border border-white/10">
+                    {/* Scrollable Filter Container */}
+                    <div className="flex gap-2 mt-6 md:mt-0 bg-zinc-900 p-1 rounded-full border border-white/10 overflow-x-auto w-full md:w-auto scrollbar-hide">
                         {tabs.map((tab) => (
                             <button
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
-                                className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                                className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 whitespace-nowrap ${
                                     activeTab === tab
                                         ? "bg-white text-black shadow-lg"
                                         : "text-gray-400 hover:text-white hover:bg-white/5"
@@ -817,6 +837,7 @@ const About = () => {
     );
 };
 
+// --- UPDATED CONTACT (INSTAGRAM ICON) ---
 const Contact = () => {
     return (
         <section id="contact" className="py-24 bg-black text-white border-t border-white/10">
@@ -835,8 +856,9 @@ const Contact = () => {
                 </a>
 
                 <div className="mt-16 flex justify-center gap-8">
-                    <a href="#" className="p-4 rounded-full bg-zinc-900 hover:bg-zinc-800 transition-colors">
-                        <Dribbble className="w-6 h-6 text-pink-500" />
+                    {/* INSTAGRAM ICON SWAP */}
+                    <a href="https://www.instagram.com/alexandros_prepis" className="p-4 rounded-full bg-zinc-900 hover:bg-zinc-800 transition-colors">
+                        <Instagram className="w-6 h-6 text-pink-500" />
                     </a>
                     <a href="https://www.linkedin.com/in/alexandros-prepis-792796163" className="p-4 rounded-full bg-zinc-900 hover:bg-zinc-800 transition-colors">
                         <Linkedin className="w-6 h-6 text-blue-500" />
@@ -850,7 +872,7 @@ const Contact = () => {
     );
 };
 
-// --- UPDATED BENTO GRID WITH NAVIGATION ---
+// --- BENTO GRID (IMAGES) ---
 const BentoGrid = ({ data }) => {
     const [currentIndex, setCurrentIndex] = useState(null);
 
@@ -1189,6 +1211,14 @@ export default function App() {
       @keyframes fadeIn {
         from { opacity: 0; transform: translateY(20px); }
         to { opacity: 1; transform: translateY(0); }
+      }
+      /* Hide scrollbar utility */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
       }
     `;
         document.head.appendChild(style);
