@@ -420,7 +420,7 @@ const PROJECTS = [
                     metricLabel: "Identity System",
                     subMetric: "Logo Design",
                     variations: [
-                        "/images/finalizing.png",
+                        "/images/finalizing.jpg",
                         "/images/khora_blue.png",
                         "/images/khora_col.png",
                         "/images/khora_idea.png"
@@ -439,8 +439,36 @@ const PROJECTS = [
                     variations: [
                         "/images/preview_aya_sofia-01.jpg",
                         "/images/preview_aya_sofia_color-01.jpg",
+                    ]
+                },
+            },
+            {
+                id: "f_GST",
+                title: "Client: GST",
+                description: "Visual identity and social media assets.",
+                bentoData: {
+                    hero: "/images/AYA_SOFIA.jpg",
+                    metric: "Social",
+                    metricLabel: "Visual Assets",
+                    subMetric: "Graphic Design",
+                    variations: [
                         "/images/GST.jpg",
-                        "/images/GST_social.jpg"
+                        "/images/GST_social.jpg",
+                    ]
+                },
+            },
+            {
+                id: "f_Chicken",
+                title: "Client: Chicken bar and More",
+                description: "Social media assets.",
+                bentoData: {
+                    hero:  "/images/CHICKEN.jpg",
+                    metric: "Social",
+                    metricLabel: "Visual Assets",
+                    subMetric: "Graphic Design",
+                    variations: [
+                        "/images/CHICKEN.jpg",
+
                     ]
                 },
             },
@@ -454,9 +482,8 @@ const PROJECTS = [
                     metricLabel: "Album Design",
                     subMetric: "Music Industry",
                     variations: [
-                        "/images/CHICKEN.jpg",
+
                         "/images/spotify3000.jpg",
-                        "/images/FREE_HOME.jpg"
                     ]
                 },
                 videos: [
@@ -464,9 +491,23 @@ const PROJECTS = [
                         id: "f1",
                         title: "Album & Video Covers",
                         category: "Music Videos",
-                        src: "/videos/freelance_reel.mp4",
+                        src: "https://youtu.be/34O7evRMHNM?si=P77daEFn3F3hDQP6",
                         className: "md:col-span-2 md:row-span-2"
-                    }
+                    },
+                    {
+                        id: "f2",
+                        title: "Album & Video Covers",
+                        category: "Music Videos",
+                        src: "https://youtu.be/nb5TuahpbbA?si=cz4Q36EX9QyR1zX6",
+                        className: "md:col-span-2 md:row-span-2"
+                    },
+                    {
+                        id: "f3",
+                        title: "Album & Video Covers",
+                        category: "Music Videos",
+                        src: "https://youtu.be/PnJBj7ueByU?si=gA5D9xvIH-tdDN_L",
+                        className: "md:col-span-2 md:row-span-2"
+                    },
                 ]
             }
         ]
