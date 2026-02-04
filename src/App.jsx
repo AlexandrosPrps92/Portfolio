@@ -447,7 +447,7 @@ const PROJECTS = [
                 title: "Client: GST",
                 description: "Visual identity and social media assets.",
                 bentoData: {
-                    hero: "/images/AYA_SOFIA.jpg",
+                    hero:  "/images/GST_social.jpg",
                     metric: "Social",
                     metricLabel: "Visual Assets",
                     subMetric: "Graphic Design",
@@ -484,31 +484,15 @@ const PROJECTS = [
                     variations: [
 
                         "/images/spotify3000.jpg",
+                        "/images/music1.jpg",
+                        "/images/music2.jpg",
+                        "/images/music3.jpg",
+                        "/images/music4.jpg",
+                        "/images/music5.jpg",
+                        "/images/music6.jpg",
                     ]
                 },
-                videos: [
-                    {
-                        id: "f1",
-                        title: "Album & Video Covers",
-                        category: "Music Videos",
-                        src: "https://youtu.be/34O7evRMHNM?si=P77daEFn3F3hDQP6",
-                        className: "md:col-span-2 md:row-span-2"
-                    },
-                    {
-                        id: "f2",
-                        title: "Album & Video Covers",
-                        category: "Music Videos",
-                        src: "https://youtu.be/nb5TuahpbbA?si=cz4Q36EX9QyR1zX6",
-                        className: "md:col-span-2 md:row-span-2"
-                    },
-                    {
-                        id: "f3",
-                        title: "Album & Video Covers",
-                        category: "Music Videos",
-                        src: "https://youtu.be/PnJBj7ueByU?si=gA5D9xvIH-tdDN_L",
-                        className: "md:col-span-2 md:row-span-2"
-                    },
-                ]
+
             }
         ]
     },
