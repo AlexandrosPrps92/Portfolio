@@ -495,6 +495,9 @@ const PROJECTS = [
                         "/images/music4.jpg",
                         "/images/music5.jpg",
                         "/images/music6.jpg",
+                        "/images/logo_INF.jpg",
+                        "/images/logo_INF2.jpg",
+                        "/images/logo_lad.jpg",
                     ]
                 },
                 videos: [
@@ -602,6 +605,7 @@ const PROJECTS = [
 
             },
 
+
             {
                 id: "c4",
                 title: "Course 3: visualize a fairytale of Calvino imaginary cities",
@@ -640,6 +644,32 @@ const PROJECTS = [
                         "/images/branding3.jpg",
                     ]
                 },
+
+            },
+            {
+                id: "c3",
+                title: "Course 2: Sum of courses and voluntary work for businesses",
+                description: "Hypothetical rebrand of a logo and applications of it of our own selection.",
+                bentoData: {
+                    hero: "/images/fiat.jpg",
+                    metric: "B",
+                    metricLabel: "Grade",
+                    subMetric: "3D Design",
+                    variations: [
+                        "/images/fear.jpg",
+                        "/images/trata.jpg",
+                    ]
+                },
+                videos: [
+                    {
+                        id: "v_game1",
+                        title: "Gameplay Demo",
+                        category: "Unity",
+                        src: "/videos/akoustirixi.mp4",
+                        className: "md:col-span-2 md:row-span-1"
+                    }
+                ]
+
 
             },
 
