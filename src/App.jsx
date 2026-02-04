@@ -285,7 +285,8 @@ const PROJECTS = [
                         "/images/final10.jpg",
                         "/images/final11.jpg",
                         "/images/final12.jpg",
-                        "/images/final13.jpg"
+                        "/images/final13.jpg",
+                        "/images/alex.fbx",
                     ]
                 },
                 videos: [
@@ -423,7 +424,7 @@ const PROJECTS = [
                         "/images/finalizing.jpg",
                         "/images/khora_blue.png",
                         "/images/khora_col.png",
-                        "/images/khora_idea.png"
+                        "/images/khora_idea.png",
                     ]
                 },
             },
@@ -468,6 +469,8 @@ const PROJECTS = [
                     subMetric: "Graphic Design",
                     variations: [
                         "/images/CHICKEN.jpg",
+                        "/images/chicken2.jpg",
+                        "/images/chicken3.jpg",
 
                     ]
                 },
@@ -504,42 +507,42 @@ const GALLERY_ITEMS = [
         id: 1,
         title: "3D Motion Exploration",
         description: "Blender Cycles Render",
-        image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800",
+        image: "/images/reference.jpg",
         className: "md:col-span-2 md:row-span-2"
     },
     {
         id: 2,
         title: "Typography Layout",
         description: "Editorial Design System",
-        image: "https://images.unsplash.com/photo-1614680376408-81e91ffe3db7?auto=format&fit=crop&q=80&w=400",
+        image: "/images/sketch.jpg",
         className: "md:col-span-1 md:row-span-1"
     },
     {
         id: 3,
         title: "Neon Gradients",
         description: "Mesh Gradient Experiments",
-        image: "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?auto=format&fit=crop&q=80&w=400",
+        image: "/images/sketch2.jpg",
         className: "md:col-span-1 md:row-span-1"
     },
     {
         id: 4,
         title: "App Interaction",
         description: "Figma Micro-interactions",
-        image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800",
+        image: "/images/sketch3.jpg",
         className: "md:col-span-2 md:row-span-1"
     },
     {
         id: 5,
         title: "Vinyl Cover Art",
         description: "Freelance Commission",
-        image: "https://images.unsplash.com/photo-1626785774573-4b799314346d?auto=format&fit=crop&q=80&w=400",
+        image: "/images/sketch4.jpg",
         className: "md:col-span-1 md:row-span-1"
     },
     {
         id: 6,
         title: "Poster Series",
         description: "Swiss Style Print",
-        image: "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?auto=format&fit=crop&q=80&w=400",
+        image: "/images/sketch5.jpg",
         className: "md:col-span-1 md:row-span-1"
     },
 ];
