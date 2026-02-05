@@ -51,14 +51,12 @@ const PROJECTS = [
                     id: "v13",
                     title: "LinkedIn Feature",
                     category: "Embedded Post",
-                    // The Iframe code:
                     embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7384532942305390592?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                    className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
+                    className: "md:col-span-1 md:row-span-2"
                 },
             ]
         },
         videos: [
-
             {
                 id: "v1",
                 title: "Heygen launch",
@@ -105,65 +103,60 @@ const PROJECTS = [
                 id: "v9",
                 title: "LinkedIn Feature",
                 category: "Embedded Post",
-                // The Iframe code:
                 embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7341393050612432896?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
-            },// --- ADDED IFRAME VIDEO HERE (V7) ---
+                className: "md:col-span-1 md:row-span-2"
+            },
             {
                 id: "v7",
                 title: "LinkedIn Feature",
                 category: "Embedded Post",
-                // The Iframe code:
                 embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7265340802833203200?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
+                className: "md:col-span-1 md:row-span-2"
             },
             {
                 id: "v8",
                 title: "LinkedIn Feature",
                 category: "Embedded Post",
-                // The Iframe code:
                 embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7257001356798955520?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
+                className: "md:col-span-1 md:row-span-2"
             },
             {
                 id: "v10",
                 title: "LinkedIn Feature",
                 category: "Embedded Post",
-                // The Iframe code:
-                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7419691159813390337?collapsed=1" height="566" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
+                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7419691159813390337?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                className: "md:col-span-1 md:row-span-2"
             },
             {
                 id: "v11",
                 title: "LinkedIn Feature",
                 category: "Embedded Post",
-                // The Iframe code:
                 embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7419691159813390337?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
+                className: "md:col-span-1 md:row-span-2"
             },
             {
                 id: "v12",
                 title: "LinkedIn Feature",
                 category: "Embedded Post",
-                // The Iframe code:
                 embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7421886115663515648?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
+                className: "md:col-span-1 md:row-span-2"
             },
             {
                 id: "v14",
                 title: "LinkedIn Feature",
                 category: "Embedded Post",
-                // The Iframe code:
                 embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7254503009626324993?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
+                className: "md:col-span-1 md:row-span-2"
             },
+
+            // --- TIKTOK EMBED ADDED HERE (v15) ---
             {
                 id: "v15",
-                title: "LinkedIn Feature",
-                category: "Embedded Post",
-                // The Iframe code:
-                embed: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@energyjobsearch_ltd/video/7554335956447399201" data-video-id="7554335956447399201" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@energyjobsearch_ltd" href="https://www.tiktok.com/@energyjobsearch_ltd?refer=embed">@energyjobsearch_ltd</a> <p>Your next energy job is closer than you think. Alex, your AI career coach, reveals the missing step 🔑. 👉 [Link in bio]</p> <a target="_blank" title="♬ original sound - Energyjobsearch.com" href="https://www.tiktok.com/music/original-sound-7554336026471320352?refer=embed">♬ original sound - Energyjobsearch.com</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>`,
-                className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
+                title: "TikTok Feature",
+                category: "Energy Job Search",
+                // Note: Modified style to width:100% so it fits the grid container
+                embed: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@energyjobsearch_ltd/video/7554335956447399201" data-video-id="7554335956447399201" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;" > <section> <a target="_blank" title="@energyjobsearch_ltd" href="https://www.tiktok.com/@energyjobsearch_ltd?refer=embed">@energyjobsearch_ltd</a> <p>Your next energy job is closer than you think. Alex, your AI career coach, reveals the missing step 🔑. 👉 [Link in bio]</p> <a target="_blank" title="♬ original sound - Energyjobsearch.com" href="https://www.tiktok.com/music/original-sound-7554336026471320352?refer=embed">♬ original sound - Energyjobsearch.com</a> </section> </blockquote>`,
+                className: "md:col-span-1 md:row-span-2"
             },
         ]
     },
@@ -1218,17 +1211,29 @@ const BentoGrid = ({ data }) => {
                     {data.variations.map((img, i) => (
                         <div
                             key={i}
-                            onClick={() => openLightbox(i + 1)} // +1 because index 0 is hero
-                            className={`relative rounded-2xl overflow-hidden border border-white/10 group cursor-zoom-in h-64 ${
+                            // BENTO LOGIC: Check if it's an object (embedded post) or string (image path)
+                            onClick={() => typeof img === 'string' && openLightbox(i + 1)}
+                            className={`relative rounded-2xl overflow-hidden border border-white/10 group ${typeof img === 'string' ? 'cursor-zoom-in' : ''} h-64 ${
                                 (i % 4 === 0 || i % 4 === 3) ? 'md:col-span-2' : 'md:col-span-1'
                             }`}
                         >
-                            <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
-                            <img
-                                src={img}
-                                alt={`Gallery item ${i}`}
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                            />
+                            {/* RENDER LOGIC: Image vs Embed */}
+                            {typeof img === 'string' ? (
+                                <>
+                                    <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
+                                    <img
+                                        src={img}
+                                        alt={`Gallery item ${i}`}
+                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    />
+                                </>
+                            ) : (
+                                // Render Embedded Content in Bento Grid
+                                <div
+                                    className="w-full h-full [&>iframe]:w-full [&>iframe]:h-full"
+                                    dangerouslySetInnerHTML={{ __html: img.embed }}
+                                />
+                            )}
                         </div>
                     ))}
                 </div>
@@ -1261,12 +1266,14 @@ const BentoGrid = ({ data }) => {
                     </button>
 
                     {/* Image */}
-                    <img
-                        src={allImages[currentIndex]}
-                        alt="Full Screen"
-                        className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
-                        onClick={(e) => e.stopPropagation()}
-                    />
+                    {typeof allImages[currentIndex] === 'string' && (
+                        <img
+                            src={allImages[currentIndex]}
+                            alt="Full Screen"
+                            className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
+                            onClick={(e) => e.stopPropagation()}
+                        />
+                    )}
 
                     {/* Mobile Tip */}
                     <div className="absolute bottom-4 left-0 w-full text-center text-white/40 text-xs md:hidden">
@@ -1278,9 +1285,21 @@ const BentoGrid = ({ data }) => {
     );
 };
 
-// --- UPDATED PROJECT VIDEO GRID (Supports Local Video + Iframes) ---
+// --- UPDATED PROJECT VIDEO GRID (Supports Local Video, Iframes & TikTok) ---
 const ProjectVideoGrid = ({ videos }) => {
     const [selectedVideo, setSelectedVideo] = useState(null);
+
+    // Load TikTok Script automatically if a TikTok embed is present
+    useEffect(() => {
+        const hasTikTok = videos.some(v => v.embed && v.embed.includes('tiktok-embed'));
+        if (hasTikTok && !document.getElementById('tiktok-embed-script')) {
+            const script = document.createElement('script');
+            script.id = 'tiktok-embed-script';
+            script.src = 'https://www.tiktok.com/embed.js';
+            script.async = true;
+            document.body.appendChild(script);
+        }
+    }, [videos]);
 
     return (
         <div className="mt-16 border-t border-white/10 pt-12">
@@ -1290,16 +1309,14 @@ const ProjectVideoGrid = ({ videos }) => {
                 {videos.map((video) => (
                     <div
                         key={video.id}
-                        // Only open modal if it's a local video. Iframes work directly in the grid.
                         onClick={() => !video.embed && setSelectedVideo(video)}
                         className={`relative rounded-2xl overflow-hidden group border border-white/10 bg-zinc-900 ${
                             !video.embed ? "cursor-pointer" : ""
                         } ${video.className}`}
                     >
-                        {/* LOGIC: If it's an Embed, show Iframe. If not, show Video Player */}
                         {video.embed ? (
                             <div
-                                className="w-full h-full [&>iframe]:w-full [&>iframe]:h-full"
+                                className="w-full h-full [&>iframe]:w-full [&>iframe]:h-full [&>blockquote]:m-0 [&>blockquote]:h-full"
                                 dangerouslySetInnerHTML={{ __html: video.embed }}
                             />
                         ) : (
@@ -1327,7 +1344,6 @@ const ProjectVideoGrid = ({ videos }) => {
                 ))}
             </div>
 
-            {/* FULLSCREEN VIDEO MODAL (Only for local videos) */}
             {selectedVideo && (
                 <div
                     className="fixed inset-0 z-[250] bg-black/95 backdrop-blur-md flex items-center justify-center p-4 animate-fade-in"
