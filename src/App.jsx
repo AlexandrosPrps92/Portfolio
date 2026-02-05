@@ -611,7 +611,14 @@ const PROJECTS = [
                         category: "Music Videos",
                         src: "/videos/freelance_reel.mp4",
                         className: "md:col-span-2 md:row-span-2"
-                    }
+                    },
+                    {
+                        id: "f2",
+                        title: "LinkedIn Feature",
+                        category: "Embedded Post",
+                        embed: `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?si=WyYGssk8WaSLG1ul&amp;list=PLKlubVxCs3I5UdoJRvUzh2elMD1kR80iP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+                        className: "md:col-span-1 md:row-span-2"
+                    },
                 ]
             }
         ]
