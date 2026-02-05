@@ -1081,6 +1081,34 @@ const GALLERY_ITEMS = [
         image: "/images/Hero_akto.jpg",
         className: "md:col-span-1 md:row-span-1"
     },
+    {
+        id: 15,
+        title: "Poster Series",
+        description: "Swiss Style Print",
+        image: "/images/gallery15.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 16,
+        title: "Poster Series",
+        description: "Swiss Style Print",
+        image: "/images/gallery16.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 17,
+        title: "Poster Series",
+        description: "Swiss Style Print",
+        image: "/images/gallery17.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 18,
+        title: "Poster Series",
+        description: "Swiss Style Print",
+        image: "/images/gallery18.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
 ];
 
 const SERVICES = [
@@ -1105,6 +1133,27 @@ const SERVICES = [
         desc: "Native-feeling iOS and Android app designs that follow the latest human interface guidelines."
     }
 ];
+
+// Helper functions for randomness
+const shuffleArray = (array) => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+};
+
+const getRandomColor = () => {
+    // Generate a random hex color
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+};
+
 
 // --- UPDATED NAV WITH HAMBURGER MENU ---
 const Nav = () => {
@@ -1287,9 +1336,13 @@ const Work = ({ onProjectClick }) => {
     );
 };
 
-// --- PLAYGROUND COMPONENT WITH INSTAGRAM EMBED SUPPORT ---
+// --- PLAYGROUND COMPONENT WITH RANDOMIZED ORDER AND FADE ---
 const Playground = () => {
-    // 1. Script Loading for Instagram
+    // Initialize with a subset or all items, shuffled
+    const [displayItems, setDisplayItems] = useState(() => shuffleArray(GALLERY_ITEMS).slice(0, 12)); // Start with random subset
+    const [fadeState, setFadeState] = useState({ active: false, color: '#000000' });
+
+    // 1. Script Loading for Instagram (kept from previous code)
     useEffect(() => {
         if (!document.getElementById('instagram-embed-script')) {
             const script = document.createElement('script');
@@ -1298,22 +1351,72 @@ const Playground = () => {
             script.async = true;
             document.body.appendChild(script);
         }
-        // Force reprocessing if script already loaded
-        if (window.instgrm) {
-            window.instgrm.Embeds.process();
-        }
     }, []);
 
+    // Effect for re-processing Instagram embeds whenever items change
+    useEffect(() => {
+        if (window.instgrm) {
+            // Tiny timeout to ensure DOM has updated
+            setTimeout(() => window.instgrm.Embeds.process(), 100);
+        }
+    }, [displayItems]);
+
+    // 2. Logic for Shuffling (Every 120 seconds)
+    useEffect(() => {
+        const shuffleGallery = () => {
+            const shuffled = shuffleArray(GALLERY_ITEMS);
+            // Random number of pictures (e.g., between 8 and full length, or keep it fixed if preferred)
+            const count = Math.floor(Math.random() * (GALLERY_ITEMS.length - 8 + 1)) + 8;
+            // Or just use full length shuffled: setDisplayItems(shuffled);
+            // Let's use a random slice to make it dynamic
+            setDisplayItems(shuffled.slice(0, Math.min(count, 16))); // Limit to e.g. 16 for performance
+        };
+
+        const intervalId = setInterval(shuffleGallery, 120000); // 120 seconds
+        return () => clearInterval(intervalId);
+    }, []);
+
+    // 3. Logic for Fading (Every 60 seconds)
+    useEffect(() => {
+        const triggerFade = () => {
+            // "Randomized color even in black" - logic:
+            // 30% chance for black, 70% chance for random hex
+            const isBlack = Math.random() < 0.3;
+            const nextColor = isBlack ? '#000000' : getRandomColor();
+
+            setFadeState({ active: true, color: nextColor });
+
+            // Fade out after 2 seconds
+            setTimeout(() => {
+                setFadeState(prev => ({ ...prev, active: false }));
+            }, 2000);
+        };
+
+        const intervalId = setInterval(triggerFade, 60000); // 60 seconds
+        return () => clearInterval(intervalId);
+    }, []);
+
+
     return (
-        <section id="playground" className="py-24 bg-black text-white border-t border-white/10">
-            <div className="container mx-auto px-6">
+        <section id="playground" className="py-24 bg-black text-white border-t border-white/10 relative">
+
+            {/* FADE OVERLAY */}
+            <div
+                className="absolute inset-0 z-20 pointer-events-none transition-colors duration-1000 ease-in-out"
+                style={{
+                    backgroundColor: fadeState.active ? fadeState.color : 'transparent',
+                    opacity: fadeState.active ? 0.9 : 0
+                }}
+            />
+
+            <div className="container mx-auto px-6 relative z-10">
                 <div className="mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Playground</h2>
                     <p className="text-gray-400 max-w-md">Experiments, 3D renders, and miscellaneous creative explorations.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[250px]">
-                    {GALLERY_ITEMS.map((item) => (
+                    {displayItems.map((item) => (
                         <div
                             key={item.id}
                             className={`relative rounded-2xl overflow-hidden group border border-white/10 bg-zinc-900 ${item.className}`}
