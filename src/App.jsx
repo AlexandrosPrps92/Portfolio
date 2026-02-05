@@ -125,7 +125,7 @@ const PROJECTS = [
                 title: "Heygen use",
                 category: "Instagram,TikTok",
                 src: "/videos/Alex__For you page__Vertical.mp4",
-                className: "md:col-span-1 md:row-span-1"
+                className: "md:col-span-2 md:row-span-1"
             },
             {
                 id: "v4",
@@ -146,7 +146,7 @@ const PROJECTS = [
                 title: "Kinetic typography",
                 category: "Instagram, TikTok, Meta",
                 src: "/videos/1080x1080_video_standard.mp4",
-                className: "md:col-span-1 md:row-span-1"
+                className: "md:col-span-2 md:row-span-1"
             },
             {
                 id: "v21",
@@ -160,7 +160,7 @@ const PROJECTS = [
                 title: "Kinetic typography",
                 category: "Instagram, TikTok, Meta",
                 src: "/videos/1080x1080_Proj_Man.mp4",
-                className: "md:col-span-1 md:row-span-1"
+                className: "md:col-span-2 md:row-span-1"
             },
 
             {
@@ -609,8 +609,6 @@ const PROJECTS = [
                     variations: [
                         "/images/preview_aya_sofia-01.jpg",
                         "/images/preview_aya_sofia_color-01.jpg",
-                        "/images/GST.jpg",
-                        "/images/GST_social.jpg"
                     ]
                 },
             },
