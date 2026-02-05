@@ -51,6 +51,14 @@ const PROJECTS = [
         },
         videos: [
             {
+                id: "v13",
+                title: "LinkedIn Feature",
+                category: "Embedded Post",
+                // The Iframe code:
+                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7384532942305390592?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
+            },
+            {
                 id: "v1",
                 title: "Heygen launch",
                 category: "Social Media",
@@ -92,7 +100,14 @@ const PROJECTS = [
                 src: "/videos/1080x1080_video_standard.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
-            // --- ADDED IFRAME VIDEO HERE (V7) ---
+            {
+                id: "v9",
+                title: "LinkedIn Feature",
+                category: "Embedded Post",
+                // The Iframe code:
+                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7341393050612432896?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
+            },// --- ADDED IFRAME VIDEO HERE (V7) ---
             {
                 id: "v7",
                 title: "LinkedIn Feature",
@@ -107,6 +122,30 @@ const PROJECTS = [
                 category: "Embedded Post",
                 // The Iframe code:
                 embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7257001356798955520?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
+            },
+            {
+                id: "v10",
+                title: "LinkedIn Feature",
+                category: "Embedded Post",
+                // The Iframe code:
+                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7419691159813390337?collapsed=1" height="566" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
+            },
+            {
+                id: "v11",
+                title: "LinkedIn Feature",
+                category: "Embedded Post",
+                // The Iframe code:
+                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7419691159813390337?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
+            },
+            {
+                id: "v12",
+                title: "LinkedIn Feature",
+                category: "Embedded Post",
+                // The Iframe code:
+                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7421886115663515648?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
                 className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
             },
         ]
