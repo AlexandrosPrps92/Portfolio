@@ -83,11 +83,11 @@ const PROJECTS = [
         articles: [
             {
                 id: "art1",
-                title: "Kariera.gr Blog",
+                title: "Energyjobsearch.com Blog",
                 description: "Insights and articles on career development and digital trends.",
-                url: "https://www.kariera.gr/blog",
-                domain: "kariera.gr",
-                image: "/images/dashboard.jpg" // Using an existing image as preview
+                url: "https://blog.energyjobsearch.com/",
+                domain: "Energyjobsearch.com",
+                image: "/images/hero_ejs_blog.jpg" // Using an existing image as preview
             }
         ],
 
