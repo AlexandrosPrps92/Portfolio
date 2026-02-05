@@ -3,7 +3,7 @@ import {
     ArrowUpRight, Mail, Github, Linkedin, Figma,
     Layers, Layout, Smartphone, Code, MoveRight,
     Palette, X, CheckCircle2, Image as ImageIcon, Play,
-    ChevronLeft, ChevronRight, Instagram, Menu
+    ChevronLeft, ChevronRight, Instagram, Menu, ExternalLink // <--- ADDED ExternalLink
 } from 'lucide-react';
 
 // --- DATA ---
@@ -51,28 +51,7 @@ const PROJECTS = [
                     id: "v13",
                     title: "LinkedIn Feature",
                     category: "Embedded Post",
-                    embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7384532942305390592?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                    className: "md:col-span-1 md:row-span-2"
-                },
-                {
-                    id: "v18",
-                    title: "LinkedIn Feature",
-                    category: "Embedded Post",
-                    embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7341393050612432896?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                    className: "md:col-span-1 md:row-span-2"
-                },
-                {
-                    id: "v17",
-                    title: "LinkedIn Feature",
-                    category: "Embedded Post",
-                    embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7423026631017119744?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                    className: "md:col-span-1 md:row-span-2"
-                },
-                {
-                    id: "v10",
-                    title: "LinkedIn Feature",
-                    category: "Embedded Post",
-                    embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7419691159813390337?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                    embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7384532942305390592?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
                     className: "md:col-span-1 md:row-span-2"
                 },
             ]
@@ -124,7 +103,7 @@ const PROJECTS = [
                 id: "v9",
                 title: "LinkedIn Feature",
                 category: "Embedded Post",
-                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7379856346118176768?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7341393050612432896?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
                 className: "md:col-span-1 md:row-span-2"
             },
             {
@@ -141,7 +120,13 @@ const PROJECTS = [
                 embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7257001356798955520?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
                 className: "md:col-span-1 md:row-span-2"
             },
-
+            {
+                id: "v10",
+                title: "LinkedIn Feature",
+                category: "Embedded Post",
+                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7419691159813390337?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                className: "md:col-span-1 md:row-span-2"
+            },
             {
                 id: "v11",
                 title: "LinkedIn Feature",
@@ -153,7 +138,7 @@ const PROJECTS = [
                 id: "v12",
                 title: "LinkedIn Feature",
                 category: "Embedded Post",
-                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7421886115663515648?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7421886115663515648?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
                 className: "md:col-span-1 md:row-span-2"
             },
             {
@@ -164,29 +149,22 @@ const PROJECTS = [
                 className: "md:col-span-1 md:row-span-2"
             },
 
-            // --- TIKTOK EMBED ADDED HERE (v15) ---
+            // --- UPDATED TIKTOK ENTRY (v15) ---
             {
                 id: "v15",
                 title: "TikTok Feature",
                 category: "Energy Job Search",
-                // Note: Modified style to width:100% so it fits the grid container
-                embed: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@energyjobsearch_ltd/video/7554335956447399201" data-video-id="7554335956447399201" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;" > <section> <a target="_blank" title="@energyjobsearch_ltd" href="https://www.tiktok.com/@energyjobsearch_ltd?refer=embed">@energyjobsearch_ltd</a> <p>Your next energy job is closer than you think. Alex, your AI career coach, reveals the missing step 🔑. 👉 [Link in bio]</p> <a target="_blank" title="♬ original sound - Energyjobsearch.com" href="https://www.tiktok.com/music/original-sound-7554336026471320352?refer=embed">♬ original sound - Energyjobsearch.com</a> </section> </blockquote>`,
+                src: "https://www.tiktok.com/@energyjobsearch_ltd/video/7554335956447399201",
+                type: "tiktok", // Used to trigger the special card
                 className: "md:col-span-1 md:row-span-2"
             },
-            {
-                id: "v18",
-                title: "TikTok Feature",
-                category: "Energy Job Search",
-                // Note: Modified style to width:100% so it fits the grid container
-                embed: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@energyjobsearch_ltd/video/7542789142111915296" data-video-id="7542789142111915296" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@energyjobsearch_ltd" href="https://www.tiktok.com/@energyjobsearch_ltd?refer=embed">@energyjobsearch_ltd</a> <p>Getting rejected from a job application sucks 😣. But it’s not the end. It’s part of the process. Hey, I’m Alex your AI career coach and I’ve seen it all: the ghosting, the “we’ve decided to move forward with another candidate” emails, the lack of communication. It happens to everyone. But here’s how to get back on track like a pro: ✨ 𝐎𝐰𝐧 𝐢𝐭. It’s okay to be disappointed. Take a second to process it. 📝 𝐑𝐞𝐯𝐢𝐞𝐰 𝐢𝐭. What can you learn? Was your CV clear? Did you prepare well for the interview? 🎯 𝐑𝐞𝐟𝐨𝐜𝐮𝐬. Set one small goal to move forward. A new application. A skills upgrade. A fresh mindset. Rejection doesn’t define your career. It’s just feedback in disguise. How you respond will do the trick 💪. 👉 Hit follow for more real-talk tips to stay motivated and grow in your career!</p> <a target="_blank" title="♬ original sound - Energyjobsearch.com" href="https://www.tiktok.com/music/original-sound-7542794264669915937?refer=embed">♬ original sound - Energyjobsearch.com</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>`,
-                className: "md:col-span-1 md:row-span-2"
-            },
+            // --- UPDATED TIKTOK ENTRY (v19) ---
             {
                 id: "v19",
-                title: "TikTok Feature",
+                title: "AI Career Coach",
                 category: "Energy Job Search",
-                // Note: Modified style to width:100% so it fits the grid container
-                embed: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@energyjobsearch_ltd/video/7527290399510023456" data-video-id="7527290399510023456" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@energyjobsearch_ltd" href="https://www.tiktok.com/@energyjobsearch_ltd?refer=embed">@energyjobsearch_ltd</a> What if your next job finds you the other way around? That’s exactly what’s happening with Energy Job Search. Upload your CV once, and you’re instantly in front of top employers in oil &#38; gas, renewables, engineering, and more. Plus, they’re all actively hiring! 😉 No endless searching. No black hole applications. Just smart matchmaking that gets results. The only thing missing? You. 📤 Upload your CV today and let your next big opportunity come to you. Find out more 👉 link in bio. <a title="energyjobs" target="_blank" href="https://www.tiktok.com/tag/energyjobs?refer=embed">#EnergyJobs</a> <a title="smarthiring" target="_blank" href="https://www.tiktok.com/tag/smarthiring?refer=embed">#SmartHiring</a> <a title="careermoves" target="_blank" href="https://www.tiktok.com/tag/careermoves?refer=embed">#CareerMoves</a> <a title="renewablesjobs" target="_blank" href="https://www.tiktok.com/tag/renewablesjobs?refer=embed">#RenewablesJobs</a> <a title="oilandgascareers" target="_blank" href="https://www.tiktok.com/tag/oilandgascareers?refer=embed">#OilAndGasCareers</a> <a title="engineeringjobs" target="_blank" href="https://www.tiktok.com/tag/engineeringjobs?refer=embed">#EngineeringJobs</a> <a title="aijobcoach" target="_blank" href="https://www.tiktok.com/tag/aijobcoach?refer=embed">#AIJobCoach</a> <a title="energycareers" target="_blank" href="https://www.tiktok.com/tag/energycareers?refer=embed">#EnergyCareers</a> <a target="_blank" title="♬ original sound - Energyjobsearch.com" href="https://www.tiktok.com/music/original-sound-7527292808701430560?refer=embed">♬ original sound - Energyjobsearch.com</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>`,
+                src: "https://www.tiktok.com/@energyjobsearch_ltd/video/7527290399510023456",
+                type: "tiktok", // Used to trigger the special card
                 className: "md:col-span-1 md:row-span-2"
             },
         ]
@@ -1320,18 +1298,6 @@ const BentoGrid = ({ data }) => {
 const ProjectVideoGrid = ({ videos }) => {
     const [selectedVideo, setSelectedVideo] = useState(null);
 
-    // Load TikTok Script automatically if a TikTok embed is present
-    useEffect(() => {
-        const hasTikTok = videos.some(v => v.embed && v.embed.includes('tiktok-embed'));
-        if (hasTikTok && !document.getElementById('tiktok-embed-script')) {
-            const script = document.createElement('script');
-            script.id = 'tiktok-embed-script';
-            script.src = 'https://www.tiktok.com/embed.js';
-            script.async = true;
-            document.body.appendChild(script);
-        }
-    }, [videos]);
-
     return (
         <div className="mt-16 border-t border-white/10 pt-12">
             <h3 className="text-sm font-mono text-gray-500 uppercase tracking-widest mb-6">Motion & Video Assets</h3>
@@ -1340,17 +1306,45 @@ const ProjectVideoGrid = ({ videos }) => {
                 {videos.map((video) => (
                     <div
                         key={video.id}
-                        onClick={() => !video.embed && setSelectedVideo(video)}
+                        onClick={() => {
+                            if (video.type === "tiktok") {
+                                window.open(video.src, "_blank");
+                            } else if (!video.embed) {
+                                setSelectedVideo(video);
+                            }
+                        }}
                         className={`relative rounded-2xl overflow-hidden group border border-white/10 bg-zinc-900 ${
-                            !video.embed ? "cursor-pointer" : ""
+                            video.type === "tiktok" || !video.embed ? "cursor-pointer" : ""
                         } ${video.className}`}
                     >
-                        {video.embed ? (
+                        {/* CASE 1: TikTok External Link */}
+                        {video.type === "tiktok" ? (
+                            <div className="w-full h-full flex flex-col items-center justify-center bg-[#000000] relative group hover:bg-[#111] transition-colors">
+                                {/* TikTok-style decorative background elements */}
+                                <div className="absolute inset-0 bg-gradient-to-tr from-[#25F4EE]/10 to-[#FE2C55]/10 opacity-50"></div>
+
+                                <div className="z-10 flex flex-col items-center gap-3">
+                                    <div className="w-14 h-14 bg-black border border-white/20 rounded-full flex items-center justify-center shadow-2xl relative">
+                                        <ExternalLink className="w-6 h-6 text-white" />
+                                        {/* Glitch effect dots */}
+                                        <div className="absolute -left-1 -top-1 w-2 h-2 bg-[#25F4EE] rounded-full blur-[1px]"></div>
+                                        <div className="absolute -right-1 -bottom-1 w-2 h-2 bg-[#FE2C55] rounded-full blur-[1px]"></div>
+                                    </div>
+                                    <span className="font-bold text-white tracking-wide uppercase text-sm">Watch on TikTok</span>
+                                </div>
+
+                                <div className="absolute bottom-0 w-full p-4 bg-gradient-to-t from-black to-transparent">
+                                    <p className="text-xs text-gray-400 font-mono text-center truncate px-2">{video.title}</p>
+                                </div>
+                            </div>
+                        ) : video.embed ? (
+                            /* CASE 2: Iframe Embed (LinkedIn, etc) */
                             <div
-                                className="w-full h-full [&>iframe]:w-full [&>iframe]:h-full [&>blockquote]:m-0 [&>blockquote]:h-full"
+                                className="w-full h-full [&>iframe]:w-full [&>iframe]:h-full"
                                 dangerouslySetInnerHTML={{ __html: video.embed }}
                             />
                         ) : (
+                            /* CASE 3: Local Video File */
                             <>
                                 <video
                                     src={video.src}
