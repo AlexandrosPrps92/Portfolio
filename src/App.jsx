@@ -252,17 +252,27 @@ const PROJECTS = [
                 "/images/MB_activation_NL_2_EN_A3.jpg",
 
                 // --- ADDED BREAK/SEPARATOR HERE ---
-                { type: "header", title: "Social Media Animations" },
+                { type: "header", title: "Social Media Animations for AEGEAN Airlines" },
+                "/images/Sleep Sticker by Aegean Airlines.gif",
+                "/images/Pride Sticker by Aegean Airlines.gif",
+                "/images/Sticker by Aegean Airlines.gif",
+                "/images/Sticker by Aegean Airlines(1).gif",
+                "/images/Sticker by Aegean Airlines(2).gif",
+                "/images/Sticker by Aegean Airlines(3).gif",
+                "/images/Sticker by Aegean Airlines(4).gif",
+                "/images/Sticker by Aegean Airlines(5).gif",
+                "/images/Sticker by Aegean Airlines(6).gif",
+                "/images/Sticker by Aegean Airlines(7).gif",
+                "/images/Sticker by Aegean Airlines(8).gif",
+                "/images/Sticker by Aegean Airlines(9).gif",
+                "/images/Sticker by Aegean Airlines(10).gif",
+                "/images/Sticker by Aegean Airlines(11).gif",
+                "/images/Sticker by Aegean Airlines(12).gif",
+                "/images/Sticker by Aegean Airlines(13).gif",
+                "/images/Sticker by Aegean Airlines(14).gif",
+                "/images/Wifionboard Sticker by Aegean Airlines.gif",
+                "/images/Wifionboard Sticker by Aegean Airlines(2).gif",
 
-                "/images/Οpa.gif",
-                "/images/ΟΑ_Logo.gif",
-                "/images/where_to_next_res.gif",
-                "/images/OA_Plane_test.gif",
-                "/images/kalimera2.gif",
-                "/images/kalinyhta.gif",
-                "/images/I_love_Greece.gif",
-                "/images/Greek_Moments.gif",
-                "/images/Discovering_Gree.gif",
                 {
                     id: "v12_b",
                     title: "Instagram Feature",
@@ -279,6 +289,20 @@ const PROJECTS = [
 <script async src="//www.instagram.com/embed.js"></script>`,
                     className: "md:col-span-1 md:row-span-2"
                 },
+
+                { type: "header", title: "Social Media Animations for Olympic Airlines" },
+
+                "/images/Οpa.gif",
+                "/images/ΟΑ_Logo.gif",
+                "/images/where_to_next_res.gif",
+                "/images/OA_Plane_test.gif",
+                "/images/kalimera2.gif",
+                "/images/kalinyhta.gif",
+                "/images/I_love_Greece.gif",
+                "/images/Greek_Moments.gif",
+                "/images/Discovering_Gree.gif",
+
+
             ]
         },
         videos: [
