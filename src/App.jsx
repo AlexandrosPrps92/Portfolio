@@ -101,6 +101,14 @@ const PROJECTS = [
                 embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7265340802833203200?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
                 className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
             },
+            {
+                id: "v8",
+                title: "LinkedIn Feature",
+                category: "Embedded Post",
+                // The Iframe code:
+                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7257001356798955520?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
+            },
         ]
     },
     {
