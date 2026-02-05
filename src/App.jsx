@@ -48,6 +48,7 @@ const PROJECTS = [
                 "/images/square2.png",
                 "/images/square3.png",
                 "/images/square4.png",
+
                 {
                     id: "v13",
                     title: "LinkedIn Feature",
@@ -76,6 +77,19 @@ const PROJECTS = [
                     embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7419691159813390337?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
                     className: "md:col-span-1 md:row-span-2"
                 },
+                { type: "header", title: "Social Media banners for Energyjobsearch.com" },
+                "/images/ejs_1.jpg",
+                "/images/ejs2.jpg",
+                "/images/ejs3.jpg",
+                "/images/ejs4.jpg",
+                "/images/ejs5.jpg",
+                "/images/ejs6.jpg",
+                "/images/ejs7.jpg",
+                "/images/ejs8.jpg",
+                "/images/ejs9.jpg",
+                "/images/EJS_dashboard_square.jpg",
+                "/images/AI_Square_1.jpg",
+
             ]
         },
 
@@ -132,6 +146,20 @@ const PROJECTS = [
                 title: "Kinetic typography",
                 category: "Instagram, TikTok, Meta",
                 src: "/videos/1080x1080_video_standard.mp4",
+                className: "md:col-span-1 md:row-span-1"
+            },
+            {
+                id: "v21",
+                title: "Kinetic typography",
+                category: "Instagram, TikTok, Meta",
+                src: "/videos/1080x1080_IN_ENGI.mp4",
+                className: "md:col-span-1 md:row-span-1"
+            },
+            {
+                id: "v22",
+                title: "Kinetic typography",
+                category: "Instagram, TikTok, Meta",
+                src: "/videos/1080x1080_Proj_Man.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
 
@@ -217,6 +245,7 @@ const PROJECTS = [
             variations: [
                 "/images/Story_ATH_nl.jpg",
                 "/images/Story_SKG_nl.jpg",
+                { type: "header", title: "Newsletter banners for AEGEAN Airlines and Olympic Airlines" },
                 "/images/NL_second_subject_wifi_280122.jpg",
                 "/images/NL_second_subject_grid_wifi_DE_280122.jpg",
                 "/images/NL_OA_GR.png",
@@ -270,7 +299,7 @@ const PROJECTS = [
                     className: "md:col-span-1 md:row-span-2"
                 },
 
-                { type: "header", title: "Social Media Animations for Olympic Airlines" },
+                { type: "header", title: "Social Media Stickers for Olympic Airlines" },
 
                 "/images/Οpa.gif",
                 "/images/ΟΑ_Logo.gif",
