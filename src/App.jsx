@@ -121,13 +121,6 @@ const PROJECTS = [
                 className: "md:col-span-1 md:row-span-1"
             },
             {
-                id: "v9",
-                title: "LinkedIn Feature",
-                category: "Embedded Post",
-                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7341393050612432896?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                className: "md:col-span-1 md:row-span-2"
-            },
-            {
                 id: "v7",
                 title: "LinkedIn Feature",
                 category: "Embedded Post",
@@ -139,20 +132,6 @@ const PROJECTS = [
                 title: "LinkedIn Feature",
                 category: "Embedded Post",
                 embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7257001356798955520?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                className: "md:col-span-1 md:row-span-2"
-            },
-            {
-                id: "v10",
-                title: "LinkedIn Feature",
-                category: "Embedded Post",
-                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7419691159813390337?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                className: "md:col-span-1 md:row-span-2"
-            },
-            {
-                id: "v11",
-                title: "LinkedIn Feature",
-                category: "Embedded Post",
-                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7419691159813390337?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
                 className: "md:col-span-1 md:row-span-2"
             },
             {
