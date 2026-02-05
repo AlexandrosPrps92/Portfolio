@@ -784,6 +784,13 @@ const GALLERY_ITEMS = [
         className: "md:col-span-2 md:row-span-2"
     },
     {
+        id: 7,
+        title: "Typography Layout",
+        description: "Editorial Design System",
+        image: "/images/reference.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
         id: 2,
         title: "Typography Layout",
         description: "Editorial Design System",
