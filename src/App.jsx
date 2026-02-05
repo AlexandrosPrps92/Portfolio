@@ -948,6 +948,83 @@ const GALLERY_ITEMS = [
         className: "md:col-span-1 md:row-span-1"
     },
     {
+        id: 11,
+        title: "Typography Layout",
+        description: "Editorial Design System",
+        image: "/images/gallery2.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 12,
+        title: "Typography Layout",
+        description: "Editorial Design System",
+        image: "/images/gallery3.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 10,
+        title: "Typography Layout",
+        description: "Editorial Design System",
+        image: "/images/gallery4.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 11,
+        title: "Typography Layout",
+        description: "Editorial Design System",
+        image: "/images/gallery5.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 12,
+        title: "Typography Layout",
+        description: "Editorial Design System",
+        image: "/images/gallery6.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 13,
+        title: "Typography Layout",
+        description: "Editorial Design System",
+        image: "/images/gallery7.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 14,
+        title: "Typography Layout",
+        description: "Editorial Design System",
+        image: "/images/gallery8.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 15,
+        title: "Typography Layout",
+        description: "Editorial Design System",
+        image: "/images/gallery9.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 16,
+        title: "Typography Layout",
+        description: "Editorial Design System",
+        image: "/images/gallery10.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 17,
+        title: "Typography Layout",
+        description: "Editorial Design System",
+        image: "/images/gallery11.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 18,
+        title: "Typography Layout",
+        description: "Editorial Design System",
+        image: "/images/gallery12.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
         id: 9,
         title: "Typography Layout",
         description: "Editorial Design System",
@@ -959,6 +1036,13 @@ const GALLERY_ITEMS = [
         title: "Typography Layout",
         description: "Editorial Design System",
         image: "/images/sketch.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 10,
+        title: "Typography Layout",
+        description: "Editorial Design System",
+        image: "/images/gallery1.jpg",
         className: "md:col-span-1 md:row-span-1"
     },
     {
