@@ -47,17 +47,18 @@ const PROJECTS = [
                 "/images/square2.png",
                 "/images/square3.png",
                 "/images/square4.png",
+                {
+                    id: "v13",
+                    title: "LinkedIn Feature",
+                    category: "Embedded Post",
+                    // The Iframe code:
+                    embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7384532942305390592?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                    className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
+                },
             ]
         },
         videos: [
-            {
-                id: "v13",
-                title: "LinkedIn Feature",
-                category: "Embedded Post",
-                // The Iframe code:
-                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7384532942305390592?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
-            },
+
             {
                 id: "v1",
                 title: "Heygen launch",
@@ -146,6 +147,22 @@ const PROJECTS = [
                 category: "Embedded Post",
                 // The Iframe code:
                 embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7421886115663515648?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
+            },
+            {
+                id: "v14",
+                title: "LinkedIn Feature",
+                category: "Embedded Post",
+                // The Iframe code:
+                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7254503009626324993?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
+            },
+            {
+                id: "v15",
+                title: "LinkedIn Feature",
+                category: "Embedded Post",
+                // The Iframe code:
+                embed: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@energyjobsearch_ltd/video/7554335956447399201" data-video-id="7554335956447399201" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@energyjobsearch_ltd" href="https://www.tiktok.com/@energyjobsearch_ltd?refer=embed">@energyjobsearch_ltd</a> <p>Your next energy job is closer than you think. Alex, your AI career coach, reveals the missing step 🔑. 👉 [Link in bio]</p> <a target="_blank" title="♬ original sound - Energyjobsearch.com" href="https://www.tiktok.com/music/original-sound-7554336026471320352?refer=embed">♬ original sound - Energyjobsearch.com</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>`,
                 className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
             },
         ]
