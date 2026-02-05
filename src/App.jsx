@@ -51,7 +51,21 @@ const PROJECTS = [
                     id: "v13",
                     title: "LinkedIn Feature",
                     category: "Embedded Post",
-                    embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7384532942305390592?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                    embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7384532942305390592?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                    className: "md:col-span-1 md:row-span-2"
+                },
+                {
+                    id: "v13",
+                    title: "LinkedIn Feature",
+                    category: "Embedded Post",
+                    embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7384532942305390592?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                    className: "md:col-span-1 md:row-span-2"
+                },
+                {
+                    id: "v17",
+                    title: "LinkedIn Feature",
+                    category: "Embedded Post",
+                    embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7423026631017119744?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
                     className: "md:col-span-1 md:row-span-2"
                 },
             ]
@@ -138,7 +152,7 @@ const PROJECTS = [
                 id: "v12",
                 title: "LinkedIn Feature",
                 category: "Embedded Post",
-                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7421886115663515648?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7421886115663515648?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
                 className: "md:col-span-1 md:row-span-2"
             },
             {
