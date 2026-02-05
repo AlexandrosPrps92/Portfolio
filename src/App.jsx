@@ -3,7 +3,7 @@ import {
     ArrowUpRight, Mail, Github, Linkedin, Figma,
     Layers, Layout, Smartphone, Code, MoveRight,
     Palette, X, CheckCircle2, Image as ImageIcon, Play,
-    ChevronLeft, ChevronRight, Instagram, Menu // <--- Added Instagram & Menu
+    ChevronLeft, ChevronRight, Instagram, Menu
 } from 'lucide-react';
 
 // --- DATA ---
@@ -91,6 +91,15 @@ const PROJECTS = [
                 category: "Instagram, TikTok, Meta",
                 src: "/videos/1080x1080_video_standard.mp4",
                 className: "md:col-span-1 md:row-span-1"
+            },
+            // --- ADDED IFRAME VIDEO HERE (V7) ---
+            {
+                id: "v7",
+                title: "LinkedIn Feature",
+                category: "Embedded Post",
+                // The Iframe code:
+                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7265340802833203200?collapsed=1" height="755" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
             },
         ]
     },
@@ -285,8 +294,7 @@ const PROJECTS = [
                         "/images/final10.jpg",
                         "/images/final11.jpg",
                         "/images/final12.jpg",
-                        "/images/final13.jpg",
-                        "/images/alex.fbx",
+                        "/images/final13.jpg"
                     ]
                 },
                 videos: [
@@ -440,6 +448,8 @@ const PROJECTS = [
                     variations: [
                         "/images/preview_aya_sofia-01.jpg",
                         "/images/preview_aya_sofia_color-01.jpg",
+                        "/images/GST.jpg",
+                        "/images/GST_social.jpg"
                     ]
                 },
             },
@@ -502,22 +512,13 @@ const PROJECTS = [
                 },
                 videos: [
                     {
-                        id: "v_int1",
-                        title: "Game Walkthrough",
-                        category: "Unity Gameplay",
-                        src: "/videos/panselinos.mp4",
+                        id: "f1",
+                        title: "Album & Video Covers",
+                        category: "Music Videos",
+                        src: "/videos/freelance_reel.mp4",
                         className: "md:col-span-2 md:row-span-2"
-                    },
-                    {
-                        id: "v_int3",
-                        title: "Game Walkthrough",
-                        category: "Unity Gameplay",
-                        src: "/videos/quaresma.mp4",
-                        className: "md:col-span-2 md:row-span-2"
-                    },
+                    }
                 ]
-
-
             }
         ]
     },
@@ -1213,7 +1214,7 @@ const BentoGrid = ({ data }) => {
     );
 };
 
-// --- PROJECT VIDEO GRID (LIVES INSIDE MODAL) ---
+// --- UPDATED PROJECT VIDEO GRID (Supports Local Video + Iframes) ---
 const ProjectVideoGrid = ({ videos }) => {
     const [selectedVideo, setSelectedVideo] = useState(null);
 
@@ -1225,30 +1226,44 @@ const ProjectVideoGrid = ({ videos }) => {
                 {videos.map((video) => (
                     <div
                         key={video.id}
-                        onClick={() => setSelectedVideo(video)}
-                        className={`relative rounded-2xl overflow-hidden group border border-white/10 bg-zinc-900 cursor-pointer ${video.className}`}
+                        // Only open modal if it's a local video. Iframes work directly in the grid.
+                        onClick={() => !video.embed && setSelectedVideo(video)}
+                        className={`relative rounded-2xl overflow-hidden group border border-white/10 bg-zinc-900 ${
+                            !video.embed ? "cursor-pointer" : ""
+                        } ${video.className}`}
                     >
-                        <video
-                            src={video.src}
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
-                        />
-                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                            <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30">
-                                <Play className="w-6 h-6 text-white fill-current" />
-                            </div>
-                        </div>
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                            <h3 className="text-xl font-bold">{video.title}</h3>
-                            <p className="text-sm text-gray-400 font-mono">{video.category}</p>
-                        </div>
+                        {/* LOGIC: If it's an Embed, show Iframe. If not, show Video Player */}
+                        {video.embed ? (
+                            <div
+                                className="w-full h-full [&>iframe]:w-full [&>iframe]:h-full"
+                                dangerouslySetInnerHTML={{ __html: video.embed }}
+                            />
+                        ) : (
+                            <>
+                                <video
+                                    src={video.src}
+                                    autoPlay
+                                    muted
+                                    loop
+                                    playsInline
+                                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+                                />
+                                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                                    <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30">
+                                        <Play className="w-6 h-6 text-white fill-current" />
+                                    </div>
+                                </div>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                                    <h3 className="text-xl font-bold">{video.title}</h3>
+                                    <p className="text-sm text-gray-400 font-mono">{video.category}</p>
+                                </div>
+                            </>
+                        )}
                     </div>
                 ))}
             </div>
 
+            {/* FULLSCREEN VIDEO MODAL (Only for local videos) */}
             {selectedVideo && (
                 <div
                     className="fixed inset-0 z-[250] bg-black/95 backdrop-blur-md flex items-center justify-center p-4 animate-fade-in"
