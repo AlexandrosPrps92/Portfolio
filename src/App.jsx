@@ -963,25 +963,25 @@ const GALLERY_ITEMS = [
         className: "md:col-span-1 md:row-span-1"
     },
     {
-        id: 13,
-        title: "Typography Layout",
+        id: 17,
+        title: "filming ",
         description: "Editorial Design System",
-        image: "/video/gallery13.mp4",
-        className: "md:col-span-2 md:row-span-1"
+        image: "/videos/gallery13.mp4",
+        className: "md:col-span-1 md:row-span-1"
     },
     {
         id: 15,
         title: "Typography Layout",
         description: "Editorial Design System",
         image: "/images/gallery14.jpg",
-        className: "md:col-span-2 md:row-span-1"
+        className: "md:col-span-1 md:row-span-1"
     },
     {
         id: 14,
         title: "Typography Layout",
         description: "Editorial Design System",
         image: "/images/gallery3.jpeg",
-        className: "md:col-span-2 md:row-span-1"
+        className: "md:col-span-1 md:row-span-1"
     },
     {
         id: 10,
@@ -1002,7 +1002,7 @@ const GALLERY_ITEMS = [
         title: "Typography Layout",
         description: "Editorial Design System",
         image: "/images/gallery6.jpg",
-        className: "md:col-span-2 md:row-span-1"
+        className: "md:col-span-1 md:row-span-1"
     },
     {
         id: 13,
