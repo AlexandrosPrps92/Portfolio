@@ -98,7 +98,7 @@ const PROJECTS = [
                 title: "LinkedIn Feature",
                 category: "Embedded Post",
                 // The Iframe code:
-                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7265340802833203200?collapsed=1" height="755" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7265340802833203200?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
                 className: "md:col-span-1 md:row-span-2" // Taller for vertical posts
             },
         ]
