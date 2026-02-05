@@ -3,7 +3,7 @@ import {
     ArrowUpRight, Mail, Github, Linkedin, Figma,
     Layers, Layout, Smartphone, Code, MoveRight,
     Palette, X, CheckCircle2, Image as ImageIcon, Play,
-    ChevronLeft, ChevronRight, Instagram, Menu, ExternalLink // <--- ADDED ExternalLink
+    ChevronLeft, ChevronRight, Instagram, Menu, ExternalLink
 } from 'lucide-react';
 
 // --- DATA ---
@@ -51,7 +51,28 @@ const PROJECTS = [
                     id: "v13",
                     title: "LinkedIn Feature",
                     category: "Embedded Post",
-                    embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7384532942305390592?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                    embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7384532942305390592?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                    className: "md:col-span-1 md:row-span-2"
+                },
+                {
+                    id: "v18_li",
+                    title: "LinkedIn Feature",
+                    category: "Embedded Post",
+                    embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7341393050612432896?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                    className: "md:col-span-1 md:row-span-2"
+                },
+                {
+                    id: "v17",
+                    title: "LinkedIn Feature",
+                    category: "Embedded Post",
+                    embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7423026631017119744?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+                    className: "md:col-span-1 md:row-span-2"
+                },
+                {
+                    id: "v10_b",
+                    title: "LinkedIn Feature",
+                    category: "Embedded Post",
+                    embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7419691159813390337?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
                     className: "md:col-span-1 md:row-span-2"
                 },
             ]
@@ -149,22 +170,29 @@ const PROJECTS = [
                 className: "md:col-span-1 md:row-span-2"
             },
 
-            // --- UPDATED TIKTOK ENTRY (v15) ---
+            // --- TIKTOK UPDATES ---
             {
                 id: "v15",
                 title: "TikTok Feature",
                 category: "Energy Job Search",
                 src: "https://www.tiktok.com/@energyjobsearch_ltd/video/7554335956447399201",
-                type: "tiktok", // Used to trigger the special card
+                type: "tiktok",
                 className: "md:col-span-1 md:row-span-2"
             },
-            // --- UPDATED TIKTOK ENTRY (v19) ---
+            {
+                id: "v18",
+                title: "TikTok Feature",
+                category: "Energy Job Search",
+                src: "https://www.tiktok.com/@energyjobsearch_ltd/video/7542789142111915296",
+                type: "tiktok",
+                className: "md:col-span-1 md:row-span-2"
+            },
             {
                 id: "v19",
                 title: "AI Career Coach",
                 category: "Energy Job Search",
                 src: "https://www.tiktok.com/@energyjobsearch_ltd/video/7527290399510023456",
-                type: "tiktok", // Used to trigger the special card
+                type: "tiktok",
                 className: "md:col-span-1 md:row-span-2"
             },
         ]
