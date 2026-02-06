@@ -393,8 +393,8 @@ const PROJECTS = [
             },
             {
                 id: "a3",
-                title: "DXB Square",
-                category: "Social Media",
+                title: "Dubai awareness campaign",
+                category: "Google perfomance ads",
                 src: "/videos/DXB_Square.mp4",
                 className: "md:col-span-2 md:row-span-1"
             },
@@ -421,22 +421,22 @@ const PROJECTS = [
             },
             {
                 id: "a7",
-                title: "Mobile Responsiveness",
-                category: "Social Media",
+                title: "Covid-19 awareness campaign for OA",
+                category: "Social Media Channels",
                 src: "/videos/mainYT_OA.mp4",
                 className: "md:col-span-2 md:row-span-1"
             },
             {
                 id: "a8",
-                title: "New Year A3",
-                category: "Social Media",
+                title: "New Year A3 post",
+                category: "Social Media post",
                 src: "/videos/NewYear_A3.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a9",
-                title: "New Year OA",
-                category: "Social Media",
+                title: "New Year OA post",
+                category: "Social Media post",
                 src: "/videos/NewYear_OA.mp4",
                 className: "md:col-span-2 md:row-span-1"
             },
@@ -457,32 +457,25 @@ const PROJECTS = [
             {
                 id: "a12",
                 title: "Genairation",
-                category: "Social Media",
+                category: "Social Media post ad",
                 src: "/videos/TikTok_Gen.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "a13",
                 title: "TikTok Video 1",
-                category: "Social Media",
+                category: "Social Media post ad",
                 src: "/videos/Video_Tik_tok_250822.mp4",
                 className: "md:col-span-2 md:row-span-1"
             },
             {
                 id: "a14",
-                title: "TikTok Video 2",
-                category: "Social Media",
+                title: "TikTok Video 2 offer ad",
+                category: "Social Media post ad",
                 src: "/videos/Tik_Tok_080922.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
-            {
-                id: "v19",
-                title: "AI Career Coach",
-                category: "Energy Job Search",
-                src: "https://www.tiktok.com/@energyjobsearch_ltd/video/7527290399510023456",
-                type: "tiktok",
-                className: "md:col-span-2 md:row-span-2"
-            },
+
         ]
     },
     {
@@ -492,11 +485,11 @@ const PROJECTS = [
         type: "Academic",
         year: "2022-2025",
         role: "Student",
-        description: "A comprehensive exploration of digital media, ranging from 3D interactive environments to web development and game design ethics.",
-        challenge: "To master a diverse set of digital tools while maintaining critical academic rigor across multiple disciplines.",
-        solution: "Delivered distinct high-fidelity projects for each module, utilizing WebGL for 3D, React for web, and Unreal Engine for game design.",
+        description: "A comprehensive exploration of digital media, specifically focusing on immersive 3D world-building and backend web architecture.",
+        challenge: "The primary challenge was the steep learning curve required to master professional 3D pipelines. I had to rapidly gain proficiency in 3D modeling (Blender, Autodesk Maya) and then breathe life into those assets using C# scripting in the Unity Game Engine—effectively bridging the gap between artistic asset creation and functional game logic.",
+        solution: "My studies centered on constructing distinct, interactive 3D worlds tailored to specific academic briefs. Parallel to game design, I established a solid technical foundation in server-side coding and database management, developing applications using PHP and the Fat-Free Framework within JetBrains PhpStorm.",
         results: [
-            "Graded Distinction (A)",
+            "Graded (B) with Merit",
             "Integrated 3D view with <2s load time",
             "Responsive across all devices"
         ],
