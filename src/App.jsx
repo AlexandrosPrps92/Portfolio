@@ -18,13 +18,13 @@ const PROJECTS = [
         role: "Digital Designer",
         description: "Spearheaded the modernization of legacy advertising assets and established data-validated creative guidelines.",
         challenge: "The company relied on legacy visual assets that were performing poorly in generic brand awareness campaigns. There was no standardized system for creating new ads, leading to inconsistent branding and unmeasured effectiveness.",
-        solution: "I introduced a 'Data-First' creative workflow. Instead of guessing, I executed structured A/B testing across three pillars: Text Hierarchy, Composition, and Aesthetics. I also implemented the Celtra tool for Meta automation to scale asset production.",
+        solution: "I introduced a 'Data-First' creative workflow. Instead of guessing, I executed structured A/B testing across three pillars: Text Hierarchy, Composition, and Aesthetics. I also pioneered in the group's first AI video production tool for B2B and B2C social media, enhancing content quality and minimizing production time to 40% of previous levels.",
         results: [
             "Redesigned all legacy brand creatives and expanded assets for audience segmentation.",
             "Part of the success of Google Case study and best practice for 2025, +155% conversion rates for jobseekers, -49% cost per application (CPA).",
             "Our team won Gold & Silver at Peak Awards 2025: Best Performance in Employment (AI-Driven Lead Gen) & Best Use of Data."
         ],
-        tags: ["Figma", "Adobe CC", "Zoho Analytics", "Wordpress", "Heygen"],
+        tags: ["Figma", "Adobe CC", "Zoho Analytics", "Wordpress", "Heygen","Canva"],
         image: "/images/award_ceremony.jpg",
         color: "from-blue-600 to-cyan-400",
         bentoData: {
@@ -98,7 +98,7 @@ const PROJECTS = [
             {
                 id: "art1",
                 title: "Energyjobsearch.com Blog",
-                description: "Insights and articles on career development and digital trends.",
+                description: "Introduced the blog for Energyjobsearch.com and took part in the build of the articles visually and navigating experience.",
                 url: "https://blog.energyjobsearch.com/",
                 domain: "energyjobsearch.com",
                 image: "/images/hero_ejs_blog.jpg"
@@ -108,111 +108,111 @@ const PROJECTS = [
         videos: [
             {
                 id: "v1",
-                title: "Heygen launch",
-                category: "Social Media",
+                title: "Energyjobsearch ltd. Ai career coach",
+                category: "Generated with HeyGen",
                 src: "/videos/Alex__Update your profile__vertical.mp4",
                 className: "md:col-span-2 md:row-span-2"
             },
             {
                 id: "v2",
-                title: "Animated creative",
-                category: "Brand Awareness",
+                title: "Animated creative for Product feature launch",
+                category: "Meta and Google ads",
                 src: "/videos/1920x1080_idea1.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "v3",
-                title: "Heygen use",
+                title: "Energyjobsearch ltd. Ai career coach",
                 category: "Instagram,TikTok",
                 src: "/videos/Alex__For you page__Vertical.mp4",
                 className: "md:col-span-2 md:row-span-1"
             },
             {
                 id: "v4",
-                title: "Kinetic typography",
-                category: "Instagram, TikTok",
+                title: "Creative assets for new product launches and special offers",
+                category: "Kinetic typography for Meta and Google ads",
                 src: "/videos/1080x1080_video_generic.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "v5",
-                title: "Kinetic typography",
-                category: "Instagram, TikTok, Meta",
+                title: "Creative assets for new product launches and special offers",
+                category: "Kinetic typography for Meta and Google ads",
                 src: "/videos/1080x1080_video_premium.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "v6",
-                title: "Kinetic typography",
-                category: "Instagram, TikTok, Meta",
+                title: "Creative assets for new product launches and special offers.",
+                category: "Kinetic typography for Meta and Google ads",
                 src: "/videos/1080x1080_video_standard.mp4",
                 className: "md:col-span-2 md:row-span-1"
             },
             {
                 id: "v21",
-                title: "Kinetic typography",
-                category: "Instagram, TikTok, Meta",
+                title: "Developed new creative assets to enhance audience segmentation.",
+                category: "Meta and Google ads",
                 src: "/videos/1080x1080_IN_ENGI.mp4",
                 className: "md:col-span-1 md:row-span-1"
             },
             {
                 id: "v22",
-                title: "Kinetic typography",
-                category: "Instagram, TikTok, Meta",
+                title: "Developed new creative assets to enhance audience segmentation.",
+                category: "Meta and Google ads",
                 src: "/videos/1080x1080_Proj_Man.mp4",
                 className: "md:col-span-2 md:row-span-1"
             },
 
             {
                 id: "v7",
-                title: "LinkedIn Feature",
-                category: "Embedded Post",
+                title: "After Effects Kinetic Typography for Webinar Promos",
+                category: "Linkedin Post",
                 embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7265340802833203200?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                className: "md:col-span-1 md:row-span-2"
+                className: "md:col-span-2 md:row-span-2"
             },
             {
                 id: "v8",
-                title: "LinkedIn Feature",
-                category: "Embedded Post",
+                title: "After Effects Kinetic Typography for Webinar Promos",
+                category: "Linkedin Post",
                 embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7257001356798955520?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
                 className: "md:col-span-1 md:row-span-2"
             },
             {
                 id: "v12",
-                title: "LinkedIn Feature",
-                category: "Embedded Post",
+                title: "Kinetic Typography for Events Promos in Canva",
+                category: "Linkedin Post",
                 embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7421886115663515648?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
                 className: "md:col-span-1 md:row-span-2"
             },
             {
                 id: "v14",
-                title: "LinkedIn Feature",
-                category: "Embedded Post",
+                title: "After Effects Kinetic Typography for Webinar Promos",
+                category: "Linkedin Post",
                 embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7254503009626324993?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                className: "md:col-span-1 md:row-span-2"
+                className: "md:col-span-2 md:row-span-2"
             },
 
             // --- TIKTOK UPDATES ---
             {
                 id: "v15",
-                title: "TikTok Feature",
-                category: "Energy Job Search",
+                title: "TikTok post created with Heygen",
+                category: "Energy Job Search Tik Tok",
                 src: "https://www.tiktok.com/@energyjobsearch_ltd/video/7554335956447399201",
                 type: "tiktok",
                 className: "md:col-span-1 md:row-span-2"
             },
             {
                 id: "v18",
-                title: "TikTok Feature",
-                category: "Energy Job Search",
+                title: "TikTok post created with Heygen",
+                category: "Energy Job Search Tik Tok",
                 src: "https://www.tiktok.com/@energyjobsearch_ltd/video/7542789142111915296",
                 type: "tiktok",
                 className: "md:col-span-1 md:row-span-2"
             },
             {
                 id: "v19",
-                title: "AI Career Coach",
-                category: "Energy Job Search",
+                title: "TikTok post created with Heygen",
+                category: "Energy Job Search Tik Tok",
                 src: "https://www.tiktok.com/@energyjobsearch_ltd/video/7527290399510023456",
                 type: "tiktok",
                 className: "md:col-span-2 md:row-span-2"
@@ -226,13 +226,14 @@ const PROJECTS = [
         type: "Professional",
         year: "2019-2024",
         role: "Digital Designer",
-        description: "Dark-mode analytics dashboard for a SaaS platform. Features real-time data graphing and modular widgets.",
-        challenge: "AEGEAN needed a robust internal tool to visualize complex flight data. The existing spreadsheets were difficult to read and slowed down decision-making processes.",
-        solution: "Designed a high-contrast dark mode interface that prioritized data legibility. Created a modular widget system allowing users to customize their view based on their specific role.",
+        description: "Managed the end-to-end creative production for AEGEAN, Olympic Air, and Hertz. My daily scope involved designing high-volume assets for email marketing (offers, news, product launches) and adapting them for social media, native ads, and performance campaigns (Google/Meta) in static, video, or animated formats based on budget allocations.",
+        challenge: "The role required maintaining strict brand consistency across a massive ecosystem of digital and physical touchpoints. This included coordinating with external partners for co-branded offers and updating digital signage for airport offices across Greece and international destinations.",
+        solution: "I integrated into the core product teams, participating in focus groups for the new AEGEAN App, In-flight Wi-Fi, and the company-wide Rebrand. I expanded my role by joining backstage photoshoots and filming events to gain holistic content insight. Additionally, I designed and launched the very first Social Media Sticker packs for both airlines to boost organic engagement.",
         results: [
-            "Updated most of AEGEAN'S digital and some physical touchpoints with the new rebranded logo and tagline",
-            "Designed the first animated stickers for social media use",
-            "Multiple Company profit records in sales via email campaigns"
+            "Updated most of AEGEAN'S digital and physical touchpoints with the new rebranded logo and tagline.",
+            "Designed creatives for new product launches and promotional offers.",
+            "Designed the first animated stickers for social media use.",
+            "Contributed to multiple company profit records via sales email campaigns."
         ],
         tags: ["Email Marketing", "Social Media", "UI Design", "Branding"],
         image: "/images/HEADER_A3.jpg",
@@ -1189,8 +1190,7 @@ const Hero = () => {
                         THAT MATTER.
                     </h1>
                     <p className="text-xl text-gray-400 max-w-2xl leading-relaxed mb-12">
-                        I craft user-centric interfaces and digital products for forward-thinking brands.
-                        Blending aesthetics with functionality to solve complex problems.
+                        A multidisciplinary designer merging video editing, UI, and AI creation to build engaging digital touchpoints. I contribute to evolving products and campaigns, bridging the gap between creative vision and technical development.
                     </p>
 
                     <div className="flex flex-wrap gap-4">
@@ -1336,7 +1336,7 @@ const Playground = () => {
             <div className="container mx-auto px-6">
                 <div className="mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Playground</h2>
-                    <p className="text-gray-400 max-w-md">Experiments, 3D renders, and miscellaneous creative explorations.</p>
+                    <p className="text-gray-400 max-w-md">Experiments, backstage, and miscellaneous creative explorations.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[250px]">
@@ -1421,7 +1421,7 @@ const About = () => {
                             I believe that great design is invisible. It's about removing friction and creating pathways that users intuitively follow.
                         </p>
                         <p>
-                            With a background in both graphic design and frontend development, I speak the language of both teams. I don't just hand off static mockups; I consider the responsiveness, interaction states, and feasibility of every element.
+                            With a background in both graphic and digital design, I speak the language of fields. I don't just hand off static mockups; I consider the responsiveness, interaction states, and feasibility of every element.
                         </p>
                     </div>
 
