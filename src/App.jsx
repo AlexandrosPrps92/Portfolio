@@ -1429,7 +1429,7 @@ const About = () => {
                             I believe that great design is invisible. It's about removing friction and creating pathways that users intuitively follow.
                         </p>
                         <p>
-                            With a background in both graphic and digital design, I speak the language of fields. I don't just hand off static mockups; I consider the responsiveness, interaction states, and feasibility of every element.
+                            With a background in both graphic and digital design, I speak the language of both fields. I don't just hand over static mockups; I consider the responsiveness, interaction states, and feasibility of every element.
                         </p>
                     </div>
 
