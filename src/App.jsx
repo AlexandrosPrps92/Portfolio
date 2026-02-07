@@ -490,8 +490,9 @@ const PROJECTS = [
         solution: "My studies centered on constructing distinct, interactive 3D worlds tailored to specific academic briefs. Parallel to game design, I established a solid technical foundation in server-side coding and database management, developing applications using PHP and the Fat-Free Framework within JetBrains PhpStorm.",
         results: [
             "Graded (B) with Merit",
-            "Integrated 3D view with <2s load time",
-            "Responsive across all devices"
+            "Extensive learn of 3d building and implementing interactivity",
+            "Learned PHP coding, Database use and collaboration within a team group project",
+            "Extensive research in Media ethics in Youth and employment bridging the skill gap needed"
         ],
         tags: ["3D Design", "Web Design", "Game Design", "Media Ethics"],
         image: "/images/edin_home.jpg",
@@ -499,8 +500,8 @@ const PROJECTS = [
         courses: [
             {
                 id: "c1",
-                title: "Final Project: Podcast Remediation Game",
-                description: "Remediation of a humorous motorsport podcast into a racing game.",
+                title: "Final Project: Remediation of a Youtube podcast into an arcade style racing game",
+                description: "Explored media remediation by transforming a humorous F1 YouTube podcast into an arcade kart racer inspired by 'Crash Team Racing' and 'Mario Kart'. I handled the full development pipeline: from 3D modeling in Autodesk Maya to programming complex vehicle physics, enemy AI, and UI systems using C#. The project successfully gamified the podcast's conversational energy through boosters, interactive feedback, and strategic mechanics, delivering a polished playable prototype within strict academic deadlines.",
                 bentoData: {
                     hero: "/images/final1.jpg",
                     metric: "B",
@@ -534,7 +535,7 @@ const PROJECTS = [
             {
                 id: "c2",
                 title: "Course 1: Design for Interactive Media",
-                description: "Building responsive, data-driven web applications.",
+                description: "Designed an interactive imaginary film and audio projector with a Steampunk/Victorian aesthetic as requested by the course brief, translating an AI-generated concept into a functional 3D asset. The workflow involved precise modeling in Autodesk Maya (extruding, cutting, and joining primary shapes), texturing, and animating mechanical elements. These assets were exported to Unity, where I programmed the user interactions, camera movements, and a period-accurate Victorian UI menu.",
                 bentoData: {
                     hero: "/images/in_game.jpg",
                     metric: "B",
@@ -576,13 +577,17 @@ const PROJECTS = [
             {
                 id: "c3",
                 title: "Course 2: Game Design Studio",
-                description: "Creating immersive spaces using Blender and Unity.",
+                description: "Visualized the Native American Chippewa fairytale 'The White Stone Canoe' as an atmospheric 3D game. The narrative follows a protagonist's journey from a harsh snowy landscape through dense forests to the land of the dead to save his bride. Players solve environmental puzzles to locate a shaman's cabin, leading to an ambiguous ending questioning the reality of the quest. I researched and modeled botanically accurate North American flora in Autodesk Maya and implemented the environment interactions and game logic using C# in Unity.",
                 bentoData: {
                     hero: "/images/game_design.jpg",
                     metric: "B",
                     metricLabel: "Grade",
                     subMetric: "3D Design",
                     variations: [
+                        "/images/game4.jpg",
+                        "/images/game5.jpg",
+                        "/images/game6.jpg",
+                        "/images/game7.jpg",
                         "/images/game2.jpg",
                         "/images/game3.jpg"
                     ]
@@ -599,8 +604,8 @@ const PROJECTS = [
             },
             {
                 id: "c4",
-                title: "Course 3: Digital Playgrounds",
-                description: "Narrative structure and level design mechanics.",
+                title: "Course 3: Digital Playgrounds for the online audience",
+                description: "Reimagined my hometown of Athens as a layered cyberpunk dystopia, visually bridging Ancient Greece and the Industrial Revolution with a high-tech future. This project marked my initiation into 3D modeling (Blender) and the Unity engine, where I integrated personal photography to texture the architectural assets. As a first foray into C#, the interaction was scoped to an atmospheric narrative walkthrough, establishing the environmental storytelling skills I developed further in later courses.",
                 bentoData: {
                     hero: "/images/play_hero.jpg",
                     metric: "B-",
