@@ -490,7 +490,7 @@ const PROJECTS = [
         solution: "My studies centered on constructing distinct, interactive 3D worlds tailored to specific academic briefs. Parallel to game design, I established a solid technical foundation in server-side coding and database management, developing applications using PHP and the Fat-Free Framework within JetBrains PhpStorm.",
         results: [
             "Graded (B) with Merit",
-            "Extensive learn of 3d building and implementing interactivity",
+            "Extensive learning of 3d building and implementing interactivity",
             "Learned PHP coding, Database use and collaboration within a team group project",
             "Extensive research in Media ethics in Youth and employment bridging the skill gap needed"
         ],
