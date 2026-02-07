@@ -798,9 +798,9 @@ const PROJECTS = [
                 description: "Challenging Tesla's 'no-advertising' strategy, I developed three distinct multi-media campaigns to highlight their competitive edge. 1) 'High Contrast': Utilized the logo's red against a black-and-white palette to semiologically emphasize EV benefits like acceleration, zero emissions, and HEPA air filtration. 2) 'Space Exploration': Inspired by the SpaceX Mars launch, I created a 'Tesla Universe' narrative with a Star Trek-esque sci-fi aesthetic. 3) 'Arcade Mode': Used retro gaming visuals to contrast technological eras, featuring the Tesla logo as a playable character defeating obsolete petrol technology.",
                 bentoData: {
                     hero: "/images/black2.jpg",
-                    metric: "B",
-                    metricLabel: "Grade",
-                    subMetric: "Maya & Unity",
+                    metric: "80",
+                    metricLabel: "Grade B",
+                    subMetric: "Adobe CC ",
                     variations: [
                         "/images/black4.jpg",
                         "/images/black2.jpg",
@@ -817,32 +817,32 @@ const PROJECTS = [
                 videos: [
                     {
                         id: "v_int1",
-                        title: "Game Walkthrough",
-                        category: "Unity Gameplay",
+                        title: "Black and red campaign",
+                        category: "Adobe CC",
                         src: "/videos/black.mp4",
-                        className: "md:col-span-2 md:row-span-2"
+                        className: "md:col-span-3 md:row-span-2"
                     },
                     {
                         id: "v_int2",
-                        title: "Game Walkthrough",
-                        category: "Unity Gameplay",
+                        title: "Space campaign",
+                        category: "Adobe CC",
                         src: "/videos/space.mp4",
                         className: "md:col-span-2 md:row-span-2"
                     },
                     {
                         id: "v_int3",
-                        title: "Game Walkthrough",
-                        category: "Unity Gameplay",
+                        title: "Arcade campaign",
+                        category: "Adobe CC",
                         src: "/videos/arcade.mp4",
-                        className: "md:col-span-2 md:row-span-2"
+                        className: "md:col-span-1 md:row-span-2"
                     },
                 ]
             },
 
             {
                 id: "c2",
-                title: "Course 1: Editorial design of a magazine",
-                description: "Building responsive, data-driven web applications.",
+                title: "Course 1: Editorial Design & Magazine Identity",
+                description: "Tasked with creating a magazine brand from scratch, I focused on the Hip Hop industry featuring the group Migos. I designed a custom logo in Adobe Illustrator and developed a bold visual identity by stylizing photography with vibrant, single-color overlays against a stark black background. The project was highly praised by the faculty and selected for feature on the college's official social media channels.",
                 bentoData: {
                     hero: "/images/reference.jpg",
                     metric: "B",
