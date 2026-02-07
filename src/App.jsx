@@ -508,6 +508,9 @@ const PROJECTS = [
                     metricLabel: "Grade",
                     subMetric: "Maya & Unity",
                     variations: [
+                        "/images/final16.jpg",
+                        "/images/final15.jpg",
+                        "/images/final14.jpg",
                         "/images/final2.jpg",
                         "/images/final3.jpg",
                         "/images/final4.jpg",
@@ -636,12 +639,14 @@ const PROJECTS = [
         type: "Freelance",
         year: "2016-2019",
         role: "Graphic Designer",
-        description: "Brand guidelines, typography system, and logo design for a modern audio streaming startup.",
-        challenge: "The startup needed a visual identity that stood out in a crowded market dominated by giants like Spotify.",
-        solution: "Developed a bold, typography-led identity system using neon accents and brutalist layouts.",
+        description: "Engaged with a diverse client base ranging from the tourism sector to the music industry. I crafted visual identities and logos for multiple businesses and music groups, extending these identities into motion through static and animated album covers and video editing.",
+        // UPDATED CHALLENGE:
+        challenge: "To adapt to distinct industry needs—from the corporate requirements of tourism businesses to the artistic expression demanded by music groups—while establishing my professional foundation in brand identity and motion graphics.",
+        // UPDATED SOLUTION:
+        solution: "Delivered tailored logo designs for three tourism businesses and two music collectives. For the musical acts, I expanded the scope to include video editing and animated cover art, marking my first professional steps in combining graphic design with animation.",
         results: [
-            "Launched across 3 major streaming platforms",
-            "Consistent branding across web and mobile",
+            "5 logo designs for clients",
+            "Video Animation and editing for 3 music groups",
             "Positive user feedback on visual identity"
         ],
         tags: ["Branding", "Identity", "Video Editing"],
@@ -651,7 +656,7 @@ const PROJECTS = [
             {
                 id: "f_khora",
                 title: "Client: Khora",
-                description: "Brand identity and logo design for Khora.",
+                description: "Brand identity and logo design for Khora Mykonos.",
                 bentoData: {
                     hero: "/images/khora.jpg",
                     metric: "Brand",
@@ -668,11 +673,11 @@ const PROJECTS = [
             {
                 id: "f_aya",
                 title: "Client: Aya Sofia",
-                description: "Visual identity and social media assets.",
+                description: "Visual identity and signage design",
                 bentoData: {
                     hero: "/images/AYA_SOFIA.jpg",
-                    metric: "Social",
-                    metricLabel: "Visual Assets",
+                    metric: "Brand",
+                    metricLabel: "Identity system",
                     subMetric: "Graphic Design",
                     variations: [
                         "/images/preview_aya_sofia-01.jpg",
@@ -687,7 +692,7 @@ const PROJECTS = [
                 description: "Visual identity and social media assets.",
                 bentoData: {
                     hero:  "/images/GST_social.jpg",
-                    metric: "Social",
+                    metric: "Brand",
                     metricLabel: "Visual Assets",
                     subMetric: "Graphic Design",
                     variations: [
@@ -748,7 +753,7 @@ const PROJECTS = [
                     },
                     {
                         id: "f2",
-                        title: "Youtube Feature",
+                        title: "Youtube covers",
                         category: "Embedded Post",
                         embed: `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?si=WyYGssk8WaSLG1ul&amp;list=PLKlubVxCs3I5UdoJRvUzh2elMD1kR80iP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
                         className: "md:col-span-2 md:row-span-2"
