@@ -860,13 +860,13 @@ const PROJECTS = [
 
             {
                 id: "c4",
-                title: "Course 3: visualize a fairytale of Calvino imaginary cities",
-                description: "Narrative structure and level design mechanics.",
+                title: "Course 3: Visualizing Calvino's 'Invisible Cities'",
+                description: "Collaborated on a multimedia group project interpreting Italo Calvino's 'Invisible Cities'. We selected the city of Ersilia—a settlement defined by threads representing human relationships that get dismantled and moved once the connections become too dense. The deliverables included a comprehensive brand identity (logo, poster), a motion graphic visualization, and a physical installation showcased at the college exhibition to represent the city's ephemeral, string-based architecture.",
                 bentoData: {
                     hero: "/images/Ersilia.jpg",
                     metric: "B-",
                     metricLabel: "Grade",
-                    subMetric: "Game Dev",
+                    subMetric: "Story visualizing",
                     variations: [
                         "/images/ersilialogo.jpg",
                         "/images/ersilialogo1.jpg",
@@ -876,7 +876,7 @@ const PROJECTS = [
                 videos: [
                     {
                         id: "v_game1",
-                        title: "Gameplay Demo",
+                        title: "Storytelling visualize",
                         category: "Unity",
                         src: "/videos/ersilia1.mp4",
                         className: "md:col-span-2 md:row-span-1"
@@ -885,13 +885,13 @@ const PROJECTS = [
             },
             {
                 id: "c3",
-                title: "Course 2: Branding",
-                description: "Hypothetical rebrand of a logo and applications of it of our own selection.",
+                title: "Course 2: Sports Branding Re-imagined",
+                description: "Selected my hometown's football club for a comprehensive rebrand exercise. The goal was to modernize a legacy logo that had remained stagnant for decades while retaining its heritage. I developed a contemporary visual identity system and applied it across various physical touchpoints, including corporate stationery and a full redesign of the official football kit.",
                 bentoData: {
                     hero: "/images/branding.jpg",
-                    metric: "B",
+                    metric: "C+",
                     metricLabel: "Grade",
-                    subMetric: "3D Design",
+                    subMetric: "Branding Design",
                     variations: [
                         "/images/branding2.jpg",
                         "/images/branding3.jpg",
@@ -901,13 +901,13 @@ const PROJECTS = [
             },
             {
                 id: "c3",
-                title: "Course 2: Sum of courses and voluntary work for businesses",
-                description: "Hypothetical rebrand of a logo and applications of it of our own selection.",
+                title: "Voluntary Work & Composition Studies",
+                description: "A curated selection of miscellaneous coursework exploring advanced composition theories and visual hierarchy. A standout project in this collection is a promotional video campaign developed pro-bono for 'Akoustirixi', a non-profit organization supporting the hearing-impaired community, where I applied motion design principles to drive social impact.",
                 bentoData: {
                     hero: "/images/fiat.jpg",
                     metric: "B",
                     metricLabel: "Grade",
-                    subMetric: "3D Design",
+                    subMetric: "Composition Design",
                     variations: [
                         "/images/fear.jpg",
                         "/images/trata.jpg",
@@ -916,8 +916,8 @@ const PROJECTS = [
                 videos: [
                     {
                         id: "v_game1",
-                        title: "Gameplay Demo",
-                        category: "Unity",
+                        title: "Support campaign ",
+                        category: "After Effects",
                         src: "/videos/akoustirixi.mp4",
                         className: "md:col-span-2 md:row-span-1"
                     }
