@@ -646,7 +646,7 @@ const PROJECTS = [
         solution: "Delivered tailored logo designs for three tourism businesses and two music collectives. For the musical acts, I expanded the scope to include video editing and animated cover art, marking my first professional steps in combining graphic design with animation.",
         results: [
             "5 logo designs for clients",
-            "Video Animation and editing for 3 music groups",
+            "Video Animation and editing for two music groups",
             "Positive user feedback on visual identity"
         ],
         tags: ["Branding", "Identity", "Video Editing"],
@@ -777,22 +777,25 @@ const PROJECTS = [
         type: "Academic",
         year: "2015-2018",
         role: "Student",
-        description: "A comprehensive exploration of digital media, ranging from 3D interactive environments to web development and game design ethics.",
-        challenge: "To master a diverse set of digital tools while maintaining critical academic rigor across multiple disciplines.",
-        solution: "Delivered distinct high-fidelity projects for each module, utilizing WebGL for 3D, React for web, and Unreal Engine for game design.",
+        // UPDATED DESCRIPTION:
+        description: "A comprehensive study of graphic design fundamentals, spanning typography, composition, color theory, and art history. The curriculum extended into digital media, introducing animation, HTML/CSS, and collaborative project workflows.",
+        // UPDATED CHALLENGE:
+        challenge: "To transition from static design foundations to dynamic media. My dissertation focused on Brand Building, requiring me to conceptualize and execute a cohesive advertising strategy for a major entity—Tesla—across diverse media formats.",
+        // UPDATED SOLUTION:
+        solution: "I designed three distinct brand campaigns for Tesla, producing both high-fidelity print advertisements and video commercials. The 'Black and Red' campaign was highly praised for its visual impact. This capstone project was pivotal, as it solidified my passion for advertising, motion graphics, and video editing.",
         results: [
-            "Graded Distinction (A)",
-            "Integrated 3D view with <2s load time",
-            "Responsive across all devices"
+            "BA(Hons) Award in graphic design",
+            "Highly praised 'Black & Red' aesthetic campaign",
+            "Discovered core passion for Motion Design & Video Editing"
         ],
-        tags: ["3D Design", "Web Design", "Game Design", "Media Ethics"],
+        tags: ["Typography", "Animation", "Brand Building", "Video Editing"],
         image: "/images/Hero_akto.jpg",
         color: "from-green-500 to-emerald-400",
         courses: [
             {
                 id: "c1",
-                title: "Final Project: Brand building as a case study of Tesla and suggested brand campaigns",
-                description: "Remediation of a humorous motorsport podcast into a racing game.",
+                title: "Final Project: Tesla Brand Building & Campaign Strategy",
+                description: "Challenging Tesla's 'no-advertising' strategy, I developed three distinct multi-media campaigns to highlight their competitive edge. 1) 'High Contrast': Utilized the logo's red against a black-and-white palette to semiologically emphasize EV benefits like acceleration, zero emissions, and HEPA air filtration. 2) 'Space Exploration': Inspired by the SpaceX Mars launch, I created a 'Tesla Universe' narrative with a Star Trek-esque sci-fi aesthetic. 3) 'Arcade Mode': Used retro gaming visuals to contrast technological eras, featuring the Tesla logo as a playable character defeating obsolete petrol technology.",
                 bentoData: {
                     hero: "/images/black2.jpg",
                     metric: "B",
