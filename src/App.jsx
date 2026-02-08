@@ -99,6 +99,7 @@ const PROJECTS = [
         },
 
         // --- ARTICLES SECTION ---
+        // --- ARTICLES SECTION ---
         articles: [
             {
                 id: "art1",
@@ -1536,20 +1537,21 @@ const ProjectArticleGrid = ({ articles }) => {
                             />
                         </div>
 
-                        {/* Article Content */}
-                        <div className="flex-grow flex flex-col justify-center">
+                        {/* Article Content - Added min-w-0 to prevent overflow */}
+                        <div className="flex-grow flex flex-col justify-center min-w-0">
                             <div className="flex items-center gap-2 text-xs font-mono text-blue-400 mb-2">
-                                <FileText className="w-3 h-3" />
-                                <span className="uppercase tracking-wider">{article.domain}</span>
+                                <FileText className="w-3 h-3 flex-shrink-0" />
+                                <span className="uppercase tracking-wider truncate">{article.domain}</span>
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors truncate">
                                 {article.title}
                             </h3>
-                            <p className="text-sm text-gray-400 line-clamp-2">
+                            {/* Added break-words to ensure wrapping */}
+                            <p className="text-sm text-gray-400 line-clamp-3 md:line-clamp-2 break-words">
                                 {article.description}
                             </p>
                             <div className="mt-4 flex items-center gap-2 text-xs font-bold text-white group-hover:translate-x-2 transition-transform">
-                                Read Article <ExternalLink className="w-3 h-3" />
+                                Read Article <ExternalLink className="w-3 h-3 flex-shrink-0" />
                             </div>
                         </div>
                     </a>
@@ -1558,7 +1560,6 @@ const ProjectArticleGrid = ({ articles }) => {
         </div>
     );
 };
-
 // --- BENTO GRID (IMAGES + HEADERS) ---
 const BentoGrid = ({ data }) => {
     const [currentIndex, setCurrentIndex] = useState(null);
