@@ -300,6 +300,8 @@ const PROJECTS = [
                 "/images/prev10.jpg",
                 "/images/prev12.jpg",
                 { type: "header", title: "Social Media banners for AEGEAN Your way product" },
+                "/images/a3_mock.jpg",
+                "/images/a3_mock2.jpg",
                 "/images/carousel_aegeanyourway_frame1.jpg",
                 "/images/carousel_aegeanyourway_frame2.jpg",
                 "/images/carousel_aegeanyourway_frame3.jpg",
