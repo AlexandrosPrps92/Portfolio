@@ -49,6 +49,7 @@ const PROJECTS = [
                 "/images/skg3.jpg",
                 "/images/square.png",
                 "/images/square2.png",
+                "/images/kar_mo3.jpg",
                 "/images/square3.png",
                 "/images/square4.png",
 
