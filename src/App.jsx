@@ -34,9 +34,12 @@ const PROJECTS = [
             subMetric: "Google Case Study 2025",
             variations: [
                 "/images/AI_Sqaure_noAI.jpg",
+                "/images/kar_mo.jpg",
+
                 "/images/HKT25.jpg",
                 "/images/dashboard.jpg",
                 "/images/dashboard2.jpg",
+                "/images/kar_mo2.jpg",
                 "/images/dashboard3.jpg",
                 "/images/generic1.jpg",
                 "/images/generic2.jpg",
@@ -78,6 +81,7 @@ const PROJECTS = [
                     className: "md:col-span-1 md:row-span-2"
                 },
                 { type: "header", title: "Social Media banners for Energyjobsearch.com" },
+                "/images/EJS_FIG.jpg",
                 "/images/ejs_1.jpg",
                 "/images/ejs2.jpg",
                 "/images/ejs3.jpg",
