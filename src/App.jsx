@@ -28,7 +28,7 @@ const PROJECTS = [
         image: "/images/award_ceremony.jpg",
         color: "from-blue-600 to-cyan-400",
         bentoData: {
-            src: "/videos/Case_study.mp4",
+            hero: "/videos/Case_study.MP4",
             metric: "+155%",
             metricLabel: "Increase in Conversions",
             subMetric: "Google Case Study 2025",
@@ -1562,11 +1562,11 @@ const ProjectArticleGrid = ({ articles }) => {
         </div>
     );
 };
-// --- BENTO GRID (UPDATED WITH ROBUST VIDEO AUTOPLAY) ---
+// --- BENTO GRID (UPDATED: Case Insensitive & Robust Autoplay) ---
 const BentoGrid = ({ data }) => {
     const [currentIndex, setCurrentIndex] = useState(null);
 
-    // Helper to check for video extension (Case Insensitive)
+    // 1. Helper to check for video extension (Ignores case: .MP4 = .mp4)
     const isVideo = (url) => url?.toLowerCase().endsWith('.mp4');
 
     // Filter out only viewable images/videos (strings) for the Lightbox
@@ -1621,13 +1621,13 @@ const BentoGrid = ({ data }) => {
                         HIGHLIGHT
                     </div>
 
-                    {/* HERO VIDEO LOGIC */}
+                    {/* HERO RENDER LOGIC */}
                     {isVideo(data.hero) ? (
                         <video
-                            key={data.hero} // Force re-render if src changes
+                            key={data.hero} // Force React to re-render if src changes
                             src={data.hero}
                             autoPlay
-                            muted={true} // Explicit boolean helps React
+                            muted={true} // Required for autoplay
                             loop
                             playsInline
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -1684,7 +1684,7 @@ const BentoGrid = ({ data }) => {
                                 {typeof item === 'string' ? (
                                     <>
                                         <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
-                                        {/* Handle small video thumbnails in variations */}
+                                        {/* Use helper to check for video extension in gallery too */}
                                         {isVideo(item) ? (
                                             <video
                                                 src={item}
@@ -1729,6 +1729,7 @@ const BentoGrid = ({ data }) => {
                         <ChevronRight className="w-8 h-8" />
                     </button>
 
+                    {/* Lightbox Content Logic */}
                     {typeof lightboxImages[currentIndex] === 'string' && (
                         isVideo(lightboxImages[currentIndex]) ? (
                             <div className="max-w-6xl w-full max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
