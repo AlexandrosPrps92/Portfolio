@@ -28,7 +28,7 @@ const PROJECTS = [
         image: "/images/award_ceremony.jpg",
         color: "from-blue-600 to-cyan-400",
         bentoData: {
-            hero: "/videos/Case_study.MP4",
+            src: "/videos/Case_study.mp4",
             metric: "+155%",
             metricLabel: "Increase in Conversions",
             subMetric: "Google Case Study 2025",
