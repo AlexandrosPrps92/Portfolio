@@ -1562,9 +1562,12 @@ const ProjectArticleGrid = ({ articles }) => {
         </div>
     );
 };
-/// --- BENTO GRID (UPDATED FOR HERO VIDEO) ---
+// --- BENTO GRID (UPDATED WITH ROBUST VIDEO AUTOPLAY) ---
 const BentoGrid = ({ data }) => {
     const [currentIndex, setCurrentIndex] = useState(null);
+
+    // Helper to check for video extension (Case Insensitive)
+    const isVideo = (url) => url?.toLowerCase().endsWith('.mp4');
 
     // Filter out only viewable images/videos (strings) for the Lightbox
     const lightboxImages = [
@@ -1618,12 +1621,13 @@ const BentoGrid = ({ data }) => {
                         HIGHLIGHT
                     </div>
 
-                    {/* Render Video or Image based on extension */}
-                    {data.hero.endsWith('.mp4') ? (
+                    {/* HERO VIDEO LOGIC */}
+                    {isVideo(data.hero) ? (
                         <video
+                            key={data.hero} // Force re-render if src changes
                             src={data.hero}
                             autoPlay
-                            muted
+                            muted={true} // Explicit boolean helps React
                             loop
                             playsInline
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -1668,7 +1672,7 @@ const BentoGrid = ({ data }) => {
                             );
                         }
 
-                        // 2. Image/Embed Logic
+                        // 2. Image/Embed/Video Logic
                         return (
                             <div
                                 key={i}
@@ -1681,7 +1685,7 @@ const BentoGrid = ({ data }) => {
                                     <>
                                         <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
                                         {/* Handle small video thumbnails in variations */}
-                                        {item.endsWith('.mp4') ? (
+                                        {isVideo(item) ? (
                                             <video
                                                 src={item}
                                                 autoPlay muted loop playsInline
@@ -1713,29 +1717,20 @@ const BentoGrid = ({ data }) => {
                     className="fixed inset-0 z-[200] bg-black/95 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-in"
                     onClick={closeLightbox}
                 >
-                    {/* Close Button */}
                     <button className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors z-[210]">
                         <X className="w-8 h-8" />
                     </button>
 
-                    {/* Navigation Arrows */}
-                    <button
-                        onClick={showPrev}
-                        className="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors z-[210] hidden md:block"
-                    >
+                    <button onClick={showPrev} className="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors z-[210] hidden md:block">
                         <ChevronLeft className="w-8 h-8" />
                     </button>
 
-                    <button
-                        onClick={showNext}
-                        className="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors z-[210] hidden md:block"
-                    >
+                    <button onClick={showNext} className="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors z-[210] hidden md:block">
                         <ChevronRight className="w-8 h-8" />
                     </button>
 
-                    {/* Image or Video Display */}
                     {typeof lightboxImages[currentIndex] === 'string' && (
-                        lightboxImages[currentIndex].endsWith('.mp4') ? (
+                        isVideo(lightboxImages[currentIndex]) ? (
                             <div className="max-w-6xl w-full max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
                                 <video
                                     src={lightboxImages[currentIndex]}
@@ -1754,7 +1749,6 @@ const BentoGrid = ({ data }) => {
                         )
                     )}
 
-                    {/* Mobile Tip */}
                     <div className="absolute bottom-4 left-0 w-full text-center text-white/40 text-xs md:hidden">
                         Swipe or tap sides to navigate
                     </div>
@@ -1763,7 +1757,6 @@ const BentoGrid = ({ data }) => {
         </div>
     );
 };
-
 // --- UPDATED PROJECT VIDEO GRID (Supports Local Video, Iframes & TikTok) ---
 const ProjectVideoGrid = ({ videos }) => {
     const [selectedVideo, setSelectedVideo] = useState(null);
