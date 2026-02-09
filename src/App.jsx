@@ -33,14 +33,14 @@ const PROJECTS = [
             metricLabel: "Increase in Conversions",
             subMetric: "Google Case Study 2025",
             variations: [
-                "/images/AI_Sqaure_noAI.jpg",
-                "/images/kar_mo.jpg",
+                "/images/ai_recommendation.jpeg",
+                "/videos/kalculator.mp4",
 
                 "/images/HKT25.jpg",
                 "/images/dashboard.jpg",
                 "/images/dashboard2.jpg",
-                "/images/kar_mo2.jpg",
-                "/images/dashboard3.jpg",
+                "/videos/kalculator2.mp4",
+                "/images/Dashboard.gif",
                 "/images/generic1.jpg",
                 "/images/generic2.jpg",
                 "/images/generic3.jpg",
