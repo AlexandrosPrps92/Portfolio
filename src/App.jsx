@@ -1562,12 +1562,11 @@ const ProjectArticleGrid = ({ articles }) => {
         </div>
     );
 };
-// --- BENTO GRID (IMAGES + HEADERS) ---
+/// --- BENTO GRID (UPDATED FOR HERO VIDEO) ---
 const BentoGrid = ({ data }) => {
     const [currentIndex, setCurrentIndex] = useState(null);
 
-    // Filter out only viewable images (strings) for the Lightbox
-    // We include hero first, then filter variations
+    // Filter out only viewable images/videos (strings) for the Lightbox
     const lightboxImages = [
         data.hero,
         ...data.variations.filter(item => typeof item === 'string')
@@ -1610,7 +1609,7 @@ const BentoGrid = ({ data }) => {
             {/* TOP SECTION: Hero & Metrics */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 h-auto md:h-[400px]">
 
-                {/* Hero Box */}
+                {/* Hero Box (Video or Image) */}
                 <div
                     onClick={() => openLightbox(data.hero)}
                     className="md:col-span-2 relative rounded-3xl overflow-hidden border border-white/10 group cursor-zoom-in"
@@ -1618,11 +1617,25 @@ const BentoGrid = ({ data }) => {
                     <div className="absolute top-4 left-4 z-10 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs font-mono border border-white/10 text-white pointer-events-none">
                         HIGHLIGHT
                     </div>
-                    <img
-                        src={data.hero}
-                        alt="Final Design"
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
+
+                    {/* Render Video or Image based on extension */}
+                    {data.hero.endsWith('.mp4') ? (
+                        <video
+                            src={data.hero}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
+                    ) : (
+                        <img
+                            src={data.hero}
+                            alt="Final Design"
+                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
+                    )}
+
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none"></div>
                 </div>
 
@@ -1667,11 +1680,20 @@ const BentoGrid = ({ data }) => {
                                 {typeof item === 'string' ? (
                                     <>
                                         <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
-                                        <img
-                                            src={item}
-                                            alt={`Gallery item ${i}`}
-                                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                                        />
+                                        {/* Handle small video thumbnails in variations */}
+                                        {item.endsWith('.mp4') ? (
+                                            <video
+                                                src={item}
+                                                autoPlay muted loop playsInline
+                                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                            />
+                                        ) : (
+                                            <img
+                                                src={item}
+                                                alt={`Gallery item ${i}`}
+                                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                            />
+                                        )}
                                     </>
                                 ) : (
                                     <div
@@ -1711,14 +1733,25 @@ const BentoGrid = ({ data }) => {
                         <ChevronRight className="w-8 h-8" />
                     </button>
 
-                    {/* Image */}
+                    {/* Image or Video Display */}
                     {typeof lightboxImages[currentIndex] === 'string' && (
-                        <img
-                            src={lightboxImages[currentIndex]}
-                            alt="Full Screen"
-                            className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
-                            onClick={(e) => e.stopPropagation()}
-                        />
+                        lightboxImages[currentIndex].endsWith('.mp4') ? (
+                            <div className="max-w-6xl w-full max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
+                                <video
+                                    src={lightboxImages[currentIndex]}
+                                    controls
+                                    autoPlay
+                                    className="w-full h-full rounded-lg shadow-2xl"
+                                />
+                            </div>
+                        ) : (
+                            <img
+                                src={lightboxImages[currentIndex]}
+                                alt="Full Screen"
+                                className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
+                                onClick={(e) => e.stopPropagation()}
+                            />
+                        )
                     )}
 
                     {/* Mobile Tip */}
