@@ -25,7 +25,7 @@ const PROJECTS = [
             "Our team won Gold & Silver at Peak Awards 2025: Best Performance in Employment (AI-Driven Lead Gen) & Best Use of Data."
         ],
         tags: ["Figma", "Adobe CC", "Zoho Analytics", "Wordpress", "Heygen","Canva"],
-        image: "/images/award_ceremony.jpg",
+        image: "/images/kariera_hero_home.jpeg",
         color: "from-blue-600 to-cyan-400",
         bentoData: {
             hero: "/videos/Case_study.MP4",
@@ -42,9 +42,8 @@ const PROJECTS = [
                 "/images/generic1.jpg",
                 "/images/generic2.jpg",
                 "/images/generic3.jpg",
-                "/images/skg1.jpg",
-                "/images/skg2.jpg",
-                "/images/skg3.jpg",
+                "/images/skg_1.jpg",
+                "/images/skg_2.jpg",
                 "/images/square.png",
                 "/images/square2.png",
                 "/images/kar_mo3.jpg",
