@@ -249,7 +249,7 @@ const PROJECTS = [
                 "/images/mb_oa.gif",
                 "/images/NL_second_subject_wifi_280122.jpg",
                 "/images/NL_second_subject_grid_wifi_DE_280122.jpg",
-                "/images/NL_OA_GR.png",
+                "/images/newsletter.jpg",
                 "/images/NL_gr.jpg",
                 "/images/NL_b2b.jpg",
 
