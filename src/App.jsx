@@ -35,12 +35,10 @@ const PROJECTS = [
             variations: [
                 "/images/ai_recommendation.jpeg",
                 "/videos/kalculator.mp4",
-
                 "/images/HKT25.jpg",
-                "/images/dashboard.jpg",
-                "/images/dashboard2.jpg",
                 "/videos/kalculator2.mp4",
                 "/images/Dashboard.gif",
+                "/images/legacy_redesign.gif",
                 "/images/generic1.jpg",
                 "/images/generic2.jpg",
                 "/images/generic3.jpg",
