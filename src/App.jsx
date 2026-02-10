@@ -224,7 +224,7 @@ const PROJECTS = [
         challenge: "The role required maintaining strict brand consistency across a massive ecosystem of digital and physical touchpoints. This included coordinating with external partners for co-branded offers and updating digital signage for airport offices across Greece and international destinations.",
         solution: "I integrated into the core product teams, participating in focus groups for the new AEGEAN App, In-flight Wi-Fi, and the company-wide Rebrand. I expanded my role by joining backstage photoshoots and filming events to gain holistic content insight. Additionally, I designed and launched the very first Social Media Sticker packs for both airlines to boost organic engagement.",
         results: [
-            "Updated most of AEGEAN'S digital and physical touchpoints with the new rebranded logo and tagline.",
+            "Updated most of AEGEAN'S digital and physical touchpoints with the new rebranded logo and tagline. https://el.aegeanair.com/anakalypste/neo-era/",
             "Designed creatives for new product launches and promotional offers.",
             "Designed the first animated stickers for social media use.",
             "Contributed to multiple company profit records via sales email campaigns."
@@ -233,21 +233,20 @@ const PROJECTS = [
         image: "/images/aegean_hero.jpg",
         color: "from-purple-600 to-pink-400",
         bentoData: {
-            hero: "/images/template_NL_3.jpg",
+            hero: "/images/rebrand.jpg",
             metric: "Rebrand",
             metricLabel: "Updated Digital Touchpoints",
             subMetric: "Internal Tool",
             variations: [
-                "/images/Story_ATH_nl.jpg",
-                "/images/Story_SKG_nl.jpg",
-                "/images/AEGEAN IN FLIGHT.jpg",
+                "/images/story_brussels.jpg",
                 "/images/Aegean_IBM_Linkedin.jpg",
-                "/images/chania_aegean.jpg",
-                "/images/clothes_recycle_aegean2.jpg",
+                "/images/banner_a3.jpg",
+                "/images/aegean_post.jpg",
+
                 { type: "header", title: "Newsletter banners for AEGEAN Airlines and Olympic Airlines" },
-                "/images/Aegean_your_way_main_desktop_EN.jpg",
-                "/images/Aegean_your_way_main_mobile_EN.jpg",
-                "/images/Aegean_main_WithLogo_mobile_EN.jpg",
+
+                "/images/aegean_way_nl.jpg",
+                "/images/mb_oa.gif",
                 "/images/NL_second_subject_wifi_280122.jpg",
                 "/images/NL_second_subject_grid_wifi_DE_280122.jpg",
                 "/images/NL_OA_GR.png",
