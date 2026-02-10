@@ -44,11 +44,10 @@ const PROJECTS = [
                 "/images/generic3.jpg",
                 "/images/skg_1.jpg",
                 "/images/skg_2.jpg",
-                "/images/square.png",
-                "/images/square2.png",
+                "/images/food_cafe1.jpg",
+                "/images/food_cafe2.jpg",
                 "/images/kar_mo3.jpg",
-                "/images/square3.png",
-                "/images/square4.png",
+
 
                 {
                     id: "v13",
@@ -1559,14 +1558,14 @@ const ProjectArticleGrid = ({ articles }) => {
         </div>
     );
 };
-// --- BENTO GRID (UPDATED: Case Insensitive & Robust Autoplay) ---
+// --- BENTO GRID (UPDATED: No Stretching in Lightbox) ---
 const BentoGrid = ({ data }) => {
     const [currentIndex, setCurrentIndex] = useState(null);
 
-    // 1. Helper to check for video extension (Ignores case: .MP4 = .mp4)
+    // Helper: Case-insensitive video check
     const isVideo = (url) => url?.toLowerCase().endsWith('.mp4');
 
-    // Filter out only viewable images/videos (strings) for the Lightbox
+    // Filter viewable items
     const lightboxImages = [
         data.hero,
         ...data.variations.filter(item => typeof item === 'string')
@@ -1574,9 +1573,7 @@ const BentoGrid = ({ data }) => {
 
     const openLightbox = (imageSrc) => {
         const index = lightboxImages.indexOf(imageSrc);
-        if (index !== -1) {
-            setCurrentIndex(index);
-        }
+        if (index !== -1) setCurrentIndex(index);
     };
 
     const closeLightbox = () => setCurrentIndex(null);
@@ -1606,10 +1603,9 @@ const BentoGrid = ({ data }) => {
     return (
         <div className="flex flex-col gap-4 mb-12">
 
-            {/* TOP SECTION: Hero & Metrics */}
+            {/* --- GRID SECTION (Keep existing layout) --- */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 h-auto md:h-[400px]">
-
-                {/* Hero Box (Video or Image) */}
+                {/* Hero Box */}
                 <div
                     onClick={() => openLightbox(data.hero)}
                     className="md:col-span-2 relative rounded-3xl overflow-hidden border border-white/10 group cursor-zoom-in"
@@ -1617,26 +1613,20 @@ const BentoGrid = ({ data }) => {
                     <div className="absolute top-4 left-4 z-10 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs font-mono border border-white/10 text-white pointer-events-none">
                         HIGHLIGHT
                     </div>
-
-                    {/* HERO RENDER LOGIC */}
                     {isVideo(data.hero) ? (
                         <video
-                            key={data.hero} // Force React to re-render if src changes
+                            key={data.hero}
                             src={data.hero}
-                            autoPlay
-                            muted={true} // Required for autoplay
-                            loop
-                            playsInline
+                            autoPlay muted={true} loop playsInline
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
                     ) : (
                         <img
                             src={data.hero}
-                            alt="Final Design"
+                            alt="Hero"
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
                     )}
-
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none"></div>
                 </div>
 
@@ -1653,12 +1643,11 @@ const BentoGrid = ({ data }) => {
                 </div>
             </div>
 
-            {/* BOTTOM SECTION: Gallery Grid */}
+            {/* Gallery Grid */}
             <div>
                 <h3 className="text-sm font-mono text-gray-500 uppercase tracking-widest mb-4 mt-4">Project Gallery</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {data.variations.map((item, i) => {
-                        // 1. Header Logic
                         if (item.type === 'header') {
                             return (
                                 <div key={i} className="md:col-span-3 py-8 flex items-center gap-4">
@@ -1668,8 +1657,6 @@ const BentoGrid = ({ data }) => {
                                 </div>
                             );
                         }
-
-                        // 2. Image/Embed/Video Logic
                         return (
                             <div
                                 key={i}
@@ -1681,26 +1668,14 @@ const BentoGrid = ({ data }) => {
                                 {typeof item === 'string' ? (
                                     <>
                                         <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
-                                        {/* Use helper to check for video extension in gallery too */}
                                         {isVideo(item) ? (
-                                            <video
-                                                src={item}
-                                                autoPlay muted loop playsInline
-                                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                                            />
+                                            <video src={item} autoPlay muted loop playsInline className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                                         ) : (
-                                            <img
-                                                src={item}
-                                                alt={`Gallery item ${i}`}
-                                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                                            />
+                                            <img src={item} alt="Gallery" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                                         )}
                                     </>
                                 ) : (
-                                    <div
-                                        className="w-full h-full [&>iframe]:w-full [&>iframe]:h-full"
-                                        dangerouslySetInnerHTML={{ __html: item.embed }}
-                                    />
+                                    <div className="w-full h-full [&>iframe]:w-full [&>iframe]:h-full" dangerouslySetInnerHTML={{ __html: item.embed }} />
                                 )}
                             </div>
                         );
@@ -1708,7 +1683,7 @@ const BentoGrid = ({ data }) => {
                 </div>
             </div>
 
-            {/* LIGHTBOX OVERLAY */}
+            {/* --- LIGHTBOX (UPDATED FOR NATURAL SIZE) --- */}
             {currentIndex !== null && (
                 <div
                     className="fixed inset-0 z-[200] bg-black/95 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-in"
@@ -1726,26 +1701,27 @@ const BentoGrid = ({ data }) => {
                         <ChevronRight className="w-8 h-8" />
                     </button>
 
-                    {/* Lightbox Content Logic */}
-                    {typeof lightboxImages[currentIndex] === 'string' && (
-                        isVideo(lightboxImages[currentIndex]) ? (
-                            <div className="max-w-6xl w-full max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
+                    {/* Media Container - Flex center allows items to take natural size */}
+                    <div className="flex items-center justify-center w-full h-full p-4 md:p-10" onClick={(e) => e.stopPropagation()}>
+                        {typeof lightboxImages[currentIndex] === 'string' && (
+                            isVideo(lightboxImages[currentIndex]) ? (
                                 <video
                                     src={lightboxImages[currentIndex]}
                                     controls
                                     autoPlay
-                                    className="w-full h-full rounded-lg shadow-2xl"
+                                    // Removed 'w-full h-full'. Added max constraints + w-auto h-auto
+                                    className="max-w-full max-h-[90vh] w-auto h-auto rounded-lg shadow-2xl outline-none"
                                 />
-                            </div>
-                        ) : (
-                            <img
-                                src={lightboxImages[currentIndex]}
-                                alt="Full Screen"
-                                className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
-                                onClick={(e) => e.stopPropagation()}
-                            />
-                        )
-                    )}
+                            ) : (
+                                <img
+                                    src={lightboxImages[currentIndex]}
+                                    alt="Full Screen"
+                                    // Uses object-contain with max constraints
+                                    className="max-w-full max-h-[90vh] w-auto h-auto object-contain rounded-lg shadow-2xl"
+                                />
+                            )
+                        )}
+                    </div>
 
                     <div className="absolute bottom-4 left-0 w-full text-center text-white/40 text-xs md:hidden">
                         Swipe or tap sides to navigate
