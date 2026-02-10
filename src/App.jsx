@@ -77,7 +77,7 @@ const PROJECTS = [
                 },
                 { type: "header", title: "Social Media banners for Energyjobsearch.com" },
                 "/images/EJS_FIG.jpg",
-                "/images/ejs_1.jpg",
+                "/images/ejs1.jpg",
                 "/videos/ejs2.mp4",
                 "/images/ejs3.jpg",
                 "/images/ejs4.jpg",
@@ -230,7 +230,7 @@ const PROJECTS = [
             "Contributed to multiple company profit records via sales email campaigns."
         ],
         tags: ["Email Marketing", "Social Media", "UI Design", "Branding"],
-        image: "/images/gallery11.jpg",
+        image: "/images/aegean_hero.jpg",
         color: "from-purple-600 to-pink-400",
         bentoData: {
             hero: "/images/template_NL_3.jpg",
