@@ -599,7 +599,7 @@ const PROJECTS = [
         title: "Freelance",
         category: "Digital Designer",
         type: "Freelance",
-        year: "2016-2019",
+        year: "2016-Current",
         role: "Graphic Designer",
         description: "Engaged with a diverse client base ranging from the tourism sector to the music industry. I crafted visual identities and logos for multiple businesses and music groups, extending these identities into motion through static and animated album covers and video editing.",
         // UPDATED CHALLENGE:
@@ -1445,11 +1445,11 @@ const Contact = () => {
                 </p>
 
                 <a
-                    href="mailto:prepis92@hotmail.com"
+                    href="mailto:alexandrosprepis@gmail.com"
                     className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform duration-300"
                 >
                     <Mail className="w-5 h-5" />
-                    prepis92@hotmail.com
+                    alexandrosprepis@gmail.com
                 </a>
 
                 <div className="mt-16 flex justify-center gap-8">
