@@ -11,11 +11,11 @@ import {
 const PROJECTS = [
     {
         id: 1,
-        title: "Kariera Group",
-        category: "Digital Designer",
+        title: "DP...am",
+        category: "Graphic Designer",
         type: "Professional",
-        year: "2024-2026",
-        role: "Digital Designer",
+        year: "2026-today",
+        role: "Graphic Designer",
         description: "Spearheaded the modernization of legacy advertising assets and established data-validated creative guidelines.",
         challenge: "The company relied on legacy visual assets that were performing poorly in generic brand awareness campaigns. There was no standardized system for creating new ads, leading to inconsistent branding and unmeasured effectiveness.",
         solution: "I introduced a 'Data-First' creative workflow. Instead of guessing, I executed structured A/B testing across three pillars: Text Hierarchy, Composition, and Aesthetics. I also pioneered in the group's first AI video production tool for B2B and B2C social media, enhancing content quality and minimizing production time to 40% of previous levels.",
@@ -213,8 +213,214 @@ const PROJECTS = [
             },
         ]
     },
+
     {
-        id: 2,
+    id: 2,
+    title: "Kariera Group",
+    category: "Digital Designer",
+    type: "Professional",
+    year: "2024-2026",
+    role: "Digital Designer",
+    description: "Spearheaded the modernization of legacy advertising assets and established data-validated creative guidelines.",
+    challenge: "The company relied on legacy visual assets that were performing poorly in generic brand awareness campaigns. There was no standardized system for creating new ads, leading to inconsistent branding and unmeasured effectiveness.",
+    solution: "I introduced a 'Data-First' creative workflow. Instead of guessing, I executed structured A/B testing across three pillars: Text Hierarchy, Composition, and Aesthetics. I also pioneered in the group's first AI video production tool for B2B and B2C social media, enhancing content quality and minimizing production time to 40% of previous levels.",
+    results: [
+    "Redesigned all legacy brand creatives and expanded assets for audience segmentation.",
+    "Part of the success of Google Case study and best practice for 2025, +155% conversion rates for jobseekers, -49% cost per application (CPA).",
+    "Our team won Gold & Silver at Peak Awards 2025: Best Performance in Employment (AI-Driven Lead Gen) & Best Use of Data."
+],
+    tags: ["Figma", "Adobe CC", "Zoho Analytics", "Wordpress", "Heygen","Canva"],
+    image: "/images/kariera_hero_home.jpeg",
+    color: "from-blue-600 to-cyan-400",
+    bentoData: {
+    hero: "/videos/Case_study.MP4",
+        metric: "+155%",
+        metricLabel: "Increase in Conversions",
+        subMetric: "Google Case Study 2025",
+        variations: [
+        "/images/ai_recommendation.jpeg",
+        "/videos/kalculator.mp4",
+        "/images/HKT25.jpg",
+        "/videos/kalculator2.mp4",
+        "/images/Dashboard.gif",
+        "/images/legacy_redesign.gif",
+
+        "/images/skg_1.jpg",
+        "/images/skg_2.jpg",
+        "/images/food_cafe1.jpg",
+        "/images/food_cafe2.jpg",
+        "/images/kar_mo3.jpg",
+
+
+        {
+            id: "v13",
+            title: "LinkedIn Feature",
+            category: "Embedded Post",
+            embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7384532942305390592?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+            className: "md:col-span-1 md:row-span-2"
+        },
+        {
+            id: "v18_li",
+            title: "LinkedIn Feature",
+            category: "Embedded Post",
+            embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7341393050612432896?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+            className: "md:col-span-1 md:row-span-2"
+        },
+        {
+            id: "v17",
+            title: "LinkedIn Feature",
+            category: "Embedded Post",
+            embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7423026631017119744?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+            className: "md:col-span-1 md:row-span-2"
+        },
+        {
+            id: "v10_b",
+            title: "LinkedIn Feature",
+            category: "Embedded Post",
+            embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7419691159813390337?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+            className: "md:col-span-1 md:row-span-2"
+        },
+        { type: "header", title: "Social Media banners for Energyjobsearch.com" },
+        "/images/EJS_FIG.jpg",
+        "/images/ejs1.jpg",
+        "/videos/ejs2.mp4",
+        "/images/ejs3.jpg",
+        "/images/ejs4.jpg",
+        "/videos/ejs5.mp4",
+
+    ]
+},
+
+// --- ARTICLES SECTION ---
+// --- ARTICLES SECTION ---
+articles: [
+    {
+        id: "art1",
+        title: "Energyjobsearch.com Blog",
+        description: "Introduced the blog for Energyjobsearch.com and took part in the build of the articles visually and navigating experience.",
+        url: "https://blog.energyjobsearch.com/",
+        domain: "energyjobsearch.com",
+        image: "/images/hero_ejs_blog.jpg"
+    }
+],
+
+    videos: [
+    {
+        id: "v1",
+        title: "Energyjobsearch ltd. Ai career coach",
+        category: "Generated with HeyGen",
+        src: "/videos/Alex__Update your profile__vertical.mp4",
+        className: "md:col-span-2 md:row-span-2"
+    },
+    {
+        id: "v2",
+        title: "Animated creative for Product feature launch",
+        category: "Meta and Google ads",
+        src: "/videos/1920x1080_idea1.mp4",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: "v3",
+        title: "Energyjobsearch ltd. Ai career coach",
+        category: "Instagram,TikTok",
+        src: "/videos/Alex__For you page__Vertical.mp4",
+        className: "md:col-span-2 md:row-span-1"
+    },
+    {
+        id: "v4",
+        title: "Creative assets for new product launches and special offers",
+        category: "Kinetic typography for Meta and Google ads",
+        src: "/videos/1080x1080_video_generic.mp4",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: "v5",
+        title: "Creative assets for new product launches and special offers",
+        category: "Kinetic typography for Meta and Google ads",
+        src: "/videos/1080x1080_video_premium.mp4",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: "v6",
+        title: "Creative assets for new product launches and special offers.",
+        category: "Kinetic typography for Meta and Google ads",
+        src: "/videos/1080x1080_video_standard.mp4",
+        className: "md:col-span-2 md:row-span-1"
+    },
+    {
+        id: "v21",
+        title: "Developed new creative assets to enhance audience segmentation.",
+        category: "Meta and Google ads",
+        src: "/videos/1080x1080_IN_ENGI.mp4",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: "v22",
+        title: "Developed new creative assets to enhance audience segmentation.",
+        category: "Meta and Google ads",
+        src: "/videos/1080x1080_Proj_Man.mp4",
+        className: "md:col-span-2 md:row-span-1"
+    },
+
+    {
+        id: "v7",
+        title: "After Effects Kinetic Typography for Webinar Promos",
+        category: "Linkedin Post",
+        embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7265340802833203200?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+        className: "md:col-span-2 md:row-span-2"
+    },
+    {
+        id: "v8",
+        title: "After Effects Kinetic Typography for Webinar Promos",
+        category: "Linkedin Post",
+        embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7257001356798955520?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+        className: "md:col-span-1 md:row-span-2"
+    },
+    {
+        id: "v12",
+        title: "Kinetic Typography for Events Promos in Canva",
+        category: "Linkedin Post",
+        embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7421886115663515648?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+        className: "md:col-span-1 md:row-span-2"
+    },
+    {
+        id: "v14",
+        title: "After Effects Kinetic Typography for Webinar Promos",
+        category: "Linkedin Post",
+        embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7254503009626324993?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+        className: "md:col-span-2 md:row-span-2"
+    },
+
+    // --- TIKTOK UPDATES ---
+    {
+        id: "v15",
+        title: "TikTok post created with Heygen",
+        category: "Energy Job Search Tik Tok",
+        src: "https://www.tiktok.com/@energyjobsearch_ltd/video/7554335956447399201",
+        type: "tiktok",
+        className: "md:col-span-1 md:row-span-2"
+    },
+    {
+        id: "v18",
+        title: "TikTok post created with Heygen",
+        category: "Energy Job Search Tik Tok",
+        src: "https://www.tiktok.com/@energyjobsearch_ltd/video/7542789142111915296",
+        type: "tiktok",
+        className: "md:col-span-1 md:row-span-2"
+    },
+    {
+        id: "v19",
+        title: "TikTok post created with Heygen",
+        category: "Energy Job Search Tik Tok",
+        src: "https://www.tiktok.com/@energyjobsearch_ltd/video/7527290399510023456",
+        type: "tiktok",
+        className: "md:col-span-2 md:row-span-2"
+    },
+]
+},
+
+    {
+        id: 3,
         title: "AEGEAN",
         category: "Digital Designer",
         type: "Professional",
@@ -441,7 +647,7 @@ const PROJECTS = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         title: "University of Edinburgh",
         category: "MSc Digital Media Design",
         type: "Academic",
@@ -595,7 +801,7 @@ const PROJECTS = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         title: "Freelance",
         category: "Digital Designer",
         type: "Freelance",
@@ -631,6 +837,18 @@ const PROJECTS = [
                         "/images/khora_idea.png",
                     ]
                 },
+            },
+
+            { articles: [
+    {
+        id: "art1",
+        title: "Islang24.gr",
+        description: "Created the news website for Island24.gr.",
+        url: "https://island24.gr/",
+        domain: "island24.gr",
+        image: "/images/hero_ejs_blog.jpg"
+    }
+],
             },
             {
                 id: "f_aya",
@@ -733,7 +951,7 @@ const PROJECTS = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         title: "AKTO in partnership with University of Middlesex",
         category: "BA(Hons) in Graphic Design",
         type: "Academic",
