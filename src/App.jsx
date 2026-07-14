@@ -24,11 +24,11 @@ const PROJECTS = [
             "Part of the success of Google Case study and best practice for 2025, +155% conversion rates for jobseekers, -49% cost per application (CPA).",
             "Our team won Gold & Silver at Peak Awards 2025: Best Performance in Employment (AI-Driven Lead Gen) & Best Use of Data."
         ],
-        tags: ["Figma", "Adobe CC", "Zoho Analytics", "Wordpress", "Heygen","Canva"],
-        image: "/images/kariera_hero_home.jpeg",
-        color: "from-blue-600 to-cyan-400",
+        tags: ["Figma", "Adobe CC",],
+        image: "/images/HappyPlan W23.jpeg",
+        color: "from-blue-600 to-red-400",
         bentoData: {
-            hero: "/videos/Case_study.MP4",
+            hero: "/images/HappyPlan W23.jpeg",
             metric: "+155%",
             metricLabel: "Increase in Conversions",
             subMetric: "Google Case Study 2025",
@@ -815,7 +815,7 @@ articles: [
         results: [
             "5 logo designs for clients",
             "Video Animation and editing for two music groups",
-            "Positive user feedback on visual identity"
+            "Website design and content creation"
         ],
         tags: ["Branding", "Identity", "Video Editing"],
         image: "/images/FREE_HOME.jpg",
@@ -846,7 +846,7 @@ articles: [
         description: "Created the news website for Island24.gr.",
         url: "https://island24.gr/",
         domain: "island24.gr",
-        image: "/images/hero_ejs_blog.jpg"
+        image: "/images/homepage_island24.png"
     }
 ],
             },
@@ -869,7 +869,7 @@ articles: [
             {
                 id: "f_GST",
                 title: "Client: GST",
-                description: "Visual identity and social media assets.",
+                description: "Visual identity, website design and social media assets.",
                 bentoData: {
                     hero:  "/images/GST_social.jpg",
                     metric: "Brand",
@@ -879,8 +879,21 @@ articles: [
                         "/images/GST.jpg",
                         "/images/GST_social.jpg",
                         "/images/GST_VAR.jpg",
+                        "/images/GST_WEB.png",
                     ]
                 },
+
+            },
+            { articles: [
+                    {
+                        id: "art1",
+                        title: "Islang24.gr",
+                        description: "Created the content for the website for GSTgreece.com.",
+                        url: "https://gstgreece.com//",
+                        domain: "gstgreece.com",
+                        image: "/images/GST_Homepage.png"
+                    }
+                ],
             },
             {
                 id: "f_Chicken",
@@ -1129,7 +1142,7 @@ const GALLERY_ITEMS = [
         className: "md:col-span-1 md:row-span-1"
     },
     {
-        id: 11,
+        id: 21,
         title: "Behind the scenes",
         description: "Filming for an festive promo",
         image: "/images/gallery2.jpeg",
@@ -1158,7 +1171,7 @@ const GALLERY_ITEMS = [
     },
 
     {
-        id: 10,
+        id: 22,
         title: "Typography Layout",
         description: "Editorial Design for Grande Magazine",
         image: "/images/gallery4.jpg",
@@ -1284,17 +1297,24 @@ const GALLERY_ITEMS = [
         className: "md:col-span-1 md:row-span-1"
     },
     {
-        id: 17,
+        id: 20,
         title: "Behind the scenes",
         description: "Took part in the filming of RISE(2022)",
         image: "/images/gallery17.jpg",
         className: "md:col-span-1 md:row-span-1"
     },
     {
-        id: 18,
+        id: 19,
         title: "The Van Gogh experience",
         description: "Quote from the exhibition",
         image: "/images/gallery18.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 23,
+        title: "Newsroom interview from the Basketball game AEK Athens- Mykonos BC",
+        description: "Interviewing the Head coach Dragan Sakota",
+        image: "/images/sakota.jpg",
         className: "md:col-span-1 md:row-span-1"
     },
 ];
