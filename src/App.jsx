@@ -28,7 +28,7 @@ const PROJECTS = [
         image: "/images/HappyPlan W23.jpeg",
         color: "from-blue-600 to-red-400",
         bentoData: {
-            hero: "/images/HappyPlan W23.jpeg",
+            hero: "/images/HERO_DPAM.png",
             metric: "+155%",
             metricLabel: "Increase in Conversions",
             subMetric: "Google Case Study 2025",
@@ -887,7 +887,7 @@ articles: [
             { articles: [
                     {
                         id: "art1",
-                        title: "Islang24.gr",
+                        title: "GSTgreece.com",
                         description: "Created the content for the website for GSTgreece.com.",
                         url: "https://gstgreece.com//",
                         domain: "gstgreece.com",
