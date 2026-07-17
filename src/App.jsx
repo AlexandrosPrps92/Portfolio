@@ -25,23 +25,23 @@ const PROJECTS = [
             "Our team won Gold & Silver at Peak Awards 2025: Best Performance in Employment (AI-Driven Lead Gen) & Best Use of Data."
         ],
         tags: ["Figma", "Adobe CC",],
-        image: "/images/HappyPlan W23.jpeg",
-        color: "from-blue-600 to-red-400",
+        image: "/images/hero_main_dpam.png",
+        color: "from-white-600 to-red-400",
         bentoData: {
             hero: "/images/HERO_DPAM.png",
             metric: "+155%",
-            metricLabel: "Increase in Conversions",
-            subMetric: "Google Case Study 2025",
+            metricLabel: "New Brand Identity and creatives",
+            subMetric: "Added more video features and brand assets",
             variations: [
-                "/images/ai_recommendation.jpeg",
-                "/videos/kalculator.mp4",
-                "/images/HKT25.jpg",
-                "/videos/kalculator2.mp4",
-                "/images/Dashboard.gif",
+                "/images/dpam_1.png",
+                "/videos/dpam_newsletter.png",
+                "/images/H&B JUN26 GENERIC CAMPAIGN C LOCALS mobile+ENG.png",
+                "/videos/H&B JUN26 GENERIC CAMPAIGN C LOCALS mobile+gr.png",
+                "/images/H&B JUN26 CAMPAIGN GENERIC RELEVANCE ALL_2.png",
                 "/images/legacy_redesign.gif",
 
-                "/images/skg_1.jpg",
-                "/images/skg_2.jpg",
+                "/images/H&B JUN26 SPORTS CAMPAIGN C LOCALS post.jpg",
+                "/images/H&B JUN26 SPORTS CAMPAIGN C LOCALS promo banners desktop+mobile gr+eng_SMALL_1.jpg",
                 "/images/food_cafe1.jpg",
                 "/images/food_cafe2.jpg",
                 "/images/kar_mo3.jpg",
@@ -835,6 +835,24 @@ articles: [
                         "/images/khora_blue.png",
                         "/images/khora_col.png",
                         "/images/khora_idea.png",
+                    ]
+                },
+            },
+            {
+                id: "island24.gr",
+                title: "Client: Island24.gr",
+                description: "Web design",
+                bentoData: {
+                    hero:  "/images/homepage_island24.png",
+                    metric: "Web design",
+                    metricLabel: "Wordpress",
+                    subMetric: "Web design Design",
+                    variations: [
+                        "/images/island2.png",
+                        "/images/island3.png",
+                        "/images/island4.png",
+                        "/images/island5.png",
+
                     ]
                 },
             },
