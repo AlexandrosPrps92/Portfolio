@@ -54,7 +54,16 @@ const PROJECTS = [
                 image: "/images/HERO_DPAM.png"
             }
         ],
-        videos: []
+        videos: [
+
+            {
+                id: "v144_li",
+                title: "Tik Tok Participation",
+                category: "Embedded Post",
+                embed: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@dpamgreece/video/7663127986459184406" data-video-id="7663127986459184406" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@dpamgreece" href="https://www.tiktok.com/@dpamgreece?refer=embed">@dpamgreece</a> Εσύ σε ποιό τμήμα θα ήθελες να δουλέψεις για 1 εβδομάδα;🤔 <a title="dpamgreece" target="_blank" href="https://www.tiktok.com/tag/dpamgreece?refer=embed">#dpamgreece</a> <a title="office" target="_blank" href="https://www.tiktok.com/tag/office?refer=embed">#office</a> <a title="work" target="_blank" href="https://www.tiktok.com/tag/work?refer=embed">#work</a> <a title="officetok" target="_blank" href="https://www.tiktok.com/tag/officetok?refer=embed">#officetok</a> <a title="marketingtiktok" target="_blank" href="https://www.tiktok.com/tag/marketingtiktok?refer=embed">#marketingtiktok</a> <a target="_blank" title="♬ πρωτότυπος ήχος - Dpam Greece" href="https://www.tiktok.com/music/πρωτότυπος-ήχος-7663127991588932355?refer=embed">♬ πρωτότυπος ήχος - Dpam Greece</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>`,
+                className: "md:col-span-1 md:row-span-2"
+            },
+            ]
     },
     {
         id: 2,
