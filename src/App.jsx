@@ -40,7 +40,7 @@ const PROJECTS = [
                 "/images/H&B JUN26 GENERIC CAMPAIGN C LOCALS mobile+gr.png",
                 "/images/H&B JUN26 CAMPAIGN GENERIC RELEVANCE ALL_2.png",
                 "/images/H&B JUN26 SPORTS CAMPAIGN C LOCALS post.jpg",
-                "/images/H&B JUN26 SPORTS CAMPAIGN C LOCALS promo banners desktop+mobile gr+eng_SMALL_1.jpg",
+                "/images/H&B JUN26 SPORTS CAMPAIGN C LOCALS promo banners desktop+mobile gr+eng_SMALL_1.jpg",]
 
 
         },
@@ -214,6 +214,60 @@ const PROJECTS = [
         videos: []
     },
     {
+        id: 4,
+        title: "University of Edinburgh",
+        category: "MSc Digital Media Design",
+        type: "Academic",
+        year: "2024-2025",
+        role: "Postgraduate Student",
+        description: "Advanced master's research and practical application at the intersection of digital media frameworks, interactive technology, and user-centered design systems.",
+        challenge: "Navigating complex 3D production pipelines, mastering object-oriented mechanics in game engines, and managing cross-platform media remediation under tight academic constraints.",
+        solution: "Developed a comprehensive understanding of interactive systems by designing server-side web frameworks, custom interactive installations, and real-time 3D applications.",
+        results: [
+            "Graduated with a Master of Science (Merit) in Digital Media Design.",
+            "Mastered 3D asset creation pipelines using Autodesk Maya and scripted interaction systems inside Unity."
+        ],
+        tags: ["Unity C#", "Autodesk Maya", "Interaction Design", "PHP & Web Architecture", "3D Modeling"],
+        image: "/images/edinburgh_hero.jpg",
+        color: "from-emerald-600 to-teal-400",
+        courses: [
+            {
+                id: "ed_racing_game",
+                title: "Arcade Racing Game Remediation",
+                description: "A real-time 3D arcade-style racing game built as a media remediation of a popular YouTube motorsport podcast, featuring custom vehicle physics and enemy AI coded from scratch.",
+                bentoData: {
+                    hero: "/videos/edinburgh_racing_remediation.mp4",
+                    metric: "Merit",
+                    metricLabel: "MSc Final Project",
+                    subMetric: "Unity & C# Scripting",
+                    variations: [
+                        "/images/maya_modeling_grid.jpg",
+                        "/images/ui_hud_design.jpg",
+                        "/images/ai_navmesh_setup.jpg",
+                        "/images/racing_gameplay_preview.jpg"
+                    ]
+                }
+            },
+            {
+                id: "ed_interactive_media",
+                title: "Interactive Installations & World-Building",
+                description: "Explorations in immersive digital media, including interactive film projector hardware setups and atmospheric 3D game spaces inspired by Native American fairytales.",
+                bentoData: {
+                    hero: "/images/interactive_projector.jpg",
+                    metric: "3D Studio",
+                    metricLabel: "World Building",
+                    subMetric: "Atmospheric Spaces",
+                    variations: [
+                        "/images/fairytale_environment.jpg",
+                        "/images/interactive_installation_setup.jpg",
+                        "/images/php_server_architecture.png"
+                    ]
+                }
+            }
+        ]
+    },
+
+    {
         id: 5,
         title: "Freelance",
         category: "Digital Designer",
@@ -365,7 +419,46 @@ const PROJECTS = [
                 ]
             }
         ]
-    }
+    },
+    {
+        id: 6,
+        title: "AKTO College",
+        category: "BA (Hons) Graphic Design",
+        type: "Academic",
+        year: "2015-2018",
+        role: "Undergraduate Student",
+        description: "Rigorous foundational training in visual communication, absolute grid layout systems, typography, corporate identity, and traditional print media production workflows in partnership with Middlesex University.",
+        challenge: "Translating conceptual, abstract creative briefs into structurally sound, highly impactful visual design assets across mixed physical and digital media ecosystems.",
+        solution: "Mastered core graphic design principles, typographic weights, and advanced workflows in Adobe Creative Cloud to craft holistic marketing campaigns.",
+        results: [
+            "Graduated with a Bachelor of Arts (Honors) in Graphic Design with a final project grade of 80 (B).",
+            "Solidified a core specialization in high-impact advertising strategies, motion graphics, and video editing frameworks."
+        ],
+        tags: ["Graphic Design", "Typography", "Branding & Identity", "Print Production", "Adobe CC"],
+        image: "/images/Hero_akto.jpg",
+        color: "from-amber-500 to-orange-400",
+        courses: [
+            {
+                id: "akto_tesla_capstone",
+                title: "Tesla Capstone Brand Campaign",
+                description: "A multi-faceted advertising framework for Tesla across three distinct pillars: a high-contrast 'Black and Red' visual identity, a SpaceX narrative arc, and an arcade-inspired campaign.",
+                bentoData: {
+                    hero: "/images/tesla_black_red_campaign.jpg",
+                    metric: "80 / 100",
+                    metricLabel: "Capstone Project Grade",
+                    subMetric: "Highly Praised Aesthetic",
+                    variations: [
+                        "/images/sketch.jpg",
+                        "/images/sketch2.jpg",
+                        "/images/sketch3.jpg",
+                        "/images/sketch4.jpg",
+                        "/images/tesla_spacex_storyboard.jpg",
+                        "/images/tesla_arcade_concept.jpg"
+                    ]
+                }
+            }
+        ]
+    },
 
 ];
 
