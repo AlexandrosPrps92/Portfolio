@@ -218,54 +218,156 @@ const PROJECTS = [
         title: "University of Edinburgh",
         category: "MSc Digital Media Design",
         type: "Academic",
-        year: "2024-2025",
-        role: "Postgraduate Student",
-        description: "Advanced master's research and practical application at the intersection of digital media frameworks, interactive technology, and user-centered design systems.",
-        challenge: "Navigating complex 3D production pipelines, mastering object-oriented mechanics in game engines, and managing cross-platform media remediation under tight academic constraints.",
-        solution: "Developed a comprehensive understanding of interactive systems by designing server-side web frameworks, custom interactive installations, and real-time 3D applications.",
+        year: "2022-2025",
+        role: "Student",
+        description: "A comprehensive exploration of digital media, specifically focusing on immersive 3D world-building and backend web architecture.",
+        challenge: "The primary challenge was the steep learning curve required to master professional 3D pipelines. I had to rapidly gain proficiency in 3D modeling (Blender, Autodesk Maya) and then breathe life into those assets using C# scripting in the Unity Game Engine—effectively bridging the gap between artistic asset creation and functional game logic.",
+        solution: "My studies centered on constructing distinct, interactive 3D worlds tailored to specific academic briefs. Parallel to game design, I established a solid technical foundation in server-side coding and database management, developing applications using PHP and the Fat-Free Framework within JetBrains PhpStorm.",
         results: [
-            "Graduated with a Master of Science (Merit) in Digital Media Design.",
-            "Mastered 3D asset creation pipelines using Autodesk Maya and scripted interaction systems inside Unity."
+            "Graded (B) with Merit",
+            "Extensive learning of 3d building and implementing interactivity",
+            "Learned PHP coding, Database use and collaboration within a team group project",
+            "Extensive research in Media ethics in Youth and employment bridging the skill gap needed"
         ],
-        tags: ["Unity C#", "Autodesk Maya", "Interaction Design", "PHP & Web Architecture", "3D Modeling"],
-        image: "/images/edinburgh_hero.jpg",
-        color: "from-emerald-600 to-teal-400",
+        tags: ["3D Design", "Web Design", "Game Design", "Media Ethics"],
+        image: "/images/edin_home.jpg",
+        color: "from-green-500 to-emerald-400",
         courses: [
             {
-                id: "ed_racing_game",
-                title: "Arcade Racing Game Remediation",
-                description: "A real-time 3D arcade-style racing game built as a media remediation of a popular YouTube motorsport podcast, featuring custom vehicle physics and enemy AI coded from scratch.",
+                id: "c1",
+                title: "Final Project: Remediation of a Youtube podcast into an arcade style racing game",
+                description: "Explored media remediation by transforming a humorous F1 YouTube podcast into an arcade kart racer inspired by 'Crash Team Racing' and 'Mario Kart'. I handled the full development pipeline: from 3D modeling in Autodesk Maya to programming complex vehicle physics, enemy AI, and UI systems using C#. The project successfully gamified the podcast's conversational energy through boosters, interactive feedback, and strategic mechanics, delivering a polished playable prototype within strict academic deadlines.",
                 bentoData: {
-                    hero: "/videos/edinburgh_racing_remediation.mp4",
-                    metric: "Merit",
-                    metricLabel: "MSc Final Project",
-                    subMetric: "Unity & C# Scripting",
+                    hero: "/images/final1.jpg",
+                    metric: "B",
+                    metricLabel: "Grade",
+                    subMetric: "Maya & Unity",
                     variations: [
-                        "/images/maya_modeling_grid.jpg",
-                        "/images/ui_hud_design.jpg",
-                        "/images/ai_navmesh_setup.jpg",
-                        "/images/racing_gameplay_preview.jpg"
+                        "/images/final16.jpg",
+                        "/images/final15.jpg",
+                        "/images/final14.jpg",
+                        "/images/final2.jpg",
+                        "/images/final3.jpg",
+                        "/images/final4.jpg",
+                        "/images/final5.jpg",
+                        "/images/final6.jpg",
+                        "/images/final7.jpg",
+                        "/images/final8.jpg",
+                        "/images/final9.jpg",
+                        "/images/final10.jpg",
+                        "/images/final11.jpg",
+                        "/images/final12.jpg",
+                        "/images/final13.jpg"
                     ]
-                }
+                },
+                videos: [
+                    {
+                        id: "v_int1",
+                        title: "Game Walkthrough",
+                        category: "Unity Gameplay",
+                        src: "/videos/final_game.mp4",
+                        className: "md:col-span-2 md:row-span-2"
+                    }
+                ]
             },
             {
-                id: "ed_interactive_media",
-                title: "Interactive Installations & World-Building",
-                description: "Explorations in immersive digital media, including interactive film projector hardware setups and atmospheric 3D game spaces inspired by Native American fairytales.",
+                id: "c2",
+                title: "Course 1: Design for Interactive Media",
+                description: "Designed an interactive imaginary film and audio projector with a Steampunk/Victorian aesthetic as requested by the course brief, translating an AI-generated concept into a functional 3D asset. The workflow involved precise modeling in Autodesk Maya (extruding, cutting, and joining primary shapes), texturing, and animating mechanical elements. These assets were exported to Unity, where I programmed the user interactions, camera movements, and a period-accurate Victorian UI menu.",
                 bentoData: {
-                    hero: "/images/interactive_projector.jpg",
-                    metric: "3D Studio",
-                    metricLabel: "World Building",
-                    subMetric: "Atmospheric Spaces",
+                    hero: "/images/in_game.jpg",
+                    metric: "B",
+                    metricLabel: "Grade",
+                    subMetric: "Interaction Design",
                     variations: [
-                        "/images/fairytale_environment.jpg",
-                        "/images/interactive_installation_setup.jpg",
-                        "/images/php_server_architecture.png"
+                        "/images/last_render.jpg",
+                        "/images/2last_render.jpg",
+                        "/images/3last_render.jpg",
+                        "/images/first_render.jpg",
+                        "/images/2first_render.jpg",
+                        "/images/3first_render.jpg",
+                        "/images/4first_render.jpg",
+                        "/images/5first_render.jpg",
+                        "/images/6first_render.jpg",
+                        "/images/7first_render.jpg",
+                        "/images/8first_render.jpg",
+                        "/images/9first_render.jpg",
+                        "/images/10first_render.jpg"
                     ]
-                }
+                },
+                videos: [
+                    {
+                        id: "v_int1_demo",
+                        title: "Build Walkthrough",
+                        category: "Process",
+                        src: "/videos/design_for_interactive_media_before.mp4",
+                        className: "md:col-span-2 md:row-span-2"
+                    },
+                    {
+                        id: "v_int2_demo",
+                        title: "Interaction Walkthrough",
+                        category: "Unity",
+                        src: "/videos/S2464169_D4IM_SUB2.mp4",
+                        className: "md:col-span-2 md:row-span-2"
+                    }
+                ]
+            },
+            {
+                id: "c3",
+                title: "Course 2: Game Design Studio",
+                description: "Visualized the Native American Chippewa fairytale 'The White Stone Canoe' as an atmospheric 3D game. The narrative follows a protagonist's journey from a harsh snowy landscape through dense forests to the land of the dead to save his bride. Players solve environmental puzzles to locate a shaman's cabin, leading to an ambiguous ending questioning the reality of the quest. I researched and modeled botanically accurate North American flora in Autodesk Maya and implemented the environment interactions and game logic using C# in Unity.",
+                bentoData: {
+                    hero: "/images/game_design.jpg",
+                    metric: "B",
+                    metricLabel: "Grade",
+                    subMetric: "3D Design",
+                    variations: [
+                        "/images/game4.jpg",
+                        "/images/game5.jpg",
+                        "/images/game6.jpg",
+                        "/images/game7.jpg",
+                        "/images/game2.jpg",
+                        "/images/game3.jpg"
+                    ]
+                },
+                videos: [
+                    {
+                        id: "v_3d1",
+                        title: "Game Walkthrough",
+                        category: "Unity Engine",
+                        src: "/videos/game_design_studio.mp4",
+                        className: "md:col-span-2 md:row-span-2"
+                    }
+                ]
+            },
+            {
+                id: "c4",
+                title: "Course 3: Digital Playgrounds for the online audience",
+                description: "Reimagined my hometown of Athens as a layered cyberpunk dystopia, visually bridging Ancient Greece and the Industrial Revolution with a high-tech future. This project marked my initiation into 3D modeling (Blender) and the Unity engine, where I integrated personal photography to texture the architectural assets. As a first foray into C#, the interaction was scoped to an atmospheric narrative walkthrough, establishing the environmental storytelling skills I developed further in later courses.",
+                bentoData: {
+                    hero: "/images/play_hero.jpg",
+                    metric: "B-",
+                    metricLabel: "Grade",
+                    subMetric: "Game Dev",
+                    variations: [
+                        "/images/play2.jpg",
+                        "/images/play3.jpg",
+                        "/images/play4.jpg"
+                    ]
+                },
+                videos: [
+                    {
+                        id: "v_game1",
+                        title: "Gameplay Demo",
+                        category: "Unity",
+                        src: "/videos/Digital_playgrounds.mp4",
+                        className: "md:col-span-2 md:row-span-1"
+                    }
+                ]
             }
         ]
     },
+
 
     {
         id: 5,
@@ -422,44 +524,150 @@ const PROJECTS = [
     },
     {
         id: 6,
-        title: "AKTO College",
-        category: "BA (Hons) Graphic Design",
+        title: "AKTO in partnership with University of Middlesex",
+        category: "BA(Hons) in Graphic Design",
         type: "Academic",
         year: "2015-2018",
-        role: "Undergraduate Student",
-        description: "Rigorous foundational training in visual communication, absolute grid layout systems, typography, corporate identity, and traditional print media production workflows in partnership with Middlesex University.",
-        challenge: "Translating conceptual, abstract creative briefs into structurally sound, highly impactful visual design assets across mixed physical and digital media ecosystems.",
-        solution: "Mastered core graphic design principles, typographic weights, and advanced workflows in Adobe Creative Cloud to craft holistic marketing campaigns.",
+        role: "Student",
+        description: "A comprehensive study of graphic design fundamentals, spanning typography, composition, color theory, and art history. The curriculum extended into digital media, introducing animation, HTML/CSS, and collaborative project workflows.",
+        challenge: "To transition from static design foundations to dynamic media. My dissertation focused on Brand Building, requiring me to conceptualize and execute a cohesive advertising strategy for a major entity—Tesla—across diverse media formats.",
+        solution: "I designed three distinct brand campaigns for Tesla, producing both high-fidelity print advertisements and video commercials. The 'Black and Red' campaign was highly praised for its visual impact. This capstone project was pivotal, as it solidified my passion for advertising, motion graphics, and video editing.",
         results: [
-            "Graduated with a Bachelor of Arts (Honors) in Graphic Design with a final project grade of 80 (B).",
-            "Solidified a core specialization in high-impact advertising strategies, motion graphics, and video editing frameworks."
+            "BA(Hons) Award in graphic design",
+            "Highly praised 'Black & Red' aesthetic campaign",
+            "Discovered core passion for Motion Design & Video Editing"
         ],
-        tags: ["Graphic Design", "Typography", "Branding & Identity", "Print Production", "Adobe CC"],
+        tags: ["Typography", "Animation", "Brand Building", "Video Editing"],
         image: "/images/Hero_akto.jpg",
-        color: "from-amber-500 to-orange-400",
+        color: "from-green-500 to-emerald-400",
         courses: [
             {
-                id: "akto_tesla_capstone",
-                title: "Tesla Capstone Brand Campaign",
-                description: "A multi-faceted advertising framework for Tesla across three distinct pillars: a high-contrast 'Black and Red' visual identity, a SpaceX narrative arc, and an arcade-inspired campaign.",
+                id: "akto_c1",
+                title: "Final Project: Tesla Brand Building & Campaign Strategy",
+                description: "Challenging Tesla's 'no-advertising' strategy, I developed three distinct multi-media campaigns to highlight their competitive edge. 1) 'High Contrast': Utilized the logo's red against a black-and-white palette to semiologically emphasize EV benefits like acceleration, zero emissions, and HEPA air filtration. 2) 'Space Exploration': Inspired by the SpaceX Mars launch, I created a 'Tesla Universe' narrative with a Star Trek-esque sci-fi aesthetic. 3) 'Arcade Mode': Used retro gaming visuals to contrast technological eras, featuring the Tesla logo as a playable character defeating obsolete petrol technology.",
                 bentoData: {
-                    hero: "/images/tesla_black_red_campaign.jpg",
-                    metric: "80 / 100",
-                    metricLabel: "Capstone Project Grade",
-                    subMetric: "Highly Praised Aesthetic",
+                    hero: "/images/black2.jpg",
+                    metric: "80",
+                    metricLabel: "Grade B",
+                    subMetric: "Adobe CC ",
                     variations: [
-                        "/images/sketch.jpg",
-                        "/images/sketch2.jpg",
-                        "/images/sketch3.jpg",
-                        "/images/sketch4.jpg",
-                        "/images/tesla_spacex_storyboard.jpg",
-                        "/images/tesla_arcade_concept.jpg"
+                        "/images/black4.jpg",
+                        "/images/black2.jpg",
+                        "/images/black5.jpg",
+                        "/images/black6.jpg",
+                        "/images/space1.jpg",
+                        "/images/space2.jpg",
+                        "/images/space3.jpg",
+                        "/images/arcade1.jpg",
+                        "/images/arcade2.jpg",
+                        "/images/arcade3.jpg",
                     ]
-                }
+                },
+                videos: [
+                    {
+                        id: "akto_v_int1",
+                        title: "Black and red campaign",
+                        category: "Adobe CC",
+                        src: "/videos/black.mp4",
+                        className: "md:col-span-3 md:row-span-2"
+                    },
+                    {
+                        id: "akto_v_int2",
+                        title: "Space campaign",
+                        category: "Adobe CC",
+                        src: "/videos/space.mp4",
+                        className: "md:col-span-2 md:row-span-2"
+                    },
+                    {
+                        id: "akto_v_int3",
+                        title: "Arcade campaign",
+                        category: "Adobe CC",
+                        src: "/videos/arcade.mp4",
+                        className: "md:col-span-1 md:row-span-2"
+                    },
+                ]
+            },
+            {
+                id: "akto_c2",
+                title: "Course 1: Editorial Design & Magazine Identity",
+                description: "Tasked with creating a magazine brand from scratch, I focused on the Hip Hop industry featuring the group Migos. I designed a custom logo in Adobe Illustrator and developed a bold visual identity by stylizing photography with vibrant, single-color overlays against a stark black background. The project was highly praised by the faculty and selected for feature on the college's official social media channels.",
+                bentoData: {
+                    hero: "/images/reference.jpg",
+                    metric: "82",
+                    metricLabel: "Grade",
+                    subMetric: "Composition and Editorial Design",
+                    variations: [
+                        "/images/print.jpg",
+                        "/images/print2.jpg",
+                    ]
+                },
+            },
+            {
+                id: "akto_c4",
+                title: "Course 3: Visualizing Calvino's 'Invisible Cities'",
+                description: "Collaborated on a multimedia group project interpreting Italo Calvino's 'Invisible Cities'. We selected the city of Ersilia—a settlement defined by threads representing human relationships that get dismantled and moved once the connections become too dense. The deliverables included a comprehensive brand identity (logo, poster), a motion graphic visualization, and a physical installation showcased at the college exhibition to represent the city's ephemeral, string-based architecture.",
+                bentoData: {
+                    hero: "/images/Ersilia.jpg",
+                    metric: "85",
+                    metricLabel: "Grade",
+                    subMetric: "Story visualizing",
+                    variations: [
+                        "/images/ersilialogo.jpg",
+                        "/images/ersilialogo1.jpg",
+                        "/images/gallery3.jpg",
+                    ]
+                },
+                videos: [
+                    {
+                        id: "akto_v_game1",
+                        title: "Storytelling visualize",
+                        category: "Unity",
+                        src: "/videos/ersilia1.mp4",
+                        className: "md:col-span-2 md:row-span-1"
+                    }
+                ]
+            },
+            {
+                id: "akto_c3_rebrand",
+                title: "Course 2: Sports Branding Re-imagined",
+                description: "Selected my hometown's football club for a comprehensive rebrand exercise. The goal was to modernize a legacy logo that had remained stagnant for decades while retaining its heritage. I developed a contemporary visual identity system and applied it across various physical touchpoints, including corporate stationery and a full redesign of the official football kit.",
+                bentoData: {
+                    hero: "/images/branding.jpg",
+                    metric: "78",
+                    metricLabel: "Grade",
+                    subMetric: "Branding Design",
+                    variations: [
+                        "/images/branding2.jpg",
+                        "/images/branding3.jpg",
+                    ]
+                },
+            },
+            {
+                id: "akto_c3_voluntary",
+                title: "Voluntary Work & Composition Studies",
+                description: "A curated selection of miscellaneous coursework exploring advanced composition theories and visual hierarchy. A standout project in this collection is a promotional video campaign developed pro-bono for 'Akoustirixi', a non-profit organization supporting the hearing-impaired community, where I applied motion design principles to drive social impact.",
+                bentoData: {
+                    hero: "/images/fiat.jpg",
+                    metric: "Stylistic exploration",
+                    metricLabel: "Theory applications",
+                    subMetric: "Composition Design",
+                    variations: [
+                        "/images/fear.jpg",
+                        "/images/trata.jpg",
+                    ]
+                },
+                videos: [
+                    {
+                        id: "akto_v_game1_vol",
+                        title: "Support campaign ",
+                        category: "After Effects",
+                        src: "/videos/akoustirixi.mp4",
+                        className: "md:col-span-2 md:row-span-1"
+                    }
+                ]
             }
         ]
     },
-
 ];
 
 // --- GALLERY DATA ---
