@@ -21,66 +21,28 @@ const PROJECTS = [
         challenge: "In addition to my core role at DPAM, I manage graphic and digital design assets for the Holland & Barrett account within the Fourlis Group. In this expanded capacity, I oversee the creation of high-impact print materials for physical retail spaces alongside multi-channel digital creative assets.",
         solution: "I spearheaded the transition of creative assets into modern, streamlined workflows and tools, slashing required asset delivery times by at least 60%. Furthermore, I elevated overall engagement by introducing animated GIFs into newsletters and deploying high-impact video assets across multiple consumer touchpoints.",
         results: [
-            "Redesigned all legacy brand creatives and expanded assets for audience segmentation.",
-            "Part of the success of Google Case study and best practice for 2025, +155% conversion rates for jobseekers, -49% cost per application (CPA).",
-            "Our team won Gold & Silver at Peak Awards 2025: Best Performance in Employment (AI-Driven Lead Gen) & Best Use of Data."
+            "Enhanced the DPAM brand footprint through the strategic integration of high-impact video assets and dynamic motion design across digital channels.",
+            "Infused modern visual trends and creative flair into the brand's ecosystem, elevating the design language across both the e-shop website and physical retail stores.",
+            "Expanded professional design operations by successfully onboarding and managing multi-channel creative assets for the UK health and wellness brand, Holland & Barrett."
         ],
         tags: ["Print Design", "Adobe CC","Modernizing e-shop visual trends"],
         image: "/images/hero_main_dpam.png",
         color: "from-white-600 to-red-400",
         bentoData: {
             hero: "/images/HERO_DPAM.png",
-            metric: "+155%",
+            metric: "Enhanced Omnichannel",
             metricLabel: "New Brand Identity and creatives",
             subMetric: "Added more video features and brand assets",
             variations: [
                 "/images/dpam_1.png",
-                "/videos/dpam_newsletter.png",
+                "/images/dpam_newsletter.gif",
                 "/images/H&B JUN26 GENERIC CAMPAIGN C LOCALS mobile+ENG.png",
-                "/videos/H&B JUN26 GENERIC CAMPAIGN C LOCALS mobile+gr.png",
+                "/images/H&B JUN26 GENERIC CAMPAIGN C LOCALS mobile+gr.png",
                 "/images/H&B JUN26 CAMPAIGN GENERIC RELEVANCE ALL_2.png",
-                "/images/legacy_redesign.gif",
                 "/images/H&B JUN26 SPORTS CAMPAIGN C LOCALS post.jpg",
                 "/images/H&B JUN26 SPORTS CAMPAIGN C LOCALS promo banners desktop+mobile gr+eng_SMALL_1.jpg",
-                "/images/food_cafe1.jpg",
-                "/images/food_cafe2.jpg",
-                "/images/kar_mo3.jpg",
-                {
-                    id: "dpam_v13",
-                    title: "LinkedIn Feature",
-                    category: "Embedded Post",
-                    embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7384532942305390592?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                    className: "md:col-span-1 md:row-span-2"
-                },
-                {
-                    id: "dpam_v18_li",
-                    title: "LinkedIn Feature",
-                    category: "Embedded Post",
-                    embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7341393050612432896?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                    className: "md:col-span-1 md:row-span-2"
-                },
-                {
-                    id: "dpam_v17",
-                    title: "LinkedIn Feature",
-                    category: "Embedded Post",
-                    embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7423026631017119744?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                    className: "md:col-span-1 md:row-span-2"
-                },
-                {
-                    id: "dpam_v10_b",
-                    title: "LinkedIn Feature",
-                    category: "Embedded Post",
-                    embed: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7419691159813390337?collapsed=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
-                    className: "md:col-span-1 md:row-span-2"
-                },
-                { type: "header", title: "Social Media banners for Energyjobsearch.com" },
-                "/images/EJS_FIG.jpg",
-                "/images/ejs1.jpg",
-                "/videos/ejs2.mp4",
-                "/images/ejs3.jpg",
-                "/images/ejs4.jpg",
-                "/videos/ejs5.mp4",
-            ]
+
+
         },
         articles: [
             {
