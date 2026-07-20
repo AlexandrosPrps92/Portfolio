@@ -770,6 +770,13 @@ const GALLERY_ITEMS = [
         className: "md:col-span-1 md:row-span-1"
     },
     {
+        id: "vid-promo-17",
+        title: "Behind the scenes with Giannis Antetokoumpo",
+        description: "Shooting for a basketball commercial",
+        image: "/videos/giannis_34.mp4",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
         id: 14,
         title: "Behind the scenes",
         description: "Shooting for a basketball commercial",
@@ -781,6 +788,20 @@ const GALLERY_ITEMS = [
         title: "Behind the scenes",
         description: "Shooting for a basketball commercial",
         image: "/images/gallery9.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: "exhibit-basketaegean-1",
+        title: "Behind the scenes with Kostas Sloukas",
+        description: "Shooting for a basketball commercial",
+        image: "/images/20190802_145001.jpg",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: "exhibit-basketaegean-2",
+        title: "Behind the scenes with Kostas Papanikolaou",
+        description: "Shooting for a basketball commercial",
+        image: "/images/20190802_183937.jpg",
         className: "md:col-span-1 md:row-span-1"
     },
     {
@@ -871,7 +892,14 @@ const GALLERY_ITEMS = [
         id: 20,
         title: "Behind the scenes",
         description: "Took part in the filming of RISE(2022)",
-        image: "/images/gallery17.jpg",
+        image: "/images/gallery17.png",
+        className: "md:col-span-1 md:row-span-1"
+    },
+    {
+        id: 26,
+        title: "Behind the scenes",
+        description: "Took part in the filming of RISE(2022)",
+        image: "/images/202607.jpg",
         className: "md:col-span-1 md:row-span-1"
     },
     {
@@ -887,7 +915,14 @@ const GALLERY_ITEMS = [
         description: "Interviewing the Head coach Dragan Sakota",
         image: "/images/sakota.jpg",
         className: "md:col-span-1 md:row-span-1"
-    }
+    },
+    {
+        id: 24,
+        title: "Design of the backdrop and animation of a ceremony",
+        description: "Backdrop and stage design for a beauty pageant",
+        image: "/videos/MRgshellas_backdrop_design.mp4",
+        className: "md:col-span-1 md:row-span-1"
+    },
 ];
 
 const SERVICES = [
